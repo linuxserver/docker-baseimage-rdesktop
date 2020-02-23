@@ -1,0 +1,23 @@
+#!/usr/bin/with-contenv bash
+
+if [ ! -e /lock.file ]; then
+  # give abc a sudo shell
+  chsh abc -s /bin/bash
+  sed -e 's/%sudo	ALL=(ALL:ALL) ALL/%sudo ALL=(ALL:ALL) NOPASSWD: ALL/g' \
+    -i /etc/sudoers
+  sed -e 's/^wheel:\(.*\)/wheel:\1,abc/g' -i /etc/group
+fi
+
+# create lock file after first run
+touch /lock.file
+
+# default file copies first run
+[[ ! -d /config/.config ]] && \
+	mkdir -p /config/.config && \
+        cp /defaults/bashrc /config/.bashrc && \
+	cp /defaults/startwm.sh /config/startwm.sh
+
+# permissions
+PERM=$(stat -c '%U' /config/.config)
+[[ "${PERM}" != "abc" ]] && \
+        chown -R abc:abc /config

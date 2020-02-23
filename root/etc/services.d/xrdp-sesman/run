@@ -1,0 +1,9 @@
+#!/bin/execlineb -P
+
+# Redirect stderr to stdout.
+fdmove -c 2 1
+
+# Notify service manager when xrdp is up
+s6-notifyoncheck -w 500 -c "true &>/dev/null </dev/tcp/127.0.0.1/3350"
+
+/usr/sbin/xrdp-sesman --nodaemon

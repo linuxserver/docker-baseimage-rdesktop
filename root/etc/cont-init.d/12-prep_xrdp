@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+mkdir -p /var/run/xrdp || exit 1
+chown root:xrdp /var/run/xrdp || exit 1
+chmod 2775 /var/run/xrdp || exit 1
+
+mkdir -p /var/run/xrdp/sockdir || exit 1
+chown root:xrdp /var/run/xrdp/sockdir || exit 1
+chmod 3777 /var/run/xrdp/sockdir || exit 1
