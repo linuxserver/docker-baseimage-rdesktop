@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu:arm64v8-focal as buildstage
+FROM lsiobase/ubuntu:arm64v8-bionic as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.4
 
@@ -48,7 +48,7 @@ RUN \
  cp -ax ../xrdp_*.deb /buildout/xrdp.deb
 
 # runtime stage
-FROM lsiobase/ubuntu:arm64v8-focal
+FROM lsiobase/ubuntu:arm64v8-bionic
 
 # set version label
 ARG BUILD_DATE
