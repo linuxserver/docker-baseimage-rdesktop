@@ -1,6 +1,7 @@
 FROM lsiobase/ubuntu:bionic as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.4
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
  echo "**** install build deps ****" && \
