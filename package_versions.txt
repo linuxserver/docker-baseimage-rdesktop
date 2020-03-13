@@ -11,7 +11,7 @@ bzip21.0.6-8.1ubuntu0.2
 ca-certificates20180409
 coreutils8.28-1ubuntu1
 cpp4:7.4.0-1ubuntu2.3
-cpp-77.4.0-1ubuntu1~18.04.1
+cpp-77.5.0-3ubuntu1~18.04
 curl7.58.0-2ubuntu3.8
 dash0.5.8-2.10
 dbus1.12.2-1ubuntu1.1
@@ -21,7 +21,7 @@ debianutils4.8.4
 diffutils1:3.6-1
 dirmngr2.2.4-1ubuntu1.2
 distro-info-data0.37ubuntu0.6
-docker-ce-cli5:19.03.7~3-0~ubuntu-bionic
+docker-ce-cli5:19.03.8~3-0~ubuntu-bionic
 dpkg1.19.0.5ubuntu2.3
 e2fsprogs1.44.1-1ubuntu1.3
 fdisk2.31.1-0.4ubuntu3.5
@@ -29,7 +29,7 @@ findutils4.6.0+git+20170828-2
 fontconfig-config2.12.6-0ubuntu2
 fonts-dejavu-core2.37-1
 gawk1:4.1.4+dfsg-1build1
-gcc-7-base7.4.0-1ubuntu1~18.04.1
+gcc-7-base7.5.0-3ubuntu1~18.04
 gcc-8-base8.3.0-6ubuntu1~18.04.1
 gir1.2-glib-2.01.56.1-1
 gnupg22.2.4-1ubuntu1.2
@@ -188,7 +188,7 @@ libsm62:1.2.2-1
 libsmartcols12.31.1-0.4ubuntu3.5
 libsndfile11.0.28-4ubuntu0.18.04.1
 libspeexdsp11.2~rc1.2-1ubuntu2
-libsqlite3-03.22.0-1ubuntu0.2
+libsqlite3-03.22.0-1ubuntu0.3
 libss21.44.1-1ubuntu1.3
 libssl1.11.1.1-1ubuntu2.1~18.04.5
 libstdc++68.3.0-6ubuntu1~18.04.1
