@@ -202,13 +202,13 @@ libsoup2.4-12.62.1-1ubuntu0.4
 libspeexdsp11.2~rc1.2-1ubuntu2
 libsqlite3-03.22.0-1ubuntu0.3
 libss21.44.1-1ubuntu1.3
-libssl1.11.1.1-1ubuntu2.1~18.04.5
+libssl1.11.1.1-1ubuntu2.1~18.04.6
 libstdc++68.4.0-1ubuntu1~18.04
-libsystemd0237-3ubuntu10.40
+libsystemd0237-3ubuntu10.41
 libtasn1-64.13-2
 libtdb11.3.15-2
 libtinfo56.1-1ubuntu1.18.04
-libudev1237-3ubuntu10.40
+libudev1237-3ubuntu10.41
 libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.6
 libvorbis0a1.3.5-4.2
@@ -270,7 +270,7 @@ mount2.31.1-0.4ubuntu3.6
 multiarch-support2.27-3ubuntu1
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
-openssl1.1.1-1ubuntu2.1~18.04.5
+openssl1.1.1-1ubuntu2.1~18.04.6
 passwd1:4.5-1ubuntu2
 perl-base5.26.1-6ubuntu0.3
 pinentry-curses1.1.0-1
@@ -298,7 +298,7 @@ tar1.29b-2ubuntu0.1
 tzdata2020a-0ubuntu0.18.04
 ubuntu-keyring2018.09.18.1~18.04.0
 ucf3.0038
-udev237-3ubuntu10.40
+udev237-3ubuntu10.41
 util-linux2.31.1-0.4ubuntu3.6
 x11-apps7.7+6ubuntu1
 x11-common1:7.7+19ubuntu7.1
