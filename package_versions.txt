@@ -358,8 +358,8 @@ xkb-data2.29-2
 xorg-sgml-doctools1:1.11-1
 xorgxrdp1:0.2.12-1
 xrdp0.9.12-1
-xserver-common2:1.20.8-2ubuntu2.1
-xserver-xorg-core2:1.20.8-2ubuntu2.1
+xserver-common2:1.20.8-2ubuntu2.2
+xserver-xorg-core2:1.20.8-2ubuntu2.2
 xtrans-dev1.4.0-1
 xutils1:7.7+19ubuntu14
 zlib1g1:1.2.11.dfsg-2ubuntu1
