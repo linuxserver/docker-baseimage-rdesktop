@@ -162,7 +162,7 @@ liblmdb00.9.24-1
 liblocale-gettext-perl1.07-4
 libltdl72.4.6-14
 liblz4-11.9.2-2
-liblzma55.2.4-1
+liblzma55.2.4-1ubuntu1
 libmount12.34-0.1ubuntu9
 libmpc31.1.0-1
 libmpdec22.4.2-3
