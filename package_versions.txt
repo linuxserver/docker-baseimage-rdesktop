@@ -73,7 +73,7 @@ libattr11:2.4.48-5
 libaudit11:2.8.5-2ubuntu6
 libaudit-common1:2.8.5-2ubuntu6
 libblkid12.34-0.1ubuntu9.1
-libbrotli11.0.7-6build1
+libbrotli11.0.7-6ubuntu0.1
 libbsd00.10.0-1
 libbz2-1.01.0.8-2
 libc62.31-0ubuntu9.1
