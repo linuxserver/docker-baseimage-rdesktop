@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu:bionic as buildstage
+FROM ghcr.io/linuxserver/baseimage-ubuntu:bionic as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.4
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -49,7 +49,7 @@ RUN \
  cp -ax ../xrdp_*.deb /buildout/xrdp.deb
 
 # runtime stage
-FROM lsiobase/ubuntu:bionic
+FROM ghcr.io/linuxserver/baseimage-ubuntu:bionic
 
 # set version label
 ARG BUILD_DATE
