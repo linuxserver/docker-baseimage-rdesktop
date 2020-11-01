@@ -1,4 +1,4 @@
-FROM lsiobase/ubuntu:focal as buildstage
+FROM ghcr.io/linuxserver/baseimage-ubuntu:focal as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.4
 
@@ -48,7 +48,7 @@ RUN \
  cp -ax ../xrdp_*.deb /buildout/xrdp.deb
 
 # runtime stage
-FROM lsiobase/ubuntu:focal
+FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
 
 # set version label
 ARG BUILD_DATE
