@@ -155,8 +155,8 @@ libkrb5-26-heimdal7.7.0+dfsg-1ubuntu1
 libkrb5-31.17-6ubuntu4
 libkrb5support01.17-6ubuntu4
 libksba81.3.5-2
-libldap-2.4-22.4.49+dfsg-2ubuntu1.3
-libldap-common2.4.49+dfsg-2ubuntu1.3
+libldap-2.4-22.4.49+dfsg-2ubuntu1.4
+libldap-common2.4.49+dfsg-2ubuntu1.4
 libllvm101:10.0.0-4ubuntu1
 liblmdb00.9.24-1
 liblocale-gettext-perl1.07-4
@@ -321,13 +321,13 @@ python3-pkg-resources45.2.0-1
 python3-requests2.22.0-2ubuntu1
 python3-requests-unixsocket0.2.0-2
 python3-six1.14.0-2
-python3-software-properties0.98.9.2
+python3-software-properties0.98.9.3
 python3-urllib31.25.8-2ubuntu0.1
 python-apt-common2.0.0ubuntu0.20.04.1
 readline-common8.0-4
 sed4.7-1
 sensible-utils0.0.12+nmu1
-software-properties-common0.98.9.2
+software-properties-common0.98.9.3
 ssl-cert1.0.39
 sudo1.8.31-1ubuntu1.1
 systemd245.4-4ubuntu3.3
