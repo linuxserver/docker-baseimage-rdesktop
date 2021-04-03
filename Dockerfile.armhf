@@ -1,54 +1,63 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm32v7-focal as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.13 as buildstage
 
-ARG XRDP_PULSE_VERSION=v0.4
+ARG ALPINE_VERSION=3.13
+ARG XRDP_PULSE_VERSION=v0.5
 
 RUN \
  echo "**** install build deps ****" && \
- sed -i 's/# deb-src/deb-src/g' /etc/apt/sources.list && \
- apt-get update && \
- apt-get install -y \
-	build-essential \
-	devscripts \
-	dpkg-dev \
-	git \
-	libpulse-dev \
-	pulseaudio && \
- apt build-dep -y \
-	pulseaudio \
-	xrdp
+ apk add --no-cache \
+	alpine-sdk \
+	autoconf \
+	automake && \
+ apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+	pulseaudio-dev \
+	xrdp-dev \
+	xorgxrdp-dev && \
+ echo "**** user perms ****" && \
+ useradd builder && \
+ usermod -G abuild builder
+
+USER builder
 
 RUN \
- echo "**** build pulseaudio modules ****" && \
- mkdir -p /buildout/var/lib/xrdp-pulseaudio-installer && \
- tmp=$(mktemp -d); cd "$tmp" && \
- pulseaudio_version=$(dpkg-query -W -f='${source:Version}' pulseaudio|awk -F: '{print $2}') && \
- pulseaudio_upstream_version=$(dpkg-query -W -f='${source:Upstream-Version}' pulseaudio) && \
- set -- $(apt-cache policy pulseaudio | fgrep -A1 '***' | tail -1) && \
- mirror=$2 && \
- suite=${3#*/} && \
- dget -u "$mirror/pool/$suite/p/pulseaudio/pulseaudio_$pulseaudio_version.dsc" && \
- cd "pulseaudio-$pulseaudio_upstream_version" && \
- ./configure && \
- cd - && \
- git clone https://github.com/neutrinolabs/pulseaudio-module-xrdp.git && \
- cd pulseaudio-module-xrdp && \
- git checkout ${XRDP_PULSE_VERSION} && \
- ./bootstrap && \
- ./configure PULSE_DIR="$tmp/pulseaudio-$pulseaudio_upstream_version" && \
- make && \
- install -t "/buildout/var/lib/xrdp-pulseaudio-installer" -D -m 644 src/.libs/*.so
-
-RUN \
- echo "**** build xrdp with fuse disabled ****" && \
+ echo "**** grab aports ****" && \
+ wget \
+        https://gitlab.alpinelinux.org/alpine/aports/-/archive/${ALPINE_VERSION}-stable/aports-${ALPINE_VERSION}-stable.tar.gz \
+        -O /tmp/aports.tar.gz && \
  cd /tmp && \
- apt-get source xrdp && \
- cd xrdp-* && \
- sed -i 's/--enable-fuse/--disable-fuse/g' debian/rules && \
- debuild -b -uc -us && \
- cp -ax ../xrdp_*.deb /buildout/xrdp.deb
+ tar -xf aports.tar.gz
+
+RUN \
+ echo "**** build pulseaudio from source ****" && \
+ cd /tmp/aports-${ALPINE_VERSION}-stable/community/pulseaudio && \
+ abuild fetch && \
+ abuild unpack && \
+ abuild deps && \
+ abuild prepare && \
+ VERSION=$(ls -1 /tmp/aports-${ALPINE_VERSION}-stable/community/pulseaudio/src/ | \
+	awk -F '-' '/pulseaudio-/ {print $2; exit}') && \
+ cd src/pulseaudio-${VERSION} && \
+ ./configure
+
+RUN \
+ echo "**** build pulseaudio xrdp module ****" && \
+ VERSION=$(ls -1 /tmp/aports-${ALPINE_VERSION}-stable/community/pulseaudio/src/ | \
+        awk -F '-' '/pulseaudio-/ {print $2; exit}') && \
+ mkdir -p /tmp/buildout/usr/lib/pulse-${VERSION}/modules/ && \
+ wget \
+	https://github.com/neutrinolabs/pulseaudio-module-xrdp/archive/refs/tags/${XRDP_PULSE_VERSION}.tar.gz \
+	-O /tmp/pulsemodule.tar.gz && \
+ cd /tmp && \
+ tar -xf pulsemodule.tar.gz && \
+ cd pulseaudio-module-xrdp-* && \
+ ./bootstrap && \
+ ./configure \
+	PULSE_DIR=/tmp/aports-${ALPINE_VERSION}-stable/community/pulseaudio/src/pulseaudio-${VERSION} && \
+ make && \
+ install -t "/tmp/buildout/usr/lib/pulse-${VERSION}/modules/" -D -m 644 src/.libs/*.so
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm32v7-focal
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.13
 
 # set version label
 ARG BUILD_DATE
@@ -57,51 +66,34 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thelamer"
 
 # copy over libs and installers from build stage
-COPY --from=buildstage /buildout/ /
+COPY --from=buildstage /tmp/buildout/ /
 
 RUN \
  echo "**** install deps ****" && \
- ldconfig && \
- apt-get update && \
- DEBIAN_FRONTEND=noninteractive \
- apt-get install -y --no-install-recommends \
-	apt-transport-https \
-	ca-certificates \
-	curl \
- 	dbus-x11 \
-	gawk \
-	gnupg2 \
-	libfuse2 \
-	libx11-dev \
-	libxfixes3 \
-	libxml2 \
-	libxrandr2 \
+ apk add --no-cache \
+	dbus \
+	docker \
+	libpulse \
+	pavucontrol \
 	pulseaudio \
-	software-properties-common \
+	pulseaudio-utils \
+	pulsemixer \
+	python2 \
 	sudo \
-	x11-apps \
-	x11-xserver-utils \
-	xfonts-base \
-	xorgxrdp \
-	xrdp \
-	xserver-xorg-core \
-	xutils \
-	zlib1g && \
- dpkg -i /xrdp.deb && \
- rm /xrdp.deb && \
- echo "**** install docker ****" && \
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
- add-apt-repository "deb [arch=armhf] https://download.docker.com/linux/ubuntu bionic stable" && \
- apt-get update && \
- apt-get install -y --no-install-recommends \
-	docker-ce-cli && \
+	xterm && \
+ apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+	xorg-server \
+	xorgxrdp \ 
+	xrdp && \
+ VERSION=$(ls -1 /usr/lib/ | \
+        awk -F '-' '/pulse-/ {print $2; exit}') && \
+ ldconfig -n /usr/lib/pulse-${VERSION}/modules && \
  echo "**** cleanup and user perms ****" && \
  echo "abc:abc" | chpasswd && \
- usermod -aG sudo abc && \
- apt-get autoclean && \
+ usermod -s /bin/bash abc && \
+ echo '%wheel ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/wheel && \
+ adduser abc wheel && \
  rm -rf \
-	/var/lib/apt/lists/* \
-	/var/tmp/* \
 	/tmp/*
 
 # add local files
