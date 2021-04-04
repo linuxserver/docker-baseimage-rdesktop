@@ -71,17 +71,11 @@ COPY --from=buildstage /tmp/buildout/ /
 RUN \
  echo "**** install deps ****" && \
  apk add --no-cache \
-	dbus \
+	dbus-x11 \
 	docker \
 	libpulse \
-	paper-gtk-theme \
-	paper-icon-theme \
 	pavucontrol \
 	pulseaudio \
-	pulseaudio-utils \
-	pulsemixer \
-	python2 \
-	ttf-freefont \
 	sudo \
 	xterm && \
  apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
