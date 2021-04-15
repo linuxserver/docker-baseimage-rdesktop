@@ -2,7 +2,7 @@ alpine-baselayout-3.2.0-r8
 alpine-keys-2.2-r0
 alsa-lib-1.2.4-r2
 alsa-plugins-pulse-1.2.2-r1
-apk-tools-2.12.4-r2
+apk-tools-2.12.5-r0
 at-spi2-atk-2.38.0-r0
 at-spi2-core-2.38.0-r0
 atk-2.36.0-r0
@@ -169,8 +169,8 @@ xinit-1.4.1-r0
 xkbcomp-1.4.4-r0
 xkeyboard-config-2.31-r0
 xmodmap-1.0.10-r0
-xorg-server-1.20.10-r4
-xorg-server-common-1.20.10-r4
+xorg-server-1.20.11-r0
+xorg-server-common-1.20.11-r0
 xorgxrdp-0.2.15-r0
 xrdb-1.2.0-r1
 xrdp-0.9.15-r0
