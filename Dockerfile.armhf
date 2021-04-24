@@ -47,6 +47,9 @@ RUN \
  debuild -b -uc -us && \
  cp -ax ../xrdp_*.deb /buildout/xrdp.deb
 
+# docker compose
+FROM ghcr.io/linuxserver/docker-compose:arm32v7-latest as compose
+
 # runtime stage
 FROM ghcr.io/linuxserver/baseimage-ubuntu:arm32v7-focal
 
@@ -58,6 +61,7 @@ LABEL maintainer="thelamer"
 
 # copy over libs and installers from build stage
 COPY --from=buildstage /buildout/ /
+COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 RUN \
  echo "**** install deps ****" && \
@@ -76,6 +80,7 @@ RUN \
 	libxfixes3 \
 	libxml2 \
 	libxrandr2 \
+	openssh-client \
 	pulseaudio \
 	software-properties-common \
 	sudo \
