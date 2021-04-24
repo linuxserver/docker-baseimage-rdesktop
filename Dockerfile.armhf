@@ -56,6 +56,9 @@ RUN \
  make && \
  install -t "/tmp/buildout/usr/lib/pulse-${VERSION}/modules/" -D -m 644 src/.libs/*.so
 
+# docker compose
+FROM ghcr.io/linuxserver/docker-compose:arm32v7-alpine as compose
+
 # runtime stage
 FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.13
 
@@ -67,6 +70,7 @@ LABEL maintainer="thelamer"
 
 # copy over libs and installers from build stage
 COPY --from=buildstage /tmp/buildout/ /
+COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 RUN \
  echo "**** install deps ****" && \
@@ -74,6 +78,8 @@ RUN \
 	dbus-x11 \
 	docker \
 	libpulse \
+	openssh-client \
+	openssl \
 	pavucontrol \
 	pulseaudio \
 	sudo \
