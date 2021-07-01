@@ -1,57 +1,60 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm64v8-focal as buildstage
+FROM ghcr.io/linuxserver/baseimage-fedora:arm64v8-34 as buildstage
 
-ARG XRDP_PULSE_VERSION=v0.4
-
-RUN \
- echo "**** install build deps ****" && \
- sed -i 's/# deb-src/deb-src/g' /etc/apt/sources.list && \
- apt-get update && \
- apt-get install -y \
-	build-essential \
-	devscripts \
-	dpkg-dev \
-	git \
-	libpulse-dev \
-	pulseaudio && \
- apt build-dep -y \
-	pulseaudio \
-	xrdp
+ARG XRDP_PULSE_VERSION=v0.5
 
 RUN \
- echo "**** build pulseaudio modules ****" && \
- mkdir -p /buildout/var/lib/xrdp-pulseaudio-installer && \
- tmp=$(mktemp -d); cd "$tmp" && \
- pulseaudio_version=$(dpkg-query -W -f='${source:Version}' pulseaudio|awk -F: '{print $2}') && \
- pulseaudio_upstream_version=$(dpkg-query -W -f='${source:Upstream-Version}' pulseaudio) && \
- set -- $(apt-cache policy pulseaudio | fgrep -A1 '***' | tail -1) && \
- mirror=$2 && \
- suite=${3#*/} && \
- dget -u "$mirror/pool/$suite/p/pulseaudio/pulseaudio_$pulseaudio_version.dsc" && \
- cd "pulseaudio-$pulseaudio_upstream_version" && \
- ./configure && \
- cd - && \
- git clone https://github.com/neutrinolabs/pulseaudio-module-xrdp.git && \
- cd pulseaudio-module-xrdp && \
- git checkout ${XRDP_PULSE_VERSION} && \
- ./bootstrap && \
- ./configure PULSE_DIR="$tmp/pulseaudio-$pulseaudio_upstream_version" && \
- make && \
- install -t "/buildout/var/lib/xrdp-pulseaudio-installer" -D -m 644 src/.libs/*.so
+  echo "**** install build deps ****" && \
+  yum groupinstall -y \
+    "Development Tools" && \
+  yum install -y \
+    rpmdevtools \
+    wget \
+    yum-utils && \
+  yum install -y \
+    pulseaudio \
+    pulseaudio-libs \
+    pulseaudio-libs-devel && \
+  yum-builddep -y \
+    pulseaudio
 
 RUN \
- echo "**** build xrdp with fuse disabled ****" && \
- cd /tmp && \
- apt-get source xrdp && \
- cd xrdp-* && \
- sed -i 's/--enable-fuse/--disable-fuse/g' debian/rules && \
- debuild -b -uc -us && \
- cp -ax ../xrdp_*.deb /buildout/xrdp.deb
+  echo "**** fetch pulseaudio source ****" && \
+  yumdownloader --source -y \
+    pulseaudio && \
+  rpm --install \
+    pulseaudio*.src.rpm
+
+RUN \
+  echo "**** run pulseaudio config ****" && \
+  VERSION=$(ls -1 /root/rpmbuild/SOURCES/*.tar.xz | \
+    awk -F '(pulseaudio-|.tar.xz)' '/pulseaudio-/ {print $2; exit}') && \
+  cd ~/rpmbuild/SOURCES/ && \
+  tar -xf pulseaudio-${VERSION}.tar.xz && \
+  cd pulseaudio-${VERSION} && \
+  ./configure
+
+RUN \
+  echo "**** build pulseaudio xrdp module ****" && \
+  VERSION=$(ls -1 /root/rpmbuild/SOURCES/*.tar.xz | \
+    awk -F '(pulseaudio-|.tar.xz)' '/pulseaudio-/ {print $2; exit}') && \
+  mkdir -p /tmp/buildout/usr/lib64/pulse-${VERSION}/modules/ && \
+  wget \
+    https://github.com/neutrinolabs/pulseaudio-module-xrdp/archive/refs/tags/${XRDP_PULSE_VERSION}.tar.gz \
+    -O /tmp/pulsemodule.tar.gz && \
+  cd /tmp && \
+  tar -xf pulsemodule.tar.gz && \
+  cd pulseaudio-module-xrdp-* && \
+  ./bootstrap && \
+  ./configure \
+    PULSE_DIR=/root/rpmbuild/SOURCES/pulseaudio-${VERSION} && \
+  make && \
+  install -t "/tmp/buildout/usr/lib64/pulse-${VERSION}/modules/" -D -m 644 src/.libs/*.so
 
 # docker compose
 FROM ghcr.io/linuxserver/docker-compose:arm64v8-latest as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm64v8-focal
+FROM ghcr.io/linuxserver/baseimage-fedora:arm64v8-34
 
 # set version label
 ARG BUILD_DATE
@@ -60,54 +63,34 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="thelamer"
 
 # copy over libs and installers from build stage
-COPY --from=buildstage /buildout/ /
+COPY --from=buildstage /tmp/buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 RUN \
- echo "**** install deps ****" && \
- ldconfig && \
- apt-get update && \
- DEBIAN_FRONTEND=noninteractive \
- apt-get install -y --no-install-recommends \
-	apt-transport-https \
-	ca-certificates \
-	curl \
- 	dbus-x11 \
-	gawk \
-	gnupg2 \
-	libfuse2 \
-	libx11-dev \
-	libxfixes3 \
-	libxml2 \
-	libxrandr2 \
-	openssh-client \
-	pulseaudio \
-	software-properties-common \
-	sudo \
-	x11-apps \
-	x11-xserver-utils \
-	xfonts-base \
-	xorgxrdp \
-	xrdp \
-	xserver-xorg-core \
-	xutils \
-	zlib1g && \
- dpkg -i /xrdp.deb && \
- rm /xrdp.deb && \
- echo "**** install docker ****" && \
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
- add-apt-repository "deb [arch=arm64] https://download.docker.com/linux/ubuntu bionic stable" && \
- apt-get update && \
- apt-get install -y --no-install-recommends \
-	docker-ce-cli && \
- echo "**** cleanup and user perms ****" && \
- echo "abc:abc" | chpasswd && \
- usermod -aG sudo abc && \
- apt-get autoclean && \
- rm -rf \
-	/var/lib/apt/lists/* \
-	/var/tmp/* \
-	/tmp/*
+  echo "**** install deps ****" && \
+  dnf install -y --setopt=install_weak_deps=False --best \
+    dbus-x11 \
+    docker \
+    openssh-clients \
+    openssl \
+    pavucontrol \
+    pulseaudio \
+    sudo \
+    xorgxrdp \
+    xrdp \
+    xterm && \
+  VERSION=$(ls -1 /usr/lib64/ | \
+    awk -F '-' '/pulse-/ {print $2; exit}') && \
+  ldconfig -n /usr/lib64/pulse-${VERSION}/modules && \
+  echo "**** cleanup and user perms ****" && \
+  echo "abc:abc" | chpasswd && \
+  usermod -s /bin/bash abc && \
+  echo '%wheel ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/wheel && \
+  usermod -aG wheel abc && \
+  dnf autoremove -y && \
+  dnf clean all && \
+  rm -rf \
+    /tmp/*
 
 # add local files
 COPY /root /
