@@ -33,7 +33,7 @@ RUN \
   cd ~/rpmbuild/SOURCES/ && \
   tar -xf pulseaudio-${VERSION}.tar.xz && \
   cd pulseaudio-${VERSION} && \
-  ./configure
+  ./configure --target=armv7l-unknown-linux-gnueabihf
 
 RUN \
   echo "**** build pulseaudio xrdp module ****" && \
@@ -48,6 +48,7 @@ RUN \
   cd pulseaudio-module-xrdp-* && \
   ./bootstrap && \
   ./configure \
+    --target=armv7l-unknown-linux-gnueabihf \
     PULSE_DIR=/root/rpmbuild/SOURCES/pulseaudio-${VERSION} && \
   make && \
   install -t "/tmp/buildout/usr/lib/pulse-${VERSION}/modules/" -D -m 644 src/.libs/*.so
