@@ -1,27 +1,27 @@
-FROM ghcr.io/linuxserver/baseimage-fedora:arm32v7-34 as buildstage
+FROM --platform=linux/arm/v7 ghcr.io/linuxserver/baseimage-fedora:arm32v7-34 as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.5
 
 RUN \
   echo "**** install build deps ****" && \
-  dnf --forcearch armv7hl groupinstall -y \
+  dnf groupinstall -y \
     "Development Tools" && \
-  dnf --forcearch armv7hl install -y \
+  dnf install -y \
     'dnf-command(builddep)' \
     'dnf-command(download)' \
     rpmdevtools \
     wget \
     yum-utils && \
-  dnf --forcearch armv7hl install -y \
+  dnf install -y \
     pulseaudio \
     pulseaudio-libs \
     pulseaudio-libs-devel && \
-  dnf builddep --forcearch armv7hl -y \
+  dnf builddep -y \
     pulseaudio
 
 RUN \
   echo "**** fetch pulseaudio source ****" && \
-  dnf download --forcearch armv7hl --source -y \
+  dnf download --source -y \
     pulseaudio && \
   rpm --install \
     pulseaudio*.src.rpm
@@ -33,7 +33,7 @@ RUN \
   cd ~/rpmbuild/SOURCES/ && \
   tar -xf pulseaudio-${VERSION}.tar.xz && \
   cd pulseaudio-${VERSION} && \
-  ./configure --target=armv7l-unknown-linux-gnueabihf
+  ./configure
 
 RUN \
   echo "**** build pulseaudio xrdp module ****" && \
@@ -48,7 +48,6 @@ RUN \
   cd pulseaudio-module-xrdp-* && \
   ./bootstrap && \
   ./configure \
-    --target=armv7l-unknown-linux-gnueabihf \
     PULSE_DIR=/root/rpmbuild/SOURCES/pulseaudio-${VERSION} && \
   make && \
   install -t "/tmp/buildout/usr/lib/pulse-${VERSION}/modules/" -D -m 644 src/.libs/*.so
@@ -57,7 +56,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:arm32v7-latest as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-fedora:arm32v7-34
+FROM --platform=linux/arm/v7 ghcr.io/linuxserver/baseimage-fedora:arm32v7-34
 
 # set version label
 ARG BUILD_DATE
