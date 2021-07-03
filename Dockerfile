@@ -4,22 +4,24 @@ ARG XRDP_PULSE_VERSION=v0.5
 
 RUN \
   echo "**** install build deps ****" && \
-  yum groupinstall -y \
+  dnf groupinstall -y \
     "Development Tools" && \
-  yum install -y \
+  dnf install -y \
+    'dnf-command(builddep)' \
+    'dnf-command(download)' \
     rpmdevtools \
     wget \
     yum-utils && \
-  yum install -y \
+  dnf install -y \
     pulseaudio \
     pulseaudio-libs \
     pulseaudio-libs-devel && \
-  yum-builddep -y \
+  dnf builddep -y \
     pulseaudio
 
 RUN \
   echo "**** fetch pulseaudio source ****" && \
-  yumdownloader --source -y \
+  dnf download --source -y \
     pulseaudio && \
   rpm --install \
     pulseaudio*.src.rpm
