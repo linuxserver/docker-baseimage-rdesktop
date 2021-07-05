@@ -19,8 +19,8 @@ cairomm-1.14.2-8.fc34.x86_64
 colord-libs-1.4.5-2.fc34.x86_64
 container-selinux-2.163.0-1.fc34.noarch
 containerd-1.5.0~rc.1-1.fc34.x86_64
-coreutils-8.32-27.fc34.x86_64
-coreutils-common-8.32-27.fc34.x86_64
+coreutils-8.32-28.fc34.x86_64
+coreutils-common-8.32-28.fc34.x86_64
 cracklib-2.9.6-25.fc34.x86_64
 criu-3.15-3.fc34.x86_64
 crypto-policies-20210213-1.git5c710c0.fc34.noarch
