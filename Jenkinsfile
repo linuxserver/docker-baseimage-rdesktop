@@ -214,6 +214,104 @@ pipeline {
         }
       }
     }
+    // Use helper containers to render templated files
+    stage('Update-Templates') {
+      when {
+        branch "fedora"
+        environment name: 'CHANGE_ID', value: ''
+        expression {
+          env.CONTAINER_NAME != null
+        }
+      }
+      steps {
+        sh '''#! /bin/bash
+              set -e
+              TEMPDIR=$(mktemp -d)
+              docker pull ghcr.io/linuxserver/jenkins-builder:latest
+              docker run --rm -e CONTAINER_NAME=${CONTAINER_NAME} -e GITHUB_BRANCH=fedora -v ${TEMPDIR}:/ansible/jenkins ghcr.io/linuxserver/jenkins-builder:latest 
+              # Stage 1 - Jenkinsfile update
+              if [[ "$(md5sum Jenkinsfile | awk '{ print $1 }')" != "$(md5sum ${TEMPDIR}/docker-${CONTAINER_NAME}/Jenkinsfile | awk '{ print $1 }')" ]]; then
+                mkdir -p ${TEMPDIR}/repo
+                git clone https://github.com/${LS_USER}/${LS_REPO}.git ${TEMPDIR}/repo/${LS_REPO}
+                cd ${TEMPDIR}/repo/${LS_REPO}
+                git checkout -f fedora
+                cp ${TEMPDIR}/docker-${CONTAINER_NAME}/Jenkinsfile ${TEMPDIR}/repo/${LS_REPO}/
+                git add Jenkinsfile
+                git commit -m 'Bot Updating Templated Files'
+                git push https://LinuxServer-CI:${GITHUB_TOKEN}@github.com/${LS_USER}/${LS_REPO}.git --all
+                echo "true" > /tmp/${COMMIT_SHA}-${BUILD_NUMBER}
+                echo "Updating Jenkinsfile"
+                rm -Rf ${TEMPDIR}
+                exit 0
+              else
+                echo "Jenkinsfile is up to date."
+              fi
+              # Stage 2 - Delete old templates
+              OLD_TEMPLATES=".github/ISSUE_TEMPLATE.md"
+              for i in ${OLD_TEMPLATES}; do
+                if [[ -f "${i}" ]]; then
+                  TEMPLATES_TO_DELETE="${i} ${TEMPLATES_TO_DELETE}"
+                fi
+              done
+              if [[ -n "${TEMPLATES_TO_DELETE}" ]]; then
+                mkdir -p ${TEMPDIR}/repo
+                git clone https://github.com/${LS_USER}/${LS_REPO}.git ${TEMPDIR}/repo/${LS_REPO}
+                cd ${TEMPDIR}/repo/${LS_REPO}
+                git checkout -f fedora
+                for i in ${TEMPLATES_TO_DELETE}; do
+                  git rm "${i}"
+                done
+                git commit -m 'Bot Updating Templated Files'
+                git push https://LinuxServer-CI:${GITHUB_TOKEN}@github.com/${LS_USER}/${LS_REPO}.git --all
+                echo "true" > /tmp/${COMMIT_SHA}-${BUILD_NUMBER}
+                echo "Deleting old templates"
+                rm -Rf ${TEMPDIR}
+                exit 0
+              else
+                echo "No templates to delete"
+              fi
+              # Stage 3 - Update templates
+              CURRENTHASH=$(grep -hs ^ ${TEMPLATED_FILES} | md5sum | cut -c1-8)
+              cd ${TEMPDIR}/docker-${CONTAINER_NAME}
+              NEWHASH=$(grep -hs ^ ${TEMPLATED_FILES} | md5sum | cut -c1-8)
+              if [[ "${CURRENTHASH}" != "${NEWHASH}" ]] || ! grep -q '.jenkins-external' "${WORKSPACE}/.gitignore" 2>/dev/null; then
+                mkdir -p ${TEMPDIR}/repo
+                git clone https://github.com/${LS_USER}/${LS_REPO}.git ${TEMPDIR}/repo/${LS_REPO}
+                cd ${TEMPDIR}/repo/${LS_REPO}
+                git checkout -f fedora
+                cd ${TEMPDIR}/docker-${CONTAINER_NAME}
+                mkdir -p ${TEMPDIR}/repo/${LS_REPO}/.github/workflows
+                mkdir -p ${TEMPDIR}/repo/${LS_REPO}/.github/ISSUE_TEMPLATE
+                cp --parents ${TEMPLATED_FILES} ${TEMPDIR}/repo/${LS_REPO}/ || :
+                cd ${TEMPDIR}/repo/${LS_REPO}/
+                if ! grep -q '.jenkins-external' .gitignore 2>/dev/null; then
+                  echo ".jenkins-external" >> .gitignore
+                  git add .gitignore
+                fi
+                git add ${TEMPLATED_FILES}
+                git commit -m 'Bot Updating Templated Files'
+                git push https://LinuxServer-CI:${GITHUB_TOKEN}@github.com/${LS_USER}/${LS_REPO}.git --all
+                echo "true" > /tmp/${COMMIT_SHA}-${BUILD_NUMBER}
+              else
+                echo "false" > /tmp/${COMMIT_SHA}-${BUILD_NUMBER}
+              fi
+              mkdir -p ${TEMPDIR}/gitbook
+              git clone https://github.com/linuxserver/docker-documentation.git ${TEMPDIR}/gitbook/docker-documentation
+              if [[ ("${BRANCH_NAME}" == "master") || ("${BRANCH_NAME}" == "main") ]] && [[ (! -f ${TEMPDIR}/gitbook/docker-documentation/images/docker-${CONTAINER_NAME}.md) || ("$(md5sum ${TEMPDIR}/gitbook/docker-documentation/images/docker-${CONTAINER_NAME}.md | awk '{ print $1 }')" != "$(md5sum ${TEMPDIR}/docker-${CONTAINER_NAME}/.jenkins-external/docker-${CONTAINER_NAME}.md | awk '{ print $1 }')") ]]; then
+                cp ${TEMPDIR}/docker-${CONTAINER_NAME}/.jenkins-external/docker-${CONTAINER_NAME}.md ${TEMPDIR}/gitbook/docker-documentation/images/
+                cd ${TEMPDIR}/gitbook/docker-documentation/
+                git add images/docker-${CONTAINER_NAME}.md
+                git commit -m 'Bot Updating Documentation'
+                git push https://LinuxServer-CI:${GITHUB_TOKEN}@github.com/linuxserver/docker-documentation.git --all
+              fi
+              rm -Rf ${TEMPDIR}'''
+        script{
+          env.FILES_UPDATED = sh(
+            script: '''cat /tmp/${COMMIT_SHA}-${BUILD_NUMBER}''',
+            returnStdout: true).trim()
+        }
+      }
+    }
     // Exit the build if the Templated files were just updated
     stage('Template-exit') {
       when {
@@ -307,7 +405,7 @@ pipeline {
         }
         stage('Build ARMHF') {
           agent {
-            label 'ARMHF'
+            label 'X86-64-MULTI'
           }
           steps {
             echo "Running on node: ${NODE_NAME}"
@@ -315,7 +413,7 @@ pipeline {
             sh '''#! /bin/bash
                   echo $GITHUB_TOKEN | docker login ghcr.io -u LinuxServer-CI --password-stdin
                '''
-            sh "docker buildx build --platform linux/arm/v7 \
+            sh "docker build \
               --label \"org.opencontainers.image.created=${GITHUB_DATE}\" \
               --label \"org.opencontainers.image.authors=linuxserver.io\" \
               --label \"org.opencontainers.image.url=https://github.com/linuxserver/docker-baseimage-rdesktop/packages\" \
@@ -341,7 +439,7 @@ pipeline {
         }
         stage('Build ARM64') {
           agent {
-            label 'ARM64'
+            label 'X86-64-MULTI'
           }
           steps {
             echo "Running on node: ${NODE_NAME}"
