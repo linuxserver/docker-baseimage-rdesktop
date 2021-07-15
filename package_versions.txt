@@ -243,7 +243,7 @@ mesa-libgbm-21.1.4-1.fc34.x86_64
 mesa-libglapi-21.1.4-1.fc34.x86_64
 mesa-vulkan-drivers-21.1.4-1.fc34.x86_64
 moby-engine-20.10.6-1.fc34.x86_64
-mozjs78-78.12.0-1.fc34.x86_64
+mozjs78-78.11.0-1.fc34.x86_64
 mpfr-4.1.0-6.fc34.x86_64
 mtdev-1.1.5-20.fc34.x86_64
 ncurses-base-6.2-4.20200222.fc34.noarch
