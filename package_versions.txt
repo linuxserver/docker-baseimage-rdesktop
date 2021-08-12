@@ -196,7 +196,7 @@ libsepol12.7-1
 libsigsegv22.12-1
 libsm62:1.2.2-1
 libsmartcols12.31.1-0.4ubuntu3.7
-libsnapd-glib11.49-0ubuntu0.18.04.2
+libsnapd-glib11.58-0ubuntu0.18.04.0
 libsndfile11.0.28-4ubuntu0.18.04.2
 libsoup2.4-12.62.1-1ubuntu0.4
 libspeexdsp11.2~rc1.2-1ubuntu2
