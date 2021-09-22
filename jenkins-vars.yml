@@ -2,10 +2,11 @@
 
 # jenkins variables
 project_name: docker-baseimage-rdesktop
-external_type: os
+external_type: na
+custom_version_command: "curl -sL 'https://aur.archlinux.org/rpc/?v=5&type=info&arg[]=xorgxrdp&arg[]=xrdp&arg[]=pulseaudio-module-xrdp' | jq -r '.results[].Version' | tr -d '\\n'"
 release_type: stable
-release_tag: focal
-ls_branch: master
+release_tag: arch
+ls_branch: arch
 repo_vars:
   - BUILD_VERSION_ARG = 'XRDP_VERSION'
   - LS_USER = 'linuxserver'
@@ -14,7 +15,7 @@ repo_vars:
   - DOCKERHUB_IMAGE = 'lsiobase/rdesktop'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/rdesktop-base'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/rdesktop-base'
-  - DIST_IMAGE = 'ubuntu'
+  - DIST_IMAGE = 'arch'
   - MULTIARCH='true'
   - CI='true'
   - CI_WEB='false'
