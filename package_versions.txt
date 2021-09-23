@@ -130,7 +130,7 @@ musl-1.2.2-r1
 musl-utils-1.2.2-r1
 ncurses-libs-6.2_p20210109-r0
 ncurses-terminfo-base-6.2_p20210109-r0
-nettle-3.7.2-r0
+nettle-3.7.3-r0
 openssh-client-8.4_p1-r3
 openssh-keygen-8.4_p1-r3
 openssl-1.1.1l-r0
