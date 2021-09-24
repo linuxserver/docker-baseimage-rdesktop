@@ -47,7 +47,7 @@ COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 RUN \
   echo "**** install deps ****" && \
-  pacman -Sy --noconfirm \
+  pacman -Sy --noconfirm --needed \
     docker \
     fuse \
     lame \
@@ -63,6 +63,8 @@ RUN \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
   echo '%abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
+  pacman -Rsn --noconfirm \
+    $(pacman -Qdtq) || : && \
   rm -rf \
     /tmp/* \
     /var/lib/pacman/sync/*
