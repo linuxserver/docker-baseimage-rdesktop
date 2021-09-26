@@ -8,7 +8,7 @@ RUN \
  apk add --no-cache \
 	alpine-sdk \
 	autoconf \
-	automake && \
+	automake \
 	pulseaudio-dev \
 	xrdp-dev \
 	xorgxrdp-dev && \
