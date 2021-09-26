@@ -41,7 +41,7 @@ grep 3.7-1
 gzip 1.11-1
 harfbuzz 3.0.0-1
 hwids 20210613-1
-iana-etc 20210728-1
+iana-etc 20210903-1
 icu 69.1-1
 iproute2 5.14.0-1
 iptables 1:1.8.7-1
