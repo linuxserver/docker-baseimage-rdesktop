@@ -169,7 +169,7 @@ systemd 249.4-1
 systemd-libs 249.4-1
 tar 1.34-1
 tdb 1.4.5-1
-tzdata 2021a-2
+tzdata 2021b-1
 util-linux 2.37.2-1
 util-linux-libs 2.37.2-1
 vulkan-icd-loader 1.2.191-1
