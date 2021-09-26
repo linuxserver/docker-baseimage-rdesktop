@@ -1,6 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.13 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.14 as buildstage
 
-ARG ALPINE_VERSION=3.13
+ARG ALPINE_VERSION=3.14
 ARG XRDP_PULSE_VERSION=v0.5
 
 RUN \
@@ -9,7 +9,6 @@ RUN \
 	alpine-sdk \
 	autoconf \
 	automake && \
- apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
 	pulseaudio-dev \
 	xrdp-dev \
 	xorgxrdp-dev && \
@@ -60,7 +59,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:arm32v7-alpine as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.13
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.14
 
 # set version label
 ARG BUILD_DATE
@@ -83,11 +82,10 @@ RUN \
 	pavucontrol \
 	pulseaudio \
 	sudo \
-	xterm && \
- apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
 	xorg-server \
 	xorgxrdp \ 
-	xrdp && \
+	xrdp \
+	xterm && \
  VERSION=$(ls -1 /usr/lib/ | \
         awk -F '-' '/pulse-/ {print $2; exit}') && \
  ldconfig -n /usr/lib/pulse-${VERSION}/modules && \
