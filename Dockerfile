@@ -59,12 +59,13 @@ RUN \
     sudo \
     xorg-server \
     xterm && \
+  echo "**** configure locale ****" && \
+  echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
+  locale-gen && \
   echo "**** cleanup and user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
   echo '%abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
-  pacman -Rsn --noconfirm \
-    $(pacman -Qdtq) || : && \
   rm -rf \
     /tmp/* \
     /var/cache/pacman/pkg/* \
