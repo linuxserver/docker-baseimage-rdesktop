@@ -1,6 +1,6 @@
 acl 2.3.1-1
 archlinux-keyring 20211028-1
-argon2 20190702-3
+argon2 20190702-4
 attr 2.5.1-1
 audit 3.0.6-5
 bash 5.1.012-1
@@ -8,7 +8,7 @@ bridge-utils 1.7.1-1
 brotli 1.0.9-7
 bzip2 1.0.8-4
 ca-certificates 20210603-1
-ca-certificates-mozilla 3.73-1
+ca-certificates-mozilla 3.73.1-1
 ca-certificates-utils 20210603-1
 containerd 1.5.8-1
 coreutils 9.0-2
@@ -24,7 +24,7 @@ file 5.41-1
 filesystem 2021.12.07-1
 findutils 4.8.0-1
 flac 1.3.3-3
-fontconfig 2:2.13.94-1
+fontconfig 2:2.13.94-2
 freetype2 2.11.1-1
 fuse-common 3.10.5-1
 fuse2 2.9.9-4
@@ -41,7 +41,7 @@ grep 3.7-1
 gzip 1.11-1
 harfbuzz 3.2.0-1
 hwids 20210613-1
-iana-etc 20211025-1
+iana-etc 20211203-1
 icu 70.1-1
 iproute2 5.15.0-1
 iptables 1:1.8.7-1
@@ -57,7 +57,7 @@ less 1:590-1
 libarchive 3.5.2-1
 libassuan 2.5.5-1
 libasyncns 0.8+3+g68cd5af-3
-libcap 2.61-1
+libcap 2.62-1
 libcap-ng 0.8.2-6
 libdrm 2.4.109-1
 libedit 20210910_3.1-1
@@ -110,7 +110,7 @@ libx11 1.7.3.1-1
 libxau 1.0.9-3
 libxaw 1.0.14-1
 libxcb 1.14-1
-libxcrypt 4.4.26-1
+libxcrypt 4.4.27-1
 libxcvt 0.1.1-1
 libxdamage 1.1.5-3
 libxdmcp 1.1.3-3
@@ -134,14 +134,14 @@ llvm-libs 13.0.0-6
 lm_sensors 1:3.6.0.r41.g31d1f125-1
 luit 20210218-1
 lz4 1:1.9.3-2
-mesa 21.3.1-1
+mesa 21.3.2-1
 mpfr 4.1.0.p13-1
 mtdev 1.1.6-1
 ncurses 6.3-1
 nettle 3.7.3-1
 npth 1.6-3
 openssh 8.8p1-1
-openssl 1.1.1.l-1
+openssl 1.1.1.m-1
 opus 1.3.1-2
 orc 0.4.32-1
 p11-kit 0.24.0-2
@@ -182,8 +182,8 @@ xcb-proto 1.14.1-5
 xf86-input-libinput 1.2.0-2
 xkeyboard-config 2.34-1
 xorg-fonts-encodings 1.0.5-2
-xorg-server 21.1.2-1
-xorg-server-common 21.1.2-1
+xorg-server 21.1.2-2
+xorg-server-common 21.1.2-2
 xorg-setxkbmap 1.3.2-2
 xorg-xkbcomp 1.4.5-1
 xorgproto 2021.5-1
