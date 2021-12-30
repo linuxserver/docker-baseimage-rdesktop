@@ -260,7 +260,7 @@ p11-kit-0.23.22-3.fc34.x86_64
 p11-kit-trust-0.23.22-3.fc34.x86_64
 pam-1.5.1-7.fc34.x86_64
 pango-1.48.10-1.fc34.x86_64
-pangomm-2.46.1-1.fc34.x86_64
+pangomm-2.46.2-1.fc34.x86_64
 pavucontrol-4.0-6.fc34.x86_64
 pcre-8.44-3.fc34.1.x86_64
 pcre2-10.36-4.fc34.x86_64
@@ -333,7 +333,7 @@ xorg-x11-server-common-1.20.11-1.fc34.x86_64
 xorg-x11-xauth-1.1-8.fc34.x86_64
 xorg-x11-xinit-1.4.0-10.fc34.x86_64
 xorgxrdp-0.2.17-2.fc34.x86_64
-xrdp-0.9.17-2.fc34.x86_64
+xrdp-0.9.17-5.fc34.x86_64
 xterm-366-1.fc34.x86_64
 xterm-resize-366-1.fc34.x86_64
 xz-5.2.5-5.fc34.x86_64
