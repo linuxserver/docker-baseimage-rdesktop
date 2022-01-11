@@ -43,7 +43,7 @@ harfbuzz 3.2.0-1
 hwdata 0.355-1
 iana-etc 20211203-1
 icu 70.1-1
-iproute2 5.15.0-2
+iproute2 5.16.0-1
 iptables 1:1.8.7-1
 js78 78.15.0-2
 json-c 0.15-2
@@ -167,7 +167,7 @@ speex 1.2.0-3
 speexdsp 1.2.0-2
 sqlite 3.37.2-1
 sudo 1.9.8.p2-3
-systemd 250.1-2
+systemd 250.2-2
 systemd-libs 250.1-2
 tar 1.34-1
 tdb 1.4.5-3
