@@ -1,5 +1,5 @@
 acl 2.3.1-1
-archlinux-keyring 20220114-1
+archlinux-keyring 20220118-1
 argon2 20190702-4
 attr 2.5.1-1
 audit 3.0.6-5
@@ -34,7 +34,7 @@ glib2 2.70.2-2
 glibc 2.33-5
 gmp 6.2.1-1
 gnupg 2.2.32-2
-gnutls 3.7.2-2
+gnutls 3.7.3-1
 gpgme 1.16.0-3
 graphite 1:1.3.14-1
 grep 3.7-1
@@ -45,7 +45,7 @@ iana-etc 20220110-1
 icu 70.1-1
 iproute2 5.16.0-1
 iptables 1:1.8.7-1
-js78 78.15.0-2
+js78 78.15.0-3
 json-c 0.15-2
 kbd 2.4.0-2
 keyutils 1.6.3-1
@@ -76,7 +76,7 @@ libidn2 2.3.2-1
 libinput 1.19.3-2
 libjpeg-turbo 2.1.2-1
 libksba 1.6.0-1
-libldap 2.6.0-2
+libldap 2.6.1-1
 libmnl 1.0.4-3
 libnetfilter_conntrack 1.0.8-1
 libnfnetlink 1.0.1-4
@@ -85,7 +85,7 @@ libnghttp2 1.46.0-1
 libnl 3.5.0-3
 libogg 1.3.5-1
 libomxil-bellagio 0.9.3-3
-libp11-kit 0.24.0-2
+libp11-kit 0.24.1-1
 libpcap 1.10.1-1
 libpciaccess 0.16-2
 libpng 1.6.37-3
@@ -145,7 +145,7 @@ openssh 8.8p1-1
 openssl 1.1.1.m-1
 opus 1.3.1-2
 orc 0.4.32-1
-p11-kit 0.24.0-2
+p11-kit 0.24.1-1
 pacman 6.0.1-3
 pacman-mirrorlist 20220116-1
 pam 1.5.2-1
@@ -168,19 +168,19 @@ speexdsp 1.2.0-2
 sqlite 3.37.2-1
 sudo 1.9.8.p2-3
 systemd 250.3-1
-systemd-libs 250.2-2
+systemd-libs 250.3-1
 tar 1.34-1
 tdb 1.4.5-3
 tzdata 2021e-1
-util-linux 2.37.2-5
-util-linux-libs 2.37.2-5
-vulkan-icd-loader 1.2.202-1
+util-linux 2.37.3-1
+util-linux-libs 2.37.3-1
+vulkan-icd-loader 1.2.203-1
 wayland 1.20.0-1
 webrtc-audio-processing 0.3.1-3
 which 2.21-5
 xbitmaps 1.1.2-2
 xcb-proto 1.14.1-5
-xf86-input-libinput 1.2.0-2
+xf86-input-libinput 1.2.1-1
 xkeyboard-config 2.34-1
 xorg-fonts-encodings 1.0.5-2
 xorg-server 21.1.3-1
@@ -191,4 +191,4 @@ xorgproto 2021.5-1
 xterm 370-1
 xz 5.2.5-2
 zlib 1:1.2.11-5
-zstd 1.5.1-2
+zstd 1.5.2-1
