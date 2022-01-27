@@ -181,8 +181,8 @@ libpcre32:8.39-13build4
 libpipeline11.5.5-1
 libpixman-1-00.40.0-1build3
 libpng16-161.6.37-3build4
-libpolkit-agent-1-00.105-31
-libpolkit-gobject-1-00.105-31
+libpolkit-agent-1-00.105-31.1
+libpolkit-gobject-1-00.105-31.1
 libprocps82:3.3.17-5ubuntu3
 libproxy1v50.4.17-1build1
 libpsl50.21.0-1.2build1
@@ -299,7 +299,7 @@ packagekit1.2.4-1ubuntu1
 passwd1:4.8.1-2ubuntu1
 perl-base5.32.1-3ubuntu3
 pinentry-curses1.1.1-1build1
-policykit-10.105-31
+policykit-10.105-31.1
 procps2:3.3.17-5ubuntu3
 publicsuffix20211207.1025-1
 pulseaudio1:15.0+dfsg1-1ubuntu6
@@ -337,7 +337,7 @@ readline-common8.1.2-1
 sed4.8-1ubuntu1
 sensible-utils0.0.17
 software-properties-common0.99.16
-ssl-cert1.1.1ubuntu1
+ssl-cert1.1.2
 sudo1.9.5p2-3ubuntu2
 systemd249.5-2ubuntu4
 systemd-sysv249.5-2ubuntu4
