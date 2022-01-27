@@ -154,7 +154,7 @@ pcre 8.45-1
 pcre2 10.39-1
 pinentry 1.2.0-1
 pixman 0.40.0-1
-polkit 0.120-3
+polkit 0.120-4
 popt 1.18-2
 procps-ng 3.3.17-1
 pulseaudio 15.0-1
