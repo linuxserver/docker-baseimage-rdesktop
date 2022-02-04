@@ -12,7 +12,7 @@ ca-certificates-mozilla 3.74-1
 ca-certificates-utils 20210603-1
 containerd 1.5.9-2
 coreutils 9.0-2
-cryptsetup 2.4.3-1
+cryptsetup 2.4.3-2
 curl 7.81.0-2
 dbus 1.12.20-1
 device-mapper 2.03.14-2
@@ -49,7 +49,7 @@ js78 78.15.0-3
 json-c 0.15-3
 kbd 2.4.0-2
 keyutils 1.6.3-1
-kmod 29-1
+kmod 29-2
 krb5 1.19.2-2
 lame 3.100-3
 ldns 1.8.1-1
@@ -61,7 +61,7 @@ libcap 2.63-1
 libcap-ng 0.8.2-6
 libdrm 2.4.109-1
 libedit 20210910_3.1-1
-libelf 0.186-3
+libelf 0.186-4
 libepoxy 1.5.9-1
 libevdev 1.12.0-1
 libfdk-aac 2.0.2-1
