@@ -65,7 +65,7 @@ RUN \
   echo "**** cleanup and user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
-  echo '%abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
+  echo 'abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
   rm -rf \
     /tmp/* \
     /var/cache/pacman/pkg/* \
