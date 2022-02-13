@@ -1,6 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-fedora:arm32v7-34 as buildstage
+FROM ghcr.io/linuxserver/baseimage-fedora:arm32v7-35 as buildstage
 
-ARG XRDP_PULSE_VERSION=v0.5
+ARG XRDP_PULSE_VERSION=v0.6
 
 RUN \
   echo "**** install build deps ****" && \
@@ -9,6 +9,7 @@ RUN \
   dnf install -y \
     'dnf-command(builddep)' \
     'dnf-command(download)' \
+    libtool \
     rpmdevtools \
     wget \
     yum-utils && \
@@ -27,13 +28,13 @@ RUN \
     pulseaudio*.src.rpm
 
 RUN \
-  echo "**** run pulseaudio config ****" && \
+  echo "**** run pulseaudio meson build ****" && \
   VERSION=$(ls -1 /root/rpmbuild/SOURCES/*.tar.xz | \
     awk -F '(pulseaudio-|.tar.xz)' '/pulseaudio-/ {print $2; exit}') && \
   cd ~/rpmbuild/SOURCES/ && \
   tar -xf pulseaudio-${VERSION}.tar.xz && \
   cd pulseaudio-${VERSION} && \
-  ./configure
+  meson build
 
 RUN \
   echo "**** build pulseaudio xrdp module ****" && \
@@ -56,7 +57,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:arm32v7-latest as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-fedora:arm32v7-34
+FROM ghcr.io/linuxserver/baseimage-fedora:arm32v7-35
 
 # set version label
 ARG BUILD_DATE
