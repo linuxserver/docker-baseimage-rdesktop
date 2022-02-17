@@ -10,7 +10,7 @@ bzip2 1.0.8-4
 ca-certificates 20210603-1
 ca-certificates-mozilla 3.75-1
 ca-certificates-utils 20210603-1
-containerd 1.5.9-2
+containerd 1.6.0-2
 coreutils 9.0-2
 cryptsetup 2.4.3-2
 curl 7.81.0-2
