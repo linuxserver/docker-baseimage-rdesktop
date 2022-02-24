@@ -18,7 +18,7 @@ cairo-gobject-1.17.4-4.fc35.x86_64
 cairomm-1.14.2-20.fc35.x86_64
 cdparanoia-libs-10.2-38.fc35.x86_64
 colord-libs-1.4.5-3.fc35.x86_64
-container-selinux-2.173.1-1.fc35.noarch
+container-selinux-2.177.0-1.fc35.noarch
 containerd-1.6.0~rc.2-2.fc35.x86_64
 coreutils-8.32-31.fc35.x86_64
 coreutils-common-8.32-31.fc35.x86_64
@@ -174,7 +174,7 @@ libgomp-11.2.1-1.fc35.x86_64
 libgpg-error-1.43-1.fc35.x86_64
 libgudev-237-1.fc35.x86_64
 libgusb-0.3.9-1.fc35.x86_64
-libibverbs-38.1-2.fc35.x86_64
+libibverbs-39.0-1.fc35.x86_64
 libicu-69.1-2.fc35.x86_64
 libidn2-2.3.2-3.fc35.x86_64
 libinput-1.19.3-1.fc35.x86_64
@@ -284,8 +284,8 @@ pcre2-syntax-10.37-4.fc35.noarch
 pigz-2.5-2.fc35.x86_64
 pixman-0.40.0-4.fc35.x86_64
 policycoreutils-3.3-1.fc35.x86_64
-polkit-0.120-1.fc35.1.x86_64
-polkit-libs-0.120-1.fc35.1.x86_64
+polkit-0.120-1.fc35.2.x86_64
+polkit-libs-0.120-1.fc35.2.x86_64
 polkit-pkla-compat-0.1-20.fc35.x86_64
 popt-1.18-6.fc35.x86_64
 procps-ng-3.3.17-3.fc35.x86_64
@@ -328,8 +328,8 @@ systemd-249.9-1.fc35.x86_64
 systemd-libs-249.9-1.fc35.x86_64
 systemd-pam-249.9-1.fc35.x86_64
 tar-1.34-2.fc35.x86_64
-tigervnc-license-1.12.0-4.fc35.noarch
-tigervnc-server-minimal-1.12.0-4.fc35.x86_64
+tigervnc-license-1.12.0-5.fc35.noarch
+tigervnc-server-minimal-1.12.0-5.fc35.x86_64
 tpm2-tss-3.1.0-3.fc35.x86_64
 tzdata-2021e-1.fc35.noarch
 util-linux-2.37.2-1.fc35.x86_64
