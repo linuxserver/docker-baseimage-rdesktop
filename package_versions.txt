@@ -113,6 +113,7 @@ libSM-1.2.3-9.fc35.x86_64
 libX11-1.7.3.1-1.fc35.x86_64
 libX11-common-1.7.3.1-1.fc35.noarch
 libX11-xcb-1.7.3.1-1.fc35.x86_64
+libXScrnSaver-1.2.3-9.fc35.x86_64
 libXau-1.0.9-7.fc35.x86_64
 libXaw-1.0.13-18.fc35.x86_64
 libXcomposite-0.4.5-6.fc35.x86_64
@@ -132,6 +133,7 @@ libXrender-0.9.10-15.fc35.x86_64
 libXt-1.2.0-5.fc35.x86_64
 libXtst-1.2.3-15.fc35.x86_64
 libXv-1.0.11-15.fc35.x86_64
+libXvMC-1.0.12-6.fc35.x86_64
 libXxf86vm-1.1.4-17.fc35.x86_64
 libacl-2.3.1-2.fc35.x86_64
 libarchive-3.5.2-2.fc35.x86_64
@@ -338,10 +340,14 @@ vim-minimal-8.2.3642-1.fc35.x86_64
 vulkan-loader-1.2.189.0-1.fc35.x86_64
 webrtc-audio-processing-0.3.1-7.fc35.x86_64
 which-2.21-27.fc35.x86_64
+xcb-util-0.4.0-18.fc35.x86_64
 xhost-1.0.8-2.fc35.x86_64
 xkbcomp-1.4.5-2.fc35.x86_64
 xkeyboard-config-2.33-2.fc35.noarch
 xml-common-0.6.3-57.fc35.noarch
+xorg-x11-drv-amdgpu-21.0.0-1.fc35.x86_64
+xorg-x11-drv-ati-19.1.0-6.fc35.x86_64
+xorg-x11-drv-intel-2.99.917-51.20200205.fc35.x86_64
 xorg-x11-drv-libinput-1.2.0-1.fc35.x86_64
 xorg-x11-server-Xorg-1.20.14-3.fc35.x86_64
 xorg-x11-server-common-1.20.14-3.fc35.x86_64
