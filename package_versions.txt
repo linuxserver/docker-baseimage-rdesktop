@@ -234,6 +234,7 @@ libxcb-glx01.13-2~ubuntu18.04
 libxcb-present01.13-2~ubuntu18.04
 libxcb-shape01.13-2~ubuntu18.04
 libxcb-sync11.13-2~ubuntu18.04
+libxcb-util10.4.0-0ubuntu3
 libxcb-xfixes01.13-2~ubuntu18.04
 libxcomposite11:0.4.4-2
 libxcursor11:1.1.15-1
@@ -254,9 +255,11 @@ libxpm41:3.5.12-1
 libxrandr22:1.5.1-1
 libxrender11:0.9.10-1
 libxshmfence11.3-1
+libxss11:1.2.2-1
 libxt61:1.1.5-1
 libxtst62:1.2.3-1
 libxv12:1.0.11-1
+libxvmc12:1.0.10-1
 libxxf86dga12:1.1.4-1
 libxxf86vm11:1.1.4-1
 libzstd11.3.3+dfsg-2ubuntu1.2
@@ -319,6 +322,10 @@ xorgxrdp0.9.5-2
 xrdp0.9.5-2
 xserver-common2:1.19.6-1ubuntu4.10
 xserver-xorg-core2:1.19.6-1ubuntu4.10
+xserver-xorg-video-amdgpu18.0.1-1
+xserver-xorg-video-ati1:18.0.1-1
+xserver-xorg-video-intel2:2.99.917+git20171229-1
+xserver-xorg-video-radeon1:18.0.1-1
 xtrans-dev1.3.5-1
 xutils1:7.7+19ubuntu7.1
 zlib1g1:1.2.11.dfsg-0ubuntu2
