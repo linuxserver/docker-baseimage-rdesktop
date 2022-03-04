@@ -45,6 +45,9 @@ LABEL maintainer="thelamer"
 COPY --from=buildstage /buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
+#Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
+ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
+
 RUN \
   echo "**** install deps ****" && \
   pacman -Sy --noconfirm --needed \
@@ -54,9 +57,13 @@ RUN \
     libfdk-aac \
     libjpeg-turbo \
     libxrandr \
+    mesa \
     openssh \
     pulseaudio \
     sudo \
+    xf86-video-ati \
+    xf86-video-amdgpu \
+    xf86-video-intel \
     xorg-server \
     xterm && \
   echo "**** configure locale ****" && \
