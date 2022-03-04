@@ -69,6 +69,9 @@ LABEL maintainer="thelamer"
 COPY --from=buildstage /tmp/buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
+#Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
+ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
+
 RUN \
   echo "**** install deps ****" && \
   dnf install -y --setopt=install_weak_deps=False --best \
@@ -79,6 +82,9 @@ RUN \
     pavucontrol \
     pulseaudio \
     sudo \
+    xorg-x11-drv-amdgpu \
+    xorg-x11-drv-intel \
+    xorg-x11-drv-ati \
     xorgxrdp \
     xrdp \
     xterm && \
