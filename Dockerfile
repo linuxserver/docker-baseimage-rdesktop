@@ -64,6 +64,9 @@ LABEL maintainer="thelamer"
 COPY --from=buildstage /buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
+#Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
+ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
+
 RUN \
   echo "**** install deps ****" && \
   ldconfig && \
@@ -91,6 +94,9 @@ RUN \
     xorgxrdp \
     xrdp \
     xserver-xorg-core \
+    xserver-xorg-video-intel \
+    xserver-xorg-video-amdgpu \
+    xserver-xorg-video-ati \
     xutils \
     zlib1g && \
   dpkg -i /xrdp.deb && \
