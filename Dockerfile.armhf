@@ -78,12 +78,15 @@ RUN \
     dbus-x11 \
     docker \
     libpulse \
+    mesa \
     openssh-client \
     openssl \
     pavucontrol \
     pciutils-libs \
     pulseaudio \
     sudo \
+    xf86-video-ati \
+    xf86-video-amdgpu \
     xorg-server \
     xorgxrdp \ 
     xrdp \
