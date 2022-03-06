@@ -53,12 +53,14 @@ RUN \
   pacman -Sy --noconfirm --needed \
     docker \
     fuse \
+    imlib2 \
     lame \
     libfdk-aac \
     libjpeg-turbo \
     libxrandr \
     mesa \
     openssh \
+    pciutils \
     pulseaudio \
     sudo \
     xf86-video-ati \
