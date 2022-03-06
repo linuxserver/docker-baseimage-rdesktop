@@ -81,6 +81,7 @@ RUN \
     openssh-client \
     openssl \
     pavucontrol \
+    pciutils-libs \
     pulseaudio \
     sudo \
     xorg-server \

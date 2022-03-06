@@ -83,6 +83,7 @@ RUN \
     openssl \
     pavucontrol \
     pulseaudio \
+    pciutils-libs \
     sudo \
     xf86-video-ati \
     xf86-video-amdgpu \
