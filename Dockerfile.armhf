@@ -79,6 +79,8 @@ RUN \
     pavucontrol \
     pulseaudio \
     sudo \
+    xorg-x11-drv-amdgpu \
+    xorg-x11-drv-ati \
     xorgxrdp \
     xrdp \
     xterm && \
