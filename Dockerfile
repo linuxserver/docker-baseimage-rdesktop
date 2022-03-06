@@ -51,14 +51,17 @@ ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
 RUN \
   echo "**** install deps ****" && \
   pacman -Sy --noconfirm --needed \
+    base-devel \
     docker \
     fuse \
+    git \
     imlib2 \
     lame \
     libfdk-aac \
     libjpeg-turbo \
     libxrandr \
     mesa \
+    noto-fonts \
     openssh \
     pciutils \
     pulseaudio \
@@ -67,14 +70,28 @@ RUN \
     xf86-video-amdgpu \
     xf86-video-intel \
     xorg-server \
+    xorg-xmessage \
     xterm && \
-  echo "**** configure locale ****" && \
-  echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
-  locale-gen && \
-  echo "**** cleanup and user perms ****" && \
+  echo "**** user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
   echo 'abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
+  echo "**** build AUR packages ****" && \
+  cd /tmp && \
+  AUR_PACKAGES="\
+    dbus-x11" && \
+  pacman -Rns --noconfirm -dd dbus && \
+  for PACKAGE in ${AUR_PACKAGES}; do \
+    git clone https://aur.archlinux.org/${PACKAGE}.git && \
+    chown -R abc:abc ${PACKAGE} && \
+    cd ${PACKAGE} && \
+    sudo -u abc makepkg -sAci --skipinteg --noconfirm --needed && \
+    cd /tmp ;\
+  done && \
+  echo "**** configure locale ****" && \
+  echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
+  locale-gen && \
+  echo "**** cleanup ****" && \
   rm -rf \
     /tmp/* \
     /var/cache/pacman/pkg/* \
