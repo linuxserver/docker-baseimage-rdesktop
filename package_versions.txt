@@ -11,7 +11,7 @@ bzip21.0.8-2
 ca-certificates20210119~20.04.2
 coreutils8.30-3ubuntu2
 cpp4:9.3.0-1ubuntu2
-cpp-99.3.0-17ubuntu1~20.04
+cpp-99.4.0-1ubuntu1~20.04
 curl7.68.0-1ubuntu2.7
 dash0.5.10.2-6
 dbus1.12.16-2ubuntu2.1
@@ -32,7 +32,7 @@ fontconfig-config2.13.1-2ubuntu3
 fonts-dejavu-core2.37-1
 gawk1:5.0.1+dfsg-1
 gcc-10-base10.3.0-1ubuntu1~20.04
-gcc-9-base9.3.0-17ubuntu1~20.04
+gcc-9-base9.4.0-1ubuntu1~20.04
 gir1.2-glib-2.01.64.1-1~ubuntu20.04.1
 gir1.2-packagekitglib-1.01.1.13-2ubuntu1.1
 glib-networking2.64.2-1ubuntu0.1
