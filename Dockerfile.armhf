@@ -90,6 +90,8 @@ RUN \
     xorgxrdp \
     xrdp \
     xserver-xorg-core \
+    xserver-xorg-video-armsoc-exynos \
+    xserver-xorg-video-omap \
     xutils \
     zlib1g && \
   dpkg -i /xrdp.deb && \
