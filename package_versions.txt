@@ -44,7 +44,7 @@ gpgme 1.17.1-1
 graphite 1:1.3.14-1
 grep 3.7-1
 gzip 1.11-1
-harfbuzz 4.0.1-1
+harfbuzz 4.1.0-1
 hwdata 0.357-1
 iana-etc 20220205-1
 icu 70.1-1
