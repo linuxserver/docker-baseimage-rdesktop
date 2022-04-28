@@ -2,7 +2,7 @@ adduser3.118ubuntu5
 apt2.4.5
 apt-transport-https2.4.5
 apt-utils2.4.5
-base-files12ubuntu3
+base-files12ubuntu4
 base-passwd3.5.52build1
 bash5.1-6ubuntu1
 bsdextrautils2.37.2-4ubuntu3
@@ -21,7 +21,7 @@ debconf1.5.79ubuntu1
 debianutils5.5-1ubuntu2
 diffutils1:3.8-0ubuntu2
 dirmngr2.2.27-3ubuntu2
-distro-info-data0.52
+distro-info-data0.52ubuntu0.1
 docker-ce-cli5:20.10.14~3-0~ubuntu-bionic
 dpkg1.21.1ubuntu2
 e2fsprogs1.46.5-2ubuntu1
