@@ -313,7 +313,7 @@ rpm-build-libs-4.17.0-4.fc35.x86_64
 rpm-libs-4.17.0-4.fc35.x86_64
 rpm-plugin-selinux-4.17.0-4.fc35.x86_64
 rpm-sign-libs-4.17.0-4.fc35.x86_64
-rtkit-0.11-28.fc35.x86_64
+rtkit-0.11-30.fc35.x86_64
 runc-1.1.1-1.fc35.x86_64
 sed-4.8-8.fc35.x86_64
 selinux-policy-35.17-1.fc35.noarch
