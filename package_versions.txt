@@ -1,7 +1,7 @@
 acl 2.3.1-2
-alsa-lib 1.2.7-2
+alsa-lib 1.2.7.1-1
 alsa-topology-conf 1.2.5.1-1
-alsa-ucm-conf 1.2.7-1
+alsa-ucm-conf 1.2.7.1-1
 archlinux-keyring 20220424-1
 argon2 20190702-4
 attr 2.5.1-2
@@ -56,7 +56,7 @@ iptables 1:1.8.8-1
 jansson 2.14-2
 js78 78.15.0-4
 json-c 0.16-1
-kbd 2.5.0-2
+kbd 2.5.1-1
 keyutils 1.6.3-1
 kmod 29-3
 krb5 1.19.3-3
@@ -101,7 +101,7 @@ libpcap 1.10.1-2
 libpciaccess 0.16-3
 libpng 1.6.37-3
 libpsl 0.21.1-1
-libpulse 16.0-1
+libpulse 16.1-1
 libsasl 2.1.28-1
 libseccomp 2.5.4-1
 libsecret 0.20.5-2
@@ -119,7 +119,7 @@ libunwind 1.6.2-1
 libutempter 1.2.1-3
 libverto 0.3.2-4
 libvorbis 1.3.7-3
-libwacom 2.2.0-1
+libwacom 2.3.0-1
 libx11 1.8.1-2
 libxau 1.0.9-4
 libxaw 1.0.14-1
@@ -149,7 +149,7 @@ llvm-libs 13.0.1-6
 lm_sensors 1:3.6.0.r41.g31d1f125-1
 luit 20220111-1
 lz4 1:1.9.3-2
-mesa 22.1.1-2
+mesa 22.1.2-1
 mpfr 4.1.0.p13-2
 mtdev 1.1.6-2
 ncurses 6.3-3
@@ -174,14 +174,14 @@ pixman 0.40.0-2
 polkit 0.120-5
 popt 1.18-3
 procps-ng 3.3.17-1
-pulseaudio 16.0-1
+pulseaudio 16.1-1
 readline 8.1.002-1
 rtkit 0.13-1
 runc 1.1.3-1
 sed 4.8-1
 shadow 4.11.1-1
-speex 1.2.0-3
-speexdsp 1.2.0-2
+speex 1.2.1-1
+speexdsp 1.2.1-1
 sqlite 3.38.5-1
 sudo 1.9.11.p2-1
 systemd 251.2-1
@@ -197,7 +197,7 @@ wayland 1.20.0-2
 webrtc-audio-processing 0.3.1-3
 which 2.21-5
 xbitmaps 1.1.2-3
-xcb-proto 1.15-1
+xcb-proto 1.15.2-1
 xcb-util 0.4.0-4
 xf86-input-libinput 1.2.1-1
 xf86-video-amdgpu 22.0.0-1
@@ -214,4 +214,4 @@ xorgproto 2022.1-1
 xterm 372-2
 xz 5.2.5-3
 zlib 1:1.2.12-2
-zstd 1.5.2-5
+zstd 1.5.2-7
