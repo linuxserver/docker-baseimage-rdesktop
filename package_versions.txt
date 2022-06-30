@@ -45,7 +45,7 @@ gpgme 1.17.1-1
 graphite 1:1.3.14-2
 grep 3.7-1
 gzip 1.12-1
-harfbuzz 4.4.0-1
+harfbuzz 4.4.1-1
 hwdata 0.360-1
 hwloc 2.7.1-1
 iana-etc 20220603-1
