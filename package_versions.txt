@@ -203,7 +203,7 @@ libspeexdsp11.2~rc1.2-1ubuntu2.1
 libsqlite3-03.22.0-1ubuntu0.5
 libss21.44.1-1ubuntu1.3
 libssl1.0.01.0.2n-1ubuntu5.10
-libssl1.11.1.1-1ubuntu2.1~18.04.19
+libssl1.11.1.1-1ubuntu2.1~18.04.20
 libstdc++68.4.0-1ubuntu1~18.04
 libsystemd0237-3ubuntu10.53
 libtasn1-64.13-2
@@ -275,7 +275,7 @@ multiarch-support2.27-3ubuntu1.6
 ncurses-base6.1-1ubuntu1.18.04
 ncurses-bin6.1-1ubuntu1.18.04
 openssh-client1:7.6p1-4ubuntu0.7
-openssl1.1.1-1ubuntu2.1~18.04.19
+openssl1.1.1-1ubuntu2.1~18.04.20
 passwd1:4.5-1ubuntu2.2
 perl-base5.26.1-6ubuntu0.5
 pinentry-curses1.1.0-1
@@ -320,8 +320,8 @@ xkb-data2.23.1-1ubuntu1.18.04.1
 xorg-sgml-doctools1:1.11-1
 xorgxrdp0.9.5-2
 xrdp0.9.5-2
-xserver-common2:1.19.6-1ubuntu4.10
-xserver-xorg-core2:1.19.6-1ubuntu4.10
+xserver-common2:1.19.6-1ubuntu4.11
+xserver-xorg-core2:1.19.6-1ubuntu4.11
 xserver-xorg-video-amdgpu18.0.1-1
 xserver-xorg-video-ati1:18.0.1-1
 xserver-xorg-video-intel2:2.99.917+git20171229-1
