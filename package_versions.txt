@@ -191,8 +191,8 @@ libpsl50.21.0-1.2build2
 libpthread-stubs0-dev0.4-1build2
 libpulse01:15.99.1+dfsg1-1ubuntu1
 libpulsedsp1:15.99.1+dfsg1-1ubuntu1
-libpython3.10-minimal3.10.4-3
-libpython3.10-stdlib3.10.4-3
+libpython3.10-minimal3.10.4-3ubuntu0.1
+libpython3.10-stdlib3.10.4-3ubuntu0.1
 libpython3-stdlib3.10.4-0ubuntu2
 libreadline88.1.2-1
 librtmp12.4+20151223.gitfa8646d.1-2build4
@@ -313,8 +313,8 @@ procps2:3.3.17-6ubuntu2
 publicsuffix20211207.1025-1
 pulseaudio1:15.99.1+dfsg1-1ubuntu1
 pulseaudio-utils1:15.99.1+dfsg1-1ubuntu1
-python3.103.10.4-3
-python3.10-minimal3.10.4-3
+python3.103.10.4-3ubuntu0.1
+python3.10-minimal3.10.4-3ubuntu0.1
 python33.10.4-0ubuntu2
 python3-apt2.3.0ubuntu2
 python3-blinker1.4+dfsg1-0.4
