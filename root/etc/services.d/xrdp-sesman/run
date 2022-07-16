@@ -1,4 +1,4 @@
-#!/bin/execlineb -P
+#! /usr/bin/execlineb -P
 
 # Redirect stderr to stdout.
 fdmove -c 2 1
