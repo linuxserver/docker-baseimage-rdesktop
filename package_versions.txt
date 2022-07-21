@@ -110,7 +110,7 @@ libfido2-11.3.1-1ubuntu2
 libflac81.3.3-1build1
 libfontconfig12.13.1-2ubuntu3
 libfontenc11:1.1.4-0ubuntu1
-libfreetype62.10.1-2ubuntu0.1
+libfreetype62.10.1-2ubuntu0.2
 libfuse22.9.9-3
 libgbm121.2.6-0ubuntu0.1~20.04.2
 libgcc-s110.3.0-1ubuntu1~20.04
