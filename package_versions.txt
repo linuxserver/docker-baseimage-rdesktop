@@ -316,7 +316,7 @@ pulseaudio-utils1:15.99.1+dfsg1-1ubuntu1
 python3.103.10.4-3ubuntu0.1
 python3.10-minimal3.10.4-3ubuntu0.1
 python33.10.4-0ubuntu2
-python3-apt2.3.0ubuntu2
+python3-apt2.3.0ubuntu2.1
 python3-blinker1.4+dfsg1-0.4
 python3-cffi-backend1.15.0-1build2
 python3-cryptography3.4.8-1ubuntu2
@@ -341,7 +341,7 @@ python3-six1.16.0-3ubuntu1
 python3-software-properties0.99.22.2
 python3-wadllib1.3.6-1
 python3-zipp1.0.0-3
-python-apt-common2.3.0ubuntu2
+python-apt-common2.3.0ubuntu2.1
 readline-common8.1.2-1
 sed4.8-1ubuntu2
 sensible-utils0.0.17
