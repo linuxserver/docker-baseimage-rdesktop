@@ -132,8 +132,8 @@ libgomp110.3.0-1ubuntu1~20.04
 libgpg-error01.37-1
 libgssapi3-heimdal7.7.0+dfsg-1ubuntu1
 libgssapi-krb5-21.17-6ubuntu4.1
-libgstreamer1.0-01.16.3-0ubuntu1
-libgstreamer-plugins-base1.0-01.16.3-0ubuntu1
+libgstreamer1.0-01.16.3-0ubuntu1.1
+libgstreamer-plugins-base1.0-01.16.3-0ubuntu1.1
 libhcrypto4-heimdal7.7.0+dfsg-1ubuntu1
 libheimbase1-heimdal7.7.0+dfsg-1ubuntu1
 libheimntlm0-heimdal7.7.0+dfsg-1ubuntu1
@@ -276,7 +276,7 @@ libxft22.3.3-0ubuntu1
 libxi62:1.7.10-0ubuntu1
 libxinerama12:1.1.4-2
 libxkbfile11:1.1.0-1
-libxml22.9.10+dfsg-5ubuntu0.20.04.3
+libxml22.9.10+dfsg-5ubuntu0.20.04.4
 libxmu62:1.1.3-0ubuntu1
 libxmuu12:1.1.3-0ubuntu1
 libxpm41:3.5.12-1
