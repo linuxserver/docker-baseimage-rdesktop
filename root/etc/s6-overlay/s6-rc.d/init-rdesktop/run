@@ -1,5 +1,24 @@
 #!/usr/bin/with-contenv bash
 
+mkdir -p /var/run/xrdp || exit 1
+chown root:xrdp /var/run/xrdp || exit 1
+chmod 2775 /var/run/xrdp || exit 1
+
+mkdir -p /var/run/xrdp/sockdir || exit 1
+chown root:xrdp /var/run/xrdp/sockdir || exit 1
+chmod 3777 /var/run/xrdp/sockdir || exit 1
+
+if [ ! -f "/keylock" ]; then
+    cd /etc/xrdp
+    xrdp-keygen xrdp
+    rm -f /etc/xrdp/*.pem
+    openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
+    -keyout /etc/xrdp/key.pem \
+    -out /etc/xrdp/cert.pem \
+    -subj "/C=US/ST=CA/L=Carlsbad/O=Linuxserver.io/OU=LSIO Server/CN=*"
+    touch /keylock
+fi
+
 if [ ! -e /lock.file ]; then
   # give abc a sudo shell
   chsh abc -s /bin/bash

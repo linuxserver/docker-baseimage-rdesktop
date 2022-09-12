@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy-cd65f39a-ls39 as buildstage
+FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.6
 
@@ -52,7 +52,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:amd64-latest as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy-cd65f39a-ls39
+FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
 
 # set version label
 ARG BUILD_DATE
@@ -84,6 +84,7 @@ RUN \
     libxfixes3 \
     libxml2 \
     libxrandr2 \
+    netcat \
     openssh-client \
     pulseaudio \
     software-properties-common \
