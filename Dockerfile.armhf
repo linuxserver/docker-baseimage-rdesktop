@@ -1,6 +1,7 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:arm32v7-jammy as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.6
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install build deps ****" && \
@@ -63,6 +64,8 @@ LABEL maintainer="thelamer"
 # copy over libs and installers from build stage
 COPY --from=buildstage /buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
+
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install deps ****" && \

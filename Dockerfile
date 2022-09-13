@@ -1,6 +1,8 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy as buildstage
 
-ARG XRDP_PULSE_VERSION=v0.6
+ARG XRDP_PULSE_VERSION=v0.6 \
+ARG DEBIAN_FRONTEND="noninteractive"
+
 
 RUN \
   echo "**** install build deps ****" && \
@@ -66,6 +68,8 @@ COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 #Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
 ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
+
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install deps ****" && \
