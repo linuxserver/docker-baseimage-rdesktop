@@ -300,6 +300,8 @@ media-types7.0.0
 mount2.37.2-4ubuntu3
 ncurses-base6.3-2
 ncurses-bin6.3-2
+netcat1.218-4ubuntu1
+netcat-openbsd1.218-4ubuntu1
 openssh-client1:8.9p1-3
 openssl3.0.2-0ubuntu1.6
 packagekit1.2.5-2ubuntu2
@@ -375,10 +377,10 @@ xorgxrdp1:0.2.17-1build1
 xrdp0.9.17-2ubuntu2
 xserver-common2:21.1.3-2ubuntu2.1
 xserver-xorg-core2:21.1.3-2ubuntu2.1
-xserver-xorg-video-amdgpu22.0.0-1build1
+xserver-xorg-video-amdgpu22.0.0-1ubuntu0.1
 xserver-xorg-video-ati1:19.1.0-2ubuntu1
 xserver-xorg-video-intel2:2.99.917+git20210115-1
 xserver-xorg-video-radeon1:19.1.0-2ubuntu1
 xtrans-dev1.4.0-1
 xutils1:7.7+23ubuntu2
-zlib1g1:1.2.11.dfsg-2ubuntu9
+zlib1g1:1.2.11.dfsg-2ubuntu9.1
