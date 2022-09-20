@@ -12,12 +12,14 @@ fi
 touch /lock.file
 
 # default file copies first run
-[[ ! -d /config/.config ]] && \
-	mkdir -p /config/.config && \
-        cp /defaults/bashrc /config/.bashrc && \
+if [ ! -d /config/.config ]; then
+	mkdir -p /config/.config
+  cp /defaults/bashrc /config/.bashrc
 	cp /defaults/startwm.sh /config/startwm.sh
+fi
 
 # permissions
 PERM=$(stat -c '%U' /config/.config)
-[[ "${PERM}" != "abc" ]] && \
-        chown -R abc:abc /config
+if [ "${PERM}" != "abc" ]; then
+  chown -R abc:abc /config
+fi
