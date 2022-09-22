@@ -200,7 +200,7 @@ libsnapd-glib11.58-0ubuntu0.18.04.0
 libsndfile11.0.28-4ubuntu0.18.04.2
 libsoup2.4-12.62.1-1ubuntu0.4
 libspeexdsp11.2~rc1.2-1ubuntu2.1
-libsqlite3-03.22.0-1ubuntu0.5
+libsqlite3-03.22.0-1ubuntu0.6
 libss21.44.1-1ubuntu1.3
 libssl1.0.01.0.2n-1ubuntu5.10
 libssl1.11.1.1-1ubuntu2.1~18.04.20
@@ -214,8 +214,8 @@ libunistring20.9.9-0ubuntu2
 libuuid12.31.1-0.4ubuntu3.7
 libvorbis0a1.3.5-4.2
 libvorbisenc21.3.5-4.2
-libwayland-client01.16.0-1ubuntu1.1~18.04.3
-libwayland-server01.16.0-1ubuntu1.1~18.04.3
+libwayland-client01.16.0-1ubuntu1.1~18.04.4
+libwayland-server01.16.0-1ubuntu1.1~18.04.4
 libwebrtc-audio-processing10.3-1
 libwind0-heimdal7.5.0+dfsg-1
 libwrap07.6.q-27
