@@ -1,0 +1,13 @@
+#!/usr/bin/with-contenv bash
+
+# default file copies first run
+if [ ! -d /config/.config ]; then
+    mkdir -p /config/.config
+    cp /defaults/startwm.sh /config/startwm.sh
+fi
+
+# permissions
+PERM=$(stat -c '%U' /config/.config)
+if [ "${PERM}" != "abc" ]; then
+    chown -R abc:abc /config
+fi
