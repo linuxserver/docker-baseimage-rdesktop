@@ -1,6 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:3.16 as buildstage
 
-ARG ALPINE_VERSION=3.15
+ARG ALPINE_VERSION=3.16
 ARG XRDP_PULSE_VERSION=v0.6
 
 RUN \
@@ -26,6 +26,9 @@ RUN \
     -O /tmp/aports.tar.gz && \
   cd /tmp && \
   tar -xf aports.tar.gz
+
+# Otherwise meson tries to write bash completions to /root
+ENV HOME=/tmp
 
 RUN \
   echo "**** build pulseaudio from source ****" && \
@@ -60,7 +63,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:amd64-alpine as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15
+FROM ghcr.io/linuxserver/baseimage-alpine:3.16
 
 # set version label
 ARG BUILD_DATE
