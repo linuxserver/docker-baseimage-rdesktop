@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-arch:3d4daa98-ls73 as buildstage
+FROM ghcr.io/linuxserver/baseimage-arch:latest as buildstage
 
 RUN \
   echo "**** install build deps ****" && \
@@ -33,7 +33,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:amd64-latest as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-arch:3d4daa98-ls73
+FROM ghcr.io/linuxserver/baseimage-arch:latest
 
 # set version label
 ARG BUILD_DATE
