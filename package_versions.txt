@@ -20,7 +20,7 @@ curl 7.85.0-2
 dbus 1.14.4-1
 device-mapper 2.03.16-2
 dnssec-anchors 20190629-3
-docker 1:20.10.18-1
+docker 1:20.10.19-1
 duktape 2.7.0-4
 e2fsprogs 1.46.5-4
 expat 2.4.9-1
@@ -184,7 +184,7 @@ speex 1.2.1-1
 speexdsp 1.2.1-1
 sqlite 3.39.4-1
 sudo 1.9.11.p3-1
-systemd 251.5-1
+systemd 251.6-1
 systemd-libs 251.5-1
 tar 1.34-1
 tdb 1.4.7-1
