@@ -298,7 +298,7 @@ polkit-0.120-5.fc36.x86_64
 polkit-libs-0.120-5.fc36.x86_64
 polkit-pkla-compat-0.1-21.fc36.x86_64
 popt-1.18-7.fc36.x86_64
-procps-ng-3.3.17-4.fc36.x86_64
+procps-ng-3.3.17-4.fc36.1.x86_64
 protobuf-c-1.4.1-2.fc36.x86_64
 publicsuffix-list-dafsa-20210518-4.fc36.noarch
 pulseaudio-15.0-5.fc36.x86_64
