@@ -1,6 +1,6 @@
 adwaita-cursor-theme-42.0-1.fc36.noarch
 adwaita-icon-theme-42.0-1.fc36.noarch
-alsa-lib-1.2.7.2-1.fc36.x86_64
+alsa-lib-1.2.8-1.fc36.x86_64
 alternatives-1.19-2.fc36.x86_64
 at-spi2-atk-2.38.0-4.fc36.x86_64
 at-spi2-core-2.44.1-1.fc36.x86_64
