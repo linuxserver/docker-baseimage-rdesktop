@@ -82,6 +82,7 @@ RUN \
   echo "**** configure locale ****" && \
   echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
   locale-gen && \
+  sed -i 's/ListenAddress/;ListenAddress/' /etc/xrdp/sesman.ini && \
   echo "**** cleanup ****" && \
   rm -rf \
     /tmp/* \
