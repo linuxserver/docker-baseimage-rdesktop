@@ -14,8 +14,8 @@ cpp4:9.3.0-1ubuntu2
 cpp-99.4.0-1ubuntu1~20.04.1
 curl7.68.0-1ubuntu2.14
 dash0.5.10.2-6
-dbus1.12.16-2ubuntu2.2
-dbus-x111.12.16-2ubuntu2.2
+dbus1.12.16-2ubuntu2.3
+dbus-x111.12.16-2ubuntu2.3
 dconf-gsettings-backend0.36.0-1
 dconf-service0.36.0-1
 debconf1.5.73
@@ -87,7 +87,7 @@ libcrypt11:4.4.10-10ubuntu4
 libcryptsetup122:2.2.2-3ubuntu2.4
 libcurl47.68.0-1ubuntu2.14
 libdb5.35.3.28+dfsg1-0.6ubuntu2
-libdbus-1-31.12.16-2ubuntu2.2
+libdbus-1-31.12.16-2ubuntu2.3
 libdconf10.36.0-1
 libdebconfclient00.251ubuntu1
 libdevmapper1.02.12:1.02.167-1ubuntu1
@@ -342,7 +342,7 @@ systemd-sysv245.4-4ubuntu3.18
 systemd-timesyncd245.4-4ubuntu3.18
 sysvinit-utils2.96-2.1ubuntu1
 tar1.30+dfsg-7ubuntu0.20.04.2
-tzdata2022c-0ubuntu0.20.04.0
+tzdata2022e-0ubuntu0.20.04.0
 ubuntu-keyring2020.02.11.4
 ucf3.0038+nmu1
 udev245.4-4ubuntu3.18
