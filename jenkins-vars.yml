@@ -3,12 +3,12 @@
 # jenkins variables
 project_name: docker-baseimage-rdesktop
 external_type: na
-custom_version_command: "curl -sL 'https://aur.archlinux.org/rpc/?v=5&type=info&arg[]=xorgxrdp&arg[]=xrdp&arg[]=pulseaudio-module-xrdp' | jq -r '.results[].Version' | tr -d '\\n'"
+custom_version_command: "curl -sX GET 'https://api.github.com/repos/linuxserver/docker-baseimage-arch/releases/latest' | jq -r '. | .tag_name' | sed 's|-ls.*||'"
 release_type: prerelease
 release_tag: arch
 ls_branch: arch
 repo_vars:
-  - BUILD_VERSION_ARG = 'XRDP_VERSION'
+  - BUILD_VERSION_ARG = 'BASE_VERSION'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-baseimage-rdesktop'
   - CONTAINER_NAME = 'baseimage-rdesktop'
