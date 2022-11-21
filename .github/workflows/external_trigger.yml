@@ -18,7 +18,7 @@ jobs:
           fi
           echo "**** External trigger running off of arch branch. To disable this trigger, set a Github secret named \"PAUSE_EXTERNAL_TRIGGER_BASEIMAGE_RDESKTOP_ARCH\". ****"
           echo "**** Retrieving external version ****"
-          EXT_RELEASE=$(curl -sL 'https://aur.archlinux.org/rpc/?v=5&type=info&arg[]=xorgxrdp&arg[]=xrdp&arg[]=pulseaudio-module-xrdp' | jq -r '.results[].Version' | tr -d '\n')
+          EXT_RELEASE=$(curl -u ${{ secrets.CR_USER }}:${{ secrets.CR_PAT }} -sX GET 'https://api.github.com/repos/linuxserver/docker-baseimage-arch/releases/latest' | jq -r '. | .tag_name' | sed 's|-ls.*||')
           if [ -z "${EXT_RELEASE}" ] || [ "${EXT_RELEASE}" == "null" ]; then
             echo "**** Can't retrieve external version, exiting ****"
             FAILURE_REASON="Can't retrieve external version for baseimage-rdesktop branch arch"

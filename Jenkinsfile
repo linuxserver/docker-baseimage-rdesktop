@@ -17,7 +17,7 @@ pipeline {
     GITLAB_TOKEN=credentials('b6f0f1dd-6952-4cf6-95d1-9c06380283f0')
     GITLAB_NAMESPACE=credentials('gitlab-namespace-id')
     SCARF_TOKEN=credentials('scarf_api_key')
-    BUILD_VERSION_ARG = 'XRDP_VERSION'
+    BUILD_VERSION_ARG = 'BASE_VERSION'
     LS_USER = 'linuxserver'
     LS_REPO = 'docker-baseimage-rdesktop'
     CONTAINER_NAME = 'baseimage-rdesktop'
@@ -104,7 +104,7 @@ pipeline {
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: ''' curl -sL 'https://aur.archlinux.org/rpc/?v=5&type=info&arg[]=xorgxrdp&arg[]=xrdp&arg[]=pulseaudio-module-xrdp' | jq -r '.results[].Version' | tr -d '\n' ''',
+            script: ''' curl -sX GET 'https://api.github.com/repos/linuxserver/docker-baseimage-arch/releases/latest' | jq -r '. | .tag_name' | sed 's|-ls.*||' ''',
             returnStdout: true).trim()
             env.RELEASE_LINK = 'custom_command'
         }
