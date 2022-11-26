@@ -65,7 +65,6 @@ RUN \
   echo "**** configure locale ****" && \
   echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
   locale-gen && \
-  sed -i 's/ListenAddress/;ListenAddress/' /etc/xrdp/sesman.ini && \
   echo "**** cleanup and user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
