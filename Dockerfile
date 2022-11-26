@@ -79,7 +79,6 @@ RUN \
   apt-get install -y --no-install-recommends \
     apt-transport-https \
     ca-certificates \
-    curl \
     dbus-x11 \
     gawk \
     gnupg2 \
@@ -112,7 +111,6 @@ RUN \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     docker-ce-cli && \
-  sed -i 's/ListenAddress/;ListenAddress/' /etc/xrdp/sesman.ini && \
   echo "**** cleanup and user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -aG sudo abc && \
