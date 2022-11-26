@@ -3,10 +3,10 @@ FROM ghcr.io/linuxserver/baseimage-ubuntu:focal as buildstage
 ARG XRDP_PULSE_VERSION=v0.4
 
 RUN \
- echo "**** install build deps ****" && \
- sed -i 's/# deb-src/deb-src/g' /etc/apt/sources.list && \
- apt-get update && \
- apt-get install -y \
+  echo "**** install build deps ****" && \
+  sed -i 's/# deb-src/deb-src/g' /etc/apt/sources.list && \
+  apt-get update && \
+  apt-get install -y \
     build-essential \
     devscripts \
     dpkg-dev \
@@ -106,7 +106,6 @@ RUN \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     docker-ce-cli && \
-  sed -i 's/ListenAddress/;ListenAddress/' /etc/xrdp/sesman.ini && \
   echo "**** cleanup and user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -aG sudo abc && \
