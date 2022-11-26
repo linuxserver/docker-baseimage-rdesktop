@@ -20,7 +20,7 @@ cairomm-1.14.2-22.fc36.x86_64
 cdparanoia-libs-10.2-39.fc36.x86_64
 colord-libs-1.4.6-1.fc36.x86_64
 container-selinux-2.191.0-1.fc36.noarch
-containerd-1.6.9-3.fc36.x86_64
+containerd-1.6.10-1.fc36.x86_64
 coreutils-9.0-8.fc36.x86_64
 coreutils-common-9.0-8.fc36.x86_64
 cracklib-2.9.6-28.fc36.x86_64
@@ -86,8 +86,8 @@ gsettings-desktop-schemas-42.0-1.fc36.x86_64
 gsm-1.0.19-7.fc36.x86_64
 gstreamer1-1.20.3-1.fc36.x86_64
 gstreamer1-plugins-base-1.20.3-1.fc36.x86_64
-gtk-update-icon-cache-3.24.34-1.fc36.x86_64
-gtk3-3.24.34-1.fc36.x86_64
+gtk-update-icon-cache-3.24.35-1.fc36.x86_64
+gtk3-3.24.35-1.fc36.x86_64
 gtkmm30-3.24.6-1.fc36.x86_64
 gzip-1.11-3.fc36.x86_64
 harfbuzz-4.0.0-2.fc36.x86_64
