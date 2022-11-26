@@ -87,7 +87,6 @@ RUN \
   VERSION=$(ls -1 /usr/lib64/ | \
     awk -F '-' '/pulse-/ {print $2; exit}') && \
   ldconfig -n /usr/lib64/pulse-${VERSION}/modules && \
-  sed -i 's/ListenAddress/;ListenAddress/' /etc/xrdp/sesman.ini && \
   echo "**** cleanup and user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
