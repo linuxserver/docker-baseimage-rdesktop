@@ -224,7 +224,7 @@ speexdsp 1.2.1-1
 sqlite 3.40.0-1
 sudo 1.9.12.p1-1
 systemd 252.2-1
-systemd-libs 252.1-2
+systemd-libs 252.2-1
 tar 1.34-1
 tdb 1.4.7-1
 texinfo 7.0-1
