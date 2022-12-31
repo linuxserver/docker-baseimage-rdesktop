@@ -71,6 +71,7 @@ RUN \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
   echo 'abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
+  echo "allowed_users=anybody" > /etc/X11/Xwrapper.config && \
   echo "**** build dbus-x11 ****" && \
   cd /tmp && \
   pacman -Rns --noconfirm -dd dbus && \
