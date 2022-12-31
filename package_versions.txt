@@ -180,7 +180,7 @@ lz4 1:1.9.4-1
 m4 1.4.19-1
 make 4.3-5
 mallard-ducktype 1.0.2-8
-mesa 22.3.1-1
+mesa 22.3.1-2
 mpfr 4.1.1.p1-1
 mtdev 1.1.6-2
 ncurses 6.3-3
