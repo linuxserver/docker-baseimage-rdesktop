@@ -75,6 +75,7 @@ RUN \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
   echo 'abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
+  echo "allowed_users=anybody" > /etc/X11/Xwrapper.config && \
   rm -rf \
     /tmp/* \
     /var/cache/pacman/pkg/* \
