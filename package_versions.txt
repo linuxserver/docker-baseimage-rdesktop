@@ -91,7 +91,7 @@ libice 1.1.1-1
 libidn2 2.3.4-3
 libinput 1.22.0-1
 libjpeg-turbo 2.1.4-2
-libksba 1.6.2-1
+libksba 1.6.3-1
 libldap 2.6.3-2
 libmnl 1.0.5-1
 libnetfilter_conntrack 1.0.9-1
@@ -188,7 +188,7 @@ sed 4.9-1
 shadow 4.12.3-2
 speex 1.2.1-1
 speexdsp 1.2.1-1
-sqlite 3.40.0-2
+sqlite 3.40.1-1
 sudo 1.9.12.p1-1
 systemd 252.4-2
 systemd-libs 252.4-2
