@@ -9,5 +9,5 @@ fi
 # permissions
 PERM=$(stat -c '%U' /config/.config)
 if [ "${PERM}" != "abc" ]; then
-    chown -R abc:abc /config
+    lsiown -R abc:abc /config
 fi
