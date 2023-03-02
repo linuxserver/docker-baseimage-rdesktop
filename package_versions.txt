@@ -1,378 +1,390 @@
-adduser3.118ubuntu2
-apt2.0.9
-apt-transport-https2.0.9
-apt-utils2.0.9
-base-files11ubuntu5.5
-base-passwd3.5.47
-bash5.0-6ubuntu1.1
-bsdmainutils11.1.2ubuntu3
-bsdutils1:2.34-0.1ubuntu9.3
-bzip21.0.8-2
-ca-certificates20211016ubuntu0.20.04.1
-coreutils8.30-3ubuntu2
-cpp4:9.3.0-1ubuntu2
-cpp-99.4.0-1ubuntu1~20.04.1
-curl7.68.0-1ubuntu2.15
-dash0.5.10.2-6
-dbus1.12.16-2ubuntu2.3
-dbus-x111.12.16-2ubuntu2.3
-dconf-gsettings-backend0.36.0-1
-dconf-service0.36.0-1
-debconf1.5.73
-debianutils4.9.1
-diffutils1:3.7-3
-dirmngr2.2.19-3ubuntu2.2
-distro-info-data0.43ubuntu1.11
-docker-ce-cli5:23.0.1-1~ubuntu.18.04~bionic
-dpkg1.19.7ubuntu3
-e2fsprogs1.45.5-2ubuntu1
-fdisk2.34-0.1ubuntu9.3
-findutils4.7.0-1ubuntu1
-fontconfig-config2.13.1-2ubuntu3
-fonts-dejavu-core2.37-1
-gawk1:5.0.1+dfsg-1
-gcc-10-base10.3.0-1ubuntu1~20.04
-gcc-9-base9.4.0-1ubuntu1~20.04.1
-gir1.2-glib-2.01.64.1-1~ubuntu20.04.1
-gir1.2-packagekitglib-1.01.1.13-2ubuntu1.1
-glib-networking2.64.2-1ubuntu0.1
-glib-networking-common2.64.2-1ubuntu0.1
-glib-networking-services2.64.2-1ubuntu0.1
-gnupg2.2.19-3ubuntu2.2
-gnupg22.2.19-3ubuntu2.2
-gnupg-l10n2.2.19-3ubuntu2.2
-gnupg-utils2.2.19-3ubuntu2.2
-gpg2.2.19-3ubuntu2.2
-gpg-agent2.2.19-3ubuntu2.2
-gpgconf2.2.19-3ubuntu2.2
-gpgsm2.2.19-3ubuntu2.2
-gpgv2.2.19-3ubuntu2.2
-gpg-wks-client2.2.19-3ubuntu2.2
-gpg-wks-server2.2.19-3ubuntu2.2
-grep3.4-1
-groff-base1.22.4-4build1
-gsettings-desktop-schemas3.36.0-1ubuntu1
-gzip1.10-0ubuntu4
-hostname3.23
-init-system-helpers1.57
-iso-codes4.4-1
-jq1.6-1ubuntu0.20.04.1
-keyboard-configuration1.194ubuntu3
-krb5-locales1.17-6ubuntu4.2
-libacl12.2.53-6
-libapparmor12.13.3-7ubuntu5.1
-libappstream40.12.10-2
-libapt-pkg6.02.0.9
-libargon2-10~20171227-0.2
-libasn1-8-heimdal7.7.0+dfsg-1ubuntu1.4
-libasound21.2.2-2.1ubuntu2.5
-libasound2-data1.2.2-2.1ubuntu2.5
-libasound2-plugins1.2.2-1ubuntu1
-libassuan02.5.3-7ubuntu2
-libasyncns00.8-6
-libattr11:2.4.48-5
-libaudit11:2.8.5-2ubuntu6
-libaudit-common1:2.8.5-2ubuntu6
-libblkid12.34-0.1ubuntu9.3
-libbrotli11.0.7-6ubuntu0.1
-libbsd00.10.0-1
-libbz2-1.01.0.8-2
-libc62.31-0ubuntu9.7
-libcap21:2.32-1
-libcap2-bin1:2.32-1
-libcap-ng00.7.9-2.1build1
-libc-bin2.31-0ubuntu9.7
-libcbor0.60.6.0-0ubuntu1
-libcom-err21.45.5-2ubuntu1
-libcrypt11:4.4.10-10ubuntu4
-libcryptsetup122:2.2.2-3ubuntu2.4
-libcurl47.68.0-1ubuntu2.15
-libdb5.35.3.28+dfsg1-0.6ubuntu2
-libdbus-1-31.12.16-2ubuntu2.3
-libdconf10.36.0-1
-libdebconfclient00.251ubuntu1
-libdevmapper1.02.12:1.02.167-1ubuntu1
-libdrm22.4.107-8ubuntu1~20.04.2
-libdrm-amdgpu12.4.107-8ubuntu1~20.04.2
-libdrm-common2.4.107-8ubuntu1~20.04.2
-libdrm-intel12.4.107-8ubuntu1~20.04.2
-libdrm-nouveau22.4.107-8ubuntu1~20.04.2
-libdrm-radeon12.4.107-8ubuntu1~20.04.2
-libedit23.1-20191231-1
-libegl11.3.2-1~ubuntu0.20.04.2
-libegl-mesa021.2.6-0ubuntu0.1~20.04.2
-libelf10.176-1.1build1
-libepoxy01.5.4-1
-libexpat12.2.9-1ubuntu0.6
-libext2fs21.45.5-2ubuntu1
-libfdisk12.34-0.1ubuntu9.3
-libffi73.3-4
-libfido2-11.3.1-1ubuntu2
-libflac81.3.3-1ubuntu0.1
-libfontconfig12.13.1-2ubuntu3
-libfontenc11:1.1.4-0ubuntu1
-libfreetype62.10.1-2ubuntu0.2
-libfuse22.9.9-3
-libgbm121.2.6-0ubuntu0.1~20.04.2
-libgcc-s110.3.0-1ubuntu1~20.04
-libgcrypt201.8.5-5ubuntu1.1
-libgdbm61.18.1-5
-libgirepository-1.0-11.64.1-1~ubuntu20.04.1
-libgl11.3.2-1~ubuntu0.20.04.2
-libgl1-mesa-dri21.2.6-0ubuntu0.1~20.04.2
-libglapi-mesa21.2.6-0ubuntu0.1~20.04.2
-libglib2.0-02.64.6-1~ubuntu20.04.4
-libglib2.0-bin2.64.6-1~ubuntu20.04.4
-libglib2.0-data2.64.6-1~ubuntu20.04.4
-libglvnd01.3.2-1~ubuntu0.20.04.2
-libglx01.3.2-1~ubuntu0.20.04.2
-libglx-mesa021.2.6-0ubuntu0.1~20.04.2
-libgmp102:6.2.0+dfsg-4
-libgnutls303.6.13-2ubuntu1.6
-libgomp110.3.0-1ubuntu1~20.04
-libgpg-error01.37-1
-libgssapi3-heimdal7.7.0+dfsg-1ubuntu1.4
-libgssapi-krb5-21.17-6ubuntu4.2
-libgstreamer1.0-01.16.3-0ubuntu1.1
-libgstreamer-plugins-base1.0-01.16.3-0ubuntu1.1
-libhcrypto4-heimdal7.7.0+dfsg-1ubuntu1.4
-libheimbase1-heimdal7.7.0+dfsg-1ubuntu1.4
-libheimntlm0-heimdal7.7.0+dfsg-1ubuntu1.4
-libhogweed53.5.1+really3.5.1-2ubuntu0.2
-libhx509-5-heimdal7.7.0+dfsg-1ubuntu1.4
-libice62:1.0.10-0ubuntu1
-libicu6666.1-2ubuntu2.1
-libidn2-02.2.0-2
-libip4tc21.8.4-3ubuntu2
-libisl220.22.1-1
-libjack-jackd2-01.9.12~dfsg-2ubuntu2
-libjpeg88c-2ubuntu8
-libjpeg-turbo82.0.3-0ubuntu1.20.04.3
-libjq11.6-1ubuntu0.20.04.1
-libjson-c40.13.1+dfsg-7ubuntu0.3
-libjson-glib-1.0-01.4.4-2ubuntu2
-libjson-glib-1.0-common1.4.4-2ubuntu2
-libk5crypto31.17-6ubuntu4.2
-libkeyutils11.6-6ubuntu1.1
-libkmod227-1ubuntu2.1
-libkrb5-26-heimdal7.7.0+dfsg-1ubuntu1.4
-libkrb5-31.17-6ubuntu4.2
-libkrb5support01.17-6ubuntu4.2
-libksba81.3.5-2ubuntu0.20.04.2
-libldap-2.4-22.4.49+dfsg-2ubuntu1.9
-libldap-common2.4.49+dfsg-2ubuntu1.9
-libllvm121:12.0.0-3ubuntu1~20.04.5
-liblmdb00.9.24-1
-liblocale-gettext-perl1.07-4
-libltdl72.4.6-14
-liblz4-11.9.2-2ubuntu0.20.04.1
-liblzma55.2.4-1ubuntu1
-libmount12.34-0.1ubuntu9.3
-libmpc31.1.0-1
-libmpdec22.4.2-3
-libmpfr64.0.2-1
-libncurses66.2-0ubuntu2
-libncursesw66.2-0ubuntu2
-libnettle73.5.1+really3.5.1-2ubuntu0.2
-libnghttp2-141.40.0-1build1
-libnpth01.6-1
-libogg01.3.4-0ubuntu1
-libonig56.9.4-1
-libopus01.3.1-0ubuntu1
-liborc-0.4-01:0.4.31-1
-libp11-kit00.23.20-1ubuntu0.1
-libpackagekit-glib2-181.1.13-2ubuntu1.1
-libpam0g1.3.1-5ubuntu4.3
-libpam-modules1.3.1-5ubuntu4.3
-libpam-modules-bin1.3.1-5ubuntu4.3
-libpam-runtime1.3.1-5ubuntu4.3
-libpam-systemd245.4-4ubuntu3.19
-libpciaccess00.16-0ubuntu1
-libpcre2-8-010.34-7
-libpcre32:8.39-12build1
-libpipeline11.5.2-2build1
-libpixman-1-00.38.4-0ubuntu2.1
-libpng16-161.6.37-2
-libpolkit-agent-1-00.105-26ubuntu1.3
-libpolkit-gobject-1-00.105-26ubuntu1.3
-libprocps82:3.3.16-1ubuntu2.3
-libproxy1v50.4.15-10ubuntu1.2
-libpsl50.21.0-1ubuntu1
-libpthread-stubs0-dev0.4-1
-libpulse01:13.99.1-1ubuntu3.13
-libpulsedsp1:13.99.1-1ubuntu3.13
-libpython3.8-minimal3.8.10-0ubuntu1~20.04.6
-libpython3.8-stdlib3.8.10-0ubuntu1~20.04.6
-libpython3-stdlib3.8.2-0ubuntu2
-libreadline88.0-4
-libroken18-heimdal7.7.0+dfsg-1ubuntu1.4
-librtmp12.4+20151223.gitfa8646d.1-2build1
-libsamplerate00.1.9-2
-libsasl2-22.1.27+dfsg-2ubuntu0.1
-libsasl2-modules2.1.27+dfsg-2ubuntu0.1
-libsasl2-modules-db2.1.27+dfsg-2ubuntu0.1
-libseccomp22.5.1-1ubuntu1~20.04.2
-libselinux13.0-1build2
-libsemanage13.0-1build2
-libsemanage-common3.0-1build2
-libsensors51:3.6.0-2ubuntu1.1
-libsensors-config1:3.6.0-2ubuntu1.1
-libsepol13.0-1
-libsigsegv22.12-2
-libsm62:1.2.3-1
-libsmartcols12.34-0.1ubuntu9.3
-libsnapd-glib11.58-0ubuntu0.20.04.0
-libsndfile11.0.28-7ubuntu0.1
-libsoup2.4-12.70.0-1
-libsoxr00.1.3-2build1
-libspeexdsp11.2~rc1.2-1.1ubuntu1.20.04.1
-libsqlite3-03.31.1-4ubuntu0.5
-libss21.45.5-2ubuntu1
-libssh-40.9.3-2ubuntu2.2
-libssl1.11.1.1f-1ubuntu2.17
-libstdc++610.3.0-1ubuntu1~20.04
-libstemmer0d0+svn585-2
-libsystemd0245.4-4ubuntu3.19
-libtasn1-64.16.0-2
-libtdb11.4.3-0ubuntu0.20.04.1
-libtinfo66.2-0ubuntu2
-libuchardet00.0.6-3build1
-libudev1245.4-4ubuntu3.19
-libunistring20.9.10-2
-libunwind81.2.1-9build1
-libuuid12.34-0.1ubuntu9.3
-libvorbis0a1.3.6-2ubuntu1
-libvorbisenc21.3.6-2ubuntu1
-libvulkan11.2.131.2-1
-libwayland-client01.18.0-1ubuntu0.1
-libwayland-server01.18.0-1ubuntu0.1
-libwebrtc-audio-processing10.3.1-0ubuntu3
-libwind0-heimdal7.7.0+dfsg-1ubuntu1.4
-libwrap07.6.q-30
-libx11-62:1.6.9-2ubuntu1.2
-libx11-data2:1.6.9-2ubuntu1.2
-libx11-dev2:1.6.9-2ubuntu1.2
-libx11-xcb12:1.6.9-2ubuntu1.2
-libxau61:1.0.9-0ubuntu1
-libxau-dev1:1.0.9-0ubuntu1
-libxaw72:1.0.13-1
-libxcb11.14-2
-libxcb1-dev1.14-2
-libxcb-dri2-01.14-2
-libxcb-dri3-01.14-2
-libxcb-glx01.14-2
-libxcb-present01.14-2
-libxcb-shape01.14-2
-libxcb-shm01.14-2
-libxcb-sync11.14-2
-libxcb-util10.4.0-0ubuntu3
-libxcb-xfixes01.14-2
-libxcomposite11:0.4.5-1
-libxcursor11:1.2.0-2
-libxdamage11:1.1.5-2
-libxdmcp61:1.1.3-0ubuntu1
-libxdmcp-dev1:1.1.3-0ubuntu1
-libxext62:1.3.4-0ubuntu1
-libxfixes31:5.0.3-2
-libxfont21:2.0.3-1
-libxft22.3.3-0ubuntu1
-libxi62:1.7.10-0ubuntu1
-libxinerama12:1.1.4-2
-libxkbfile11:1.1.0-1
-libxml22.9.10+dfsg-5ubuntu0.20.04.5
-libxmu62:1.1.3-0ubuntu1
-libxmuu12:1.1.3-0ubuntu1
-libxpm41:3.5.12-1ubuntu0.20.04.1
-libxrandr22:1.5.2-0ubuntu1
-libxrender11:0.9.10-1
-libxshmfence11.3-1
-libxss11:1.2.3-1
-libxt61:1.1.5-1
-libxtst62:1.2.3-1
-libxv12:1.0.11-1
-libxvmc12:1.0.12-2
-libxxf86dga12:1.1.5-0ubuntu1
-libxxf86vm11:1.1.4-1build1
-libyaml-0-20.2.2-1
-libzstd11.4.4+dfsg-3ubuntu0.1
-locales2.31-0ubuntu9.9
-login1:4.8.1-1ubuntu5.20.04.1
-logsave1.45.5-2ubuntu1
-lsb-base11.1.0ubuntu2
-lsb-release11.1.0ubuntu2
-man-db2.9.1-1
-mawk1.3.4.20200120-2
-mime-support3.64ubuntu1
-mount2.34-0.1ubuntu9.3
-ncurses-base6.2-0ubuntu2
-ncurses-bin6.2-0ubuntu2
-netcat1.206-1ubuntu1
-netcat-openbsd1.206-1ubuntu1
-openssh-client1:8.2p1-4ubuntu0.5
-openssl1.1.1f-1ubuntu2.17
-packagekit1.1.13-2ubuntu1.1
-passwd1:4.8.1-1ubuntu5.20.04.1
-perl-base5.30.0-9ubuntu0.2
-pinentry-curses1.1.0-3build1
-policykit-10.105-26ubuntu1.3
-procps2:3.3.16-1ubuntu2.3
-publicsuffix20200303.0012-1
-pulseaudio1:13.99.1-1ubuntu3.13
-pulseaudio-utils1:13.99.1-1ubuntu3.13
-python33.8.2-0ubuntu2
-python3.83.8.10-0ubuntu1~20.04.6
-python3.8-minimal3.8.10-0ubuntu1~20.04.6
-python3-apt2.0.1
-python3-certifi2019.11.28-1
-python3-chardet3.0.4-4build1
-python3-dbus1.2.16-1build1
-python3-gi3.36.0-1
-python3-idna2.8-1
-python3-minimal3.8.2-0ubuntu2
-python3-pkg-resources45.2.0-1ubuntu0.1
-python3-requests2.22.0-2ubuntu1
-python3-requests-unixsocket0.2.0-2
-python3-six1.14.0-2
-python3-software-properties0.99.9.10
-python3-urllib31.25.8-2ubuntu0.2
-python-apt-common2.0.1
-readline-common8.0-4
-sed4.7-1
-sensible-utils0.0.12+nmu1
-software-properties-common0.99.9.10
-ssl-cert1.0.39
-sudo1.8.31-1ubuntu1.4
-systemd245.4-4ubuntu3.19
-systemd-sysv245.4-4ubuntu3.19
-systemd-timesyncd245.4-4ubuntu3.19
-sysvinit-utils2.96-2.1ubuntu1
-tar1.30+dfsg-7ubuntu0.20.04.2
-tzdata2022g-0ubuntu0.20.04.1
-ubuntu-keyring2020.02.11.4
-ucf3.0038+nmu1
-udev245.4-4ubuntu3.19
-util-linux2.34-0.1ubuntu9.3
-x11-apps7.7+8
-x11-common1:7.7+19ubuntu14
-x11proto-core-dev2019.2-1ubuntu1
-x11proto-dev2019.2-1ubuntu1
-x11-session-utils7.7+4
-x11-utils7.7+5
-x11-xkb-utils7.7+5
-x11-xserver-utils7.7+8
-xfonts-base1:1.0.5
-xfonts-encodings1:1.0.5-0ubuntu1
-xfonts-utils1:7.7+6
-xkb-data2.29-2
-xorg-sgml-doctools1:1.11-1
-xorgxrdp1:0.2.12-1
-xrdp0.9.12-1
-xserver-common2:1.20.13-1ubuntu1~20.04.6
-xserver-xorg-core2:1.20.13-1ubuntu1~20.04.6
-xserver-xorg-video-amdgpu19.1.0-1ubuntu0.1
-xserver-xorg-video-ati1:19.1.0-1
-xserver-xorg-video-intel2:2.99.917+git20200226-1
-xserver-xorg-video-radeon1:19.1.0-1
-xtrans-dev1.4.0-1
-xutils1:7.7+19ubuntu14
-zlib1g1:1.2.11.dfsg-2ubuntu1.5
+NAME                            VERSION                            TYPE   
+PyGObject                       3.36.0                             python  
+adduser                         3.118ubuntu2                       deb     
+apt                             2.0.9                              deb     
+apt-transport-https             2.0.9                              deb     
+apt-utils                       2.0.9                              deb     
+base-files                      11ubuntu5.5                        deb     
+base-passwd                     3.5.47                             deb     
+bash                            5.0-6ubuntu1.1                     deb     
+bsdmainutils                    11.1.2ubuntu3                      deb     
+bsdutils                        1:2.34-0.1ubuntu9.3                deb     
+bzip2                           1.0.8-2                            deb     
+ca-certificates                 20211016ubuntu0.20.04.1            deb     
+certifi                         2019.11.28                         python  
+chardet                         3.0.4                              python  
+coreutils                       8.30-3ubuntu2                      deb     
+cpp                             4:9.3.0-1ubuntu2                   deb     
+cpp-9                           9.4.0-1ubuntu1~20.04.1             deb     
+curl                            7.68.0-1ubuntu2.16                 deb     
+dash                            0.5.10.2-6                         deb     
+dbus                            1.12.16-2ubuntu2.3                 deb     
+dbus-python                     1.2.16                             python  
+dbus-x11                        1.12.16-2ubuntu2.3                 deb     
+dconf-gsettings-backend         0.36.0-1                           deb     
+dconf-service                   0.36.0-1                           deb     
+debconf                         1.5.73                             deb     
+debianutils                     4.9.1                              deb     
+diffutils                       1:3.7-3                            deb     
+dirmngr                         2.2.19-3ubuntu2.2                  deb     
+distro-info-data                0.43ubuntu1.11                     deb     
+docker-ce-cli                   5:23.0.1-1~ubuntu.18.04~bionic     deb     
+dpkg                            1.19.7ubuntu3                      deb     
+e2fsprogs                       1.45.5-2ubuntu1                    deb     
+fdisk                           2.34-0.1ubuntu9.3                  deb     
+findutils                       4.7.0-1ubuntu1                     deb     
+fontconfig-config               2.13.1-2ubuntu3                    deb     
+fonts-dejavu-core               2.37-1                             deb     
+gawk                            1:5.0.1+dfsg-1                     deb     
+gcc-10-base                     10.3.0-1ubuntu1~20.04              deb     
+gcc-9-base                      9.4.0-1ubuntu1~20.04.1             deb     
+gir1.2-glib-2.0                 1.64.1-1~ubuntu20.04.1             deb     
+gir1.2-packagekitglib-1.0       1.1.13-2ubuntu1.1                  deb     
+glib-networking                 2.64.2-1ubuntu0.1                  deb     
+glib-networking-common          2.64.2-1ubuntu0.1                  deb     
+glib-networking-services        2.64.2-1ubuntu0.1                  deb     
+gnupg                           2.2.19-3ubuntu2.2                  deb     
+gnupg-l10n                      2.2.19-3ubuntu2.2                  deb     
+gnupg-utils                     2.2.19-3ubuntu2.2                  deb     
+gnupg2                          2.2.19-3ubuntu2.2                  deb     
+gpg                             2.2.19-3ubuntu2.2                  deb     
+gpg-agent                       2.2.19-3ubuntu2.2                  deb     
+gpg-wks-client                  2.2.19-3ubuntu2.2                  deb     
+gpg-wks-server                  2.2.19-3ubuntu2.2                  deb     
+gpgconf                         2.2.19-3ubuntu2.2                  deb     
+gpgsm                           2.2.19-3ubuntu2.2                  deb     
+gpgv                            2.2.19-3ubuntu2.2                  deb     
+grep                            3.4-1                              deb     
+groff-base                      1.22.4-4build1                     deb     
+gsettings-desktop-schemas       3.36.0-1ubuntu1                    deb     
+gzip                            1.10-0ubuntu4                      deb     
+hostname                        3.23                               deb     
+idna                            2.8                                python  
+init-system-helpers             1.57                               deb     
+iso-codes                       4.4-1                              deb     
+jq                              1.6-1ubuntu0.20.04.1               deb     
+keyboard-configuration          1.194ubuntu3                       deb     
+krb5-locales                    1.17-6ubuntu4.2                    deb     
+libacl1                         2.2.53-6                           deb     
+libapparmor1                    2.13.3-7ubuntu5.1                  deb     
+libappstream4                   0.12.10-2                          deb     
+libapt-pkg6.0                   2.0.9                              deb     
+libargon2-1                     0~20171227-0.2                     deb     
+libasn1-8-heimdal               7.7.0+dfsg-1ubuntu1.4              deb     
+libasound2                      1.2.2-2.1ubuntu2.5                 deb     
+libasound2-data                 1.2.2-2.1ubuntu2.5                 deb     
+libasound2-plugins              1.2.2-1ubuntu1                     deb     
+libassuan0                      2.5.3-7ubuntu2                     deb     
+libasyncns0                     0.8-6                              deb     
+libattr1                        1:2.4.48-5                         deb     
+libaudit-common                 1:2.8.5-2ubuntu6                   deb     
+libaudit1                       1:2.8.5-2ubuntu6                   deb     
+libblkid1                       2.34-0.1ubuntu9.3                  deb     
+libbrotli1                      1.0.7-6ubuntu0.1                   deb     
+libbsd0                         0.10.0-1                           deb     
+libbz2-1.0                      1.0.8-2                            deb     
+libc-bin                        2.31-0ubuntu9.7                    deb     
+libc6                           2.31-0ubuntu9.7                    deb     
+libcap-ng0                      0.7.9-2.1build1                    deb     
+libcap2                         1:2.32-1                           deb     
+libcap2-bin                     1:2.32-1                           deb     
+libcbor0.6                      0.6.0-0ubuntu1                     deb     
+libcom-err2                     1.45.5-2ubuntu1                    deb     
+libcrypt1                       1:4.4.10-10ubuntu4                 deb     
+libcryptsetup12                 2:2.2.2-3ubuntu2.4                 deb     
+libcurl4                        7.68.0-1ubuntu2.16                 deb     
+libdb5.3                        5.3.28+dfsg1-0.6ubuntu2            deb     
+libdbus-1-3                     1.12.16-2ubuntu2.3                 deb     
+libdconf1                       0.36.0-1                           deb     
+libdebconfclient0               0.251ubuntu1                       deb     
+libdevmapper1.02.1              2:1.02.167-1ubuntu1                deb     
+libdrm-amdgpu1                  2.4.107-8ubuntu1~20.04.2           deb     
+libdrm-common                   2.4.107-8ubuntu1~20.04.2           deb     
+libdrm-intel1                   2.4.107-8ubuntu1~20.04.2           deb     
+libdrm-nouveau2                 2.4.107-8ubuntu1~20.04.2           deb     
+libdrm-radeon1                  2.4.107-8ubuntu1~20.04.2           deb     
+libdrm2                         2.4.107-8ubuntu1~20.04.2           deb     
+libedit2                        3.1-20191231-1                     deb     
+libegl-mesa0                    21.2.6-0ubuntu0.1~20.04.2          deb     
+libegl1                         1.3.2-1~ubuntu0.20.04.2            deb     
+libelf1                         0.176-1.1build1                    deb     
+libepoxy0                       1.5.4-1                            deb     
+libexpat1                       2.2.9-1ubuntu0.6                   deb     
+libext2fs2                      1.45.5-2ubuntu1                    deb     
+libfdisk1                       2.34-0.1ubuntu9.3                  deb     
+libffi7                         3.3-4                              deb     
+libfido2-1                      1.3.1-1ubuntu2                     deb     
+libflac8                        1.3.3-1ubuntu0.1                   deb     
+libfontconfig1                  2.13.1-2ubuntu3                    deb     
+libfontenc1                     1:1.1.4-0ubuntu1                   deb     
+libfreetype6                    2.10.1-2ubuntu0.2                  deb     
+libfuse2                        2.9.9-3                            deb     
+libgbm1                         21.2.6-0ubuntu0.1~20.04.2          deb     
+libgcc-s1                       10.3.0-1ubuntu1~20.04              deb     
+libgcrypt20                     1.8.5-5ubuntu1.1                   deb     
+libgdbm6                        1.18.1-5                           deb     
+libgirepository-1.0-1           1.64.1-1~ubuntu20.04.1             deb     
+libgl1                          1.3.2-1~ubuntu0.20.04.2            deb     
+libgl1-mesa-dri                 21.2.6-0ubuntu0.1~20.04.2          deb     
+libglapi-mesa                   21.2.6-0ubuntu0.1~20.04.2          deb     
+libglib2.0-0                    2.64.6-1~ubuntu20.04.4             deb     
+libglib2.0-bin                  2.64.6-1~ubuntu20.04.4             deb     
+libglib2.0-data                 2.64.6-1~ubuntu20.04.4             deb     
+libglvnd0                       1.3.2-1~ubuntu0.20.04.2            deb     
+libglx-mesa0                    21.2.6-0ubuntu0.1~20.04.2          deb     
+libglx0                         1.3.2-1~ubuntu0.20.04.2            deb     
+libgmp10                        2:6.2.0+dfsg-4                     deb     
+libgnutls30                     3.6.13-2ubuntu1.6                  deb     
+libgomp1                        10.3.0-1ubuntu1~20.04              deb     
+libgpg-error0                   1.37-1                             deb     
+libgssapi-krb5-2                1.17-6ubuntu4.2                    deb     
+libgssapi3-heimdal              7.7.0+dfsg-1ubuntu1.4              deb     
+libgstreamer-plugins-base1.0-0  1.16.3-0ubuntu1.1                  deb     
+libgstreamer1.0-0               1.16.3-0ubuntu1.1                  deb     
+libhcrypto4-heimdal             7.7.0+dfsg-1ubuntu1.4              deb     
+libheimbase1-heimdal            7.7.0+dfsg-1ubuntu1.4              deb     
+libheimntlm0-heimdal            7.7.0+dfsg-1ubuntu1.4              deb     
+libhogweed5                     3.5.1+really3.5.1-2ubuntu0.2       deb     
+libhx509-5-heimdal              7.7.0+dfsg-1ubuntu1.4              deb     
+libice6                         2:1.0.10-0ubuntu1                  deb     
+libicu66                        66.1-2ubuntu2.1                    deb     
+libidn2-0                       2.2.0-2                            deb     
+libip4tc2                       1.8.4-3ubuntu2                     deb     
+libisl22                        0.22.1-1                           deb     
+libjack-jackd2-0                1.9.12~dfsg-2ubuntu2               deb     
+libjpeg-turbo8                  2.0.3-0ubuntu1.20.04.3             deb     
+libjpeg8                        8c-2ubuntu8                        deb     
+libjq1                          1.6-1ubuntu0.20.04.1               deb     
+libjson-c4                      0.13.1+dfsg-7ubuntu0.3             deb     
+libjson-glib-1.0-0              1.4.4-2ubuntu2                     deb     
+libjson-glib-1.0-common         1.4.4-2ubuntu2                     deb     
+libk5crypto3                    1.17-6ubuntu4.2                    deb     
+libkeyutils1                    1.6-6ubuntu1.1                     deb     
+libkmod2                        27-1ubuntu2.1                      deb     
+libkrb5-26-heimdal              7.7.0+dfsg-1ubuntu1.4              deb     
+libkrb5-3                       1.17-6ubuntu4.2                    deb     
+libkrb5support0                 1.17-6ubuntu4.2                    deb     
+libksba8                        1.3.5-2ubuntu0.20.04.2             deb     
+libldap-2.4-2                   2.4.49+dfsg-2ubuntu1.9             deb     
+libldap-common                  2.4.49+dfsg-2ubuntu1.9             deb     
+libllvm12                       1:12.0.0-3ubuntu1~20.04.5          deb     
+liblmdb0                        0.9.24-1                           deb     
+liblocale-gettext-perl          1.07-4                             deb     
+libltdl7                        2.4.6-14                           deb     
+liblz4-1                        1.9.2-2ubuntu0.20.04.1             deb     
+liblzma5                        5.2.4-1ubuntu1                     deb     
+libmount1                       2.34-0.1ubuntu9.3                  deb     
+libmpc3                         1.1.0-1                            deb     
+libmpdec2                       2.4.2-3                            deb     
+libmpfr6                        4.0.2-1                            deb     
+libncurses6                     6.2-0ubuntu2                       deb     
+libncursesw6                    6.2-0ubuntu2                       deb     
+libnettle7                      3.5.1+really3.5.1-2ubuntu0.2       deb     
+libnghttp2-14                   1.40.0-1build1                     deb     
+libnpth0                        1.6-1                              deb     
+libogg0                         1.3.4-0ubuntu1                     deb     
+libonig5                        6.9.4-1                            deb     
+libopus0                        1.3.1-0ubuntu1                     deb     
+liborc-0.4-0                    1:0.4.31-1                         deb     
+libp11-kit0                     0.23.20-1ubuntu0.1                 deb     
+libpackagekit-glib2-18          1.1.13-2ubuntu1.1                  deb     
+libpam-modules                  1.3.1-5ubuntu4.3                   deb     
+libpam-modules-bin              1.3.1-5ubuntu4.3                   deb     
+libpam-runtime                  1.3.1-5ubuntu4.3                   deb     
+libpam-systemd                  245.4-4ubuntu3.19                  deb     
+libpam0g                        1.3.1-5ubuntu4.3                   deb     
+libpciaccess0                   0.16-0ubuntu1                      deb     
+libpcre2-8-0                    10.34-7                            deb     
+libpcre3                        2:8.39-12build1                    deb     
+libpipeline1                    1.5.2-2build1                      deb     
+libpixman-1-0                   0.38.4-0ubuntu2.1                  deb     
+libpng16-16                     1.6.37-2                           deb     
+libpolkit-agent-1-0             0.105-26ubuntu1.3                  deb     
+libpolkit-gobject-1-0           0.105-26ubuntu1.3                  deb     
+libprocps8                      2:3.3.16-1ubuntu2.3                deb     
+libproxy1v5                     0.4.15-10ubuntu1.2                 deb     
+libpsl5                         0.21.0-1ubuntu1                    deb     
+libpthread-stubs0-dev           0.4-1                              deb     
+libpulse0                       1:13.99.1-1ubuntu3.13              deb     
+libpulsedsp                     1:13.99.1-1ubuntu3.13              deb     
+libpython3-stdlib               3.8.2-0ubuntu2                     deb     
+libpython3.8-minimal            3.8.10-0ubuntu1~20.04.6            deb     
+libpython3.8-stdlib             3.8.10-0ubuntu1~20.04.6            deb     
+libreadline8                    8.0-4                              deb     
+libroken18-heimdal              7.7.0+dfsg-1ubuntu1.4              deb     
+librtmp1                        2.4+20151223.gitfa8646d.1-2build1  deb     
+libsamplerate0                  0.1.9-2                            deb     
+libsasl2-2                      2.1.27+dfsg-2ubuntu0.1             deb     
+libsasl2-modules                2.1.27+dfsg-2ubuntu0.1             deb     
+libsasl2-modules-db             2.1.27+dfsg-2ubuntu0.1             deb     
+libseccomp2                     2.5.1-1ubuntu1~20.04.2             deb     
+libselinux1                     3.0-1build2                        deb     
+libsemanage-common              3.0-1build2                        deb     
+libsemanage1                    3.0-1build2                        deb     
+libsensors-config               1:3.6.0-2ubuntu1.1                 deb     
+libsensors5                     1:3.6.0-2ubuntu1.1                 deb     
+libsepol1                       3.0-1                              deb     
+libsigsegv2                     2.12-2                             deb     
+libsm6                          2:1.2.3-1                          deb     
+libsmartcols1                   2.34-0.1ubuntu9.3                  deb     
+libsnapd-glib1                  1.58-0ubuntu0.20.04.0              deb     
+libsndfile1                     1.0.28-7ubuntu0.1                  deb     
+libsoup2.4-1                    2.70.0-1                           deb     
+libsoxr0                        0.1.3-2build1                      deb     
+libspeexdsp1                    1.2~rc1.2-1.1ubuntu1.20.04.1       deb     
+libsqlite3-0                    3.31.1-4ubuntu0.5                  deb     
+libss2                          1.45.5-2ubuntu1                    deb     
+libssh-4                        0.9.3-2ubuntu2.2                   deb     
+libssl1.1                       1.1.1f-1ubuntu2.17                 deb     
+libstdc++6                      10.3.0-1ubuntu1~20.04              deb     
+libstemmer0d                    0+svn585-2                         deb     
+libsystemd0                     245.4-4ubuntu3.19                  deb     
+libtasn1-6                      4.16.0-2                           deb     
+libtdb1                         1.4.3-0ubuntu0.20.04.1             deb     
+libtinfo6                       6.2-0ubuntu2                       deb     
+libuchardet0                    0.0.6-3build1                      deb     
+libudev1                        245.4-4ubuntu3.19                  deb     
+libunistring2                   0.9.10-2                           deb     
+libunwind8                      1.2.1-9build1                      deb     
+libuuid1                        2.34-0.1ubuntu9.3                  deb     
+libvorbis0a                     1.3.6-2ubuntu1                     deb     
+libvorbisenc2                   1.3.6-2ubuntu1                     deb     
+libvulkan1                      1.2.131.2-1                        deb     
+libwayland-client0              1.18.0-1ubuntu0.1                  deb     
+libwayland-server0              1.18.0-1ubuntu0.1                  deb     
+libwebrtc-audio-processing1     0.3.1-0ubuntu3                     deb     
+libwind0-heimdal                7.7.0+dfsg-1ubuntu1.4              deb     
+libwrap0                        7.6.q-30                           deb     
+libx11-6                        2:1.6.9-2ubuntu1.2                 deb     
+libx11-data                     2:1.6.9-2ubuntu1.2                 deb     
+libx11-dev                      2:1.6.9-2ubuntu1.2                 deb     
+libx11-xcb1                     2:1.6.9-2ubuntu1.2                 deb     
+libxau-dev                      1:1.0.9-0ubuntu1                   deb     
+libxau6                         1:1.0.9-0ubuntu1                   deb     
+libxaw7                         2:1.0.13-1                         deb     
+libxcb-dri2-0                   1.14-2                             deb     
+libxcb-dri3-0                   1.14-2                             deb     
+libxcb-glx0                     1.14-2                             deb     
+libxcb-present0                 1.14-2                             deb     
+libxcb-shape0                   1.14-2                             deb     
+libxcb-shm0                     1.14-2                             deb     
+libxcb-sync1                    1.14-2                             deb     
+libxcb-util1                    0.4.0-0ubuntu3                     deb     
+libxcb-xfixes0                  1.14-2                             deb     
+libxcb1                         1.14-2                             deb     
+libxcb1-dev                     1.14-2                             deb     
+libxcomposite1                  1:0.4.5-1                          deb     
+libxcursor1                     1:1.2.0-2                          deb     
+libxdamage1                     1:1.1.5-2                          deb     
+libxdmcp-dev                    1:1.1.3-0ubuntu1                   deb     
+libxdmcp6                       1:1.1.3-0ubuntu1                   deb     
+libxext6                        2:1.3.4-0ubuntu1                   deb     
+libxfixes3                      1:5.0.3-2                          deb     
+libxfont2                       1:2.0.3-1                          deb     
+libxft2                         2.3.3-0ubuntu1                     deb     
+libxi6                          2:1.7.10-0ubuntu1                  deb     
+libxinerama1                    2:1.1.4-2                          deb     
+libxkbfile1                     1:1.1.0-1                          deb     
+libxml2                         2.9.10+dfsg-5ubuntu0.20.04.5       deb     
+libxmu6                         2:1.1.3-0ubuntu1                   deb     
+libxmuu1                        2:1.1.3-0ubuntu1                   deb     
+libxpm4                         1:3.5.12-1ubuntu0.20.04.1          deb     
+libxrandr2                      2:1.5.2-0ubuntu1                   deb     
+libxrender1                     1:0.9.10-1                         deb     
+libxshmfence1                   1.3-1                              deb     
+libxss1                         1:1.2.3-1                          deb     
+libxt6                          1:1.1.5-1                          deb     
+libxtst6                        2:1.2.3-1                          deb     
+libxv1                          2:1.0.11-1                         deb     
+libxvmc1                        2:1.0.12-2                         deb     
+libxxf86dga1                    2:1.1.5-0ubuntu1                   deb     
+libxxf86vm1                     1:1.1.4-1build1                    deb     
+libyaml-0-2                     0.2.2-1                            deb     
+libzstd1                        1.4.4+dfsg-3ubuntu0.1              deb     
+locales                         2.31-0ubuntu9.9                    deb     
+login                           1:4.8.1-1ubuntu5.20.04.1           deb     
+logsave                         1.45.5-2ubuntu1                    deb     
+lsb-base                        11.1.0ubuntu2                      deb     
+lsb-release                     11.1.0ubuntu2                      deb     
+man-db                          2.9.1-1                            deb     
+mawk                            1.3.4.20200120-2                   deb     
+mime-support                    3.64ubuntu1                        deb     
+mount                           2.34-0.1ubuntu9.3                  deb     
+ncurses-base                    6.2-0ubuntu2                       deb     
+ncurses-bin                     6.2-0ubuntu2                       deb     
+netcat                          1.206-1ubuntu1                     deb     
+netcat-openbsd                  1.206-1ubuntu1                     deb     
+openssh-client                  1:8.2p1-4ubuntu0.5                 deb     
+openssl                         1.1.1f-1ubuntu2.17                 deb     
+packagekit                      1.1.13-2ubuntu1.1                  deb     
+passwd                          1:4.8.1-1ubuntu5.20.04.1           deb     
+perl-base                       5.30.0-9ubuntu0.2                  deb     
+pinentry-curses                 1.1.0-3build1                      deb     
+policykit-1                     0.105-26ubuntu1.3                  deb     
+procps                          2:3.3.16-1ubuntu2.3                deb     
+publicsuffix                    20200303.0012-1                    deb     
+pulseaudio                      1:13.99.1-1ubuntu3.13              deb     
+pulseaudio-utils                1:13.99.1-1ubuntu3.13              deb     
+python                          3.8.10                             binary  
+python-apt                      2.0.1                              python  
+python-apt-common               2.0.1                              deb     
+python3                         3.8.2-0ubuntu2                     deb     
+python3-apt                     2.0.1                              deb     
+python3-certifi                 2019.11.28-1                       deb     
+python3-chardet                 3.0.4-4build1                      deb     
+python3-dbus                    1.2.16-1build1                     deb     
+python3-gi                      3.36.0-1                           deb     
+python3-idna                    2.8-1                              deb     
+python3-minimal                 3.8.2-0ubuntu2                     deb     
+python3-pkg-resources           45.2.0-1ubuntu0.1                  deb     
+python3-requests                2.22.0-2ubuntu1                    deb     
+python3-requests-unixsocket     0.2.0-2                            deb     
+python3-six                     1.14.0-2                           deb     
+python3-software-properties     0.99.9.11                          deb     
+python3-urllib3                 1.25.8-2ubuntu0.2                  deb     
+python3.8                       3.8.10-0ubuntu1~20.04.6            deb     
+python3.8-minimal               3.8.10-0ubuntu1~20.04.6            deb     
+readline-common                 8.0-4                              deb     
+requests                        2.22.0                             python  
+requests-unixsocket             0.2.0                              python  
+sed                             4.7-1                              deb     
+sensible-utils                  0.0.12+nmu1                        deb     
+six                             1.14.0                             python  
+software-properties-common      0.99.9.11                          deb     
+ssl-cert                        1.0.39                             deb     
+sudo                            1.8.31-1ubuntu1.4                  deb     
+systemd                         245.4-4ubuntu3.19                  deb     
+systemd-sysv                    245.4-4ubuntu3.19                  deb     
+systemd-timesyncd               245.4-4ubuntu3.19                  deb     
+sysvinit-utils                  2.96-2.1ubuntu1                    deb     
+tar                             1.30+dfsg-7ubuntu0.20.04.2         deb     
+tzdata                          2022g-0ubuntu0.20.04.1             deb     
+ubuntu-keyring                  2020.02.11.4                       deb     
+ucf                             3.0038+nmu1                        deb     
+udev                            245.4-4ubuntu3.19                  deb     
+urllib3                         1.25.8                             python  
+util-linux                      2.34-0.1ubuntu9.3                  deb     
+x11-apps                        7.7+8                              deb     
+x11-common                      1:7.7+19ubuntu14                   deb     
+x11-session-utils               7.7+4                              deb     
+x11-utils                       7.7+5                              deb     
+x11-xkb-utils                   7.7+5                              deb     
+x11-xserver-utils               7.7+8                              deb     
+x11proto-core-dev               2019.2-1ubuntu1                    deb     
+x11proto-dev                    2019.2-1ubuntu1                    deb     
+xfonts-base                     1:1.0.5                            deb     
+xfonts-encodings                1:1.0.5-0ubuntu1                   deb     
+xfonts-utils                    1:7.7+6                            deb     
+xkb-data                        2.29-2                             deb     
+xorg-sgml-doctools              1:1.11-1                           deb     
+xorgxrdp                        1:0.2.12-1                         deb     
+xrdp                            0.9.12-1                           deb     
+xserver-common                  2:1.20.13-1ubuntu1~20.04.6         deb     
+xserver-xorg-core               2:1.20.13-1ubuntu1~20.04.6         deb     
+xserver-xorg-video-amdgpu       19.1.0-1ubuntu0.1                  deb     
+xserver-xorg-video-ati          1:19.1.0-1                         deb     
+xserver-xorg-video-intel        2:2.99.917+git20200226-1           deb     
+xserver-xorg-video-radeon       1:19.1.0-1                         deb     
+xtrans-dev                      1.4.0-1                            deb     
+xutils                          1:7.7+19ubuntu14                   deb     
+zlib1g                          1:1.2.11.dfsg-2ubuntu1.5           deb     
