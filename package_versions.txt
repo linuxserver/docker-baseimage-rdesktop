@@ -340,7 +340,7 @@ publicsuffix-list-dafsa                                       20210518-4.fc36   
 pulseaudio                                                    15.0-5.fc36                           rpm        
 pulseaudio-libs                                               15.0-5.fc36                           rpm        
 pulseaudio-libs-glib2                                         15.0-5.fc36                           rpm        
-python                                                        3.10.10-1                             binary     
+python                                                        3.10.10                               binary     
 python-pip-wheel                                              21.3.1-4.fc36                         rpm        
 python-setuptools-wheel                                       59.6.0-3.fc36                         rpm        
 python3                                                       3.10.10-1.fc36                        rpm        
@@ -394,7 +394,7 @@ xkbcomp                                                       1.4.5-3.fc36      
 xkeyboard-config                                              2.35.1-1.fc36                         rpm        
 xml-common                                                    0.6.3-58.fc36                         rpm        
 xmodmap                                                       1.0.10-3.fc36                         rpm        
-xorg-x11-drv-amdgpu                                           22.0.0-1.fc36                         rpm        
+xorg-x11-drv-amdgpu                                           23.0.0-1.fc36                         rpm        
 xorg-x11-drv-ati                                              19.1.0-7.fc36                         rpm        
 xorg-x11-drv-intel                                            2.99.917-52.20200205.fc36             rpm        
 xorg-x11-drv-libinput                                         1.2.1-1.fc36                          rpm        
