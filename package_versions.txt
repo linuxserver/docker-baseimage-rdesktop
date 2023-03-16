@@ -327,10 +327,10 @@ publicsuffix                      20200303.0012-1                    deb
 pulseaudio                        1:13.99.1-1ubuntu3.13              deb        
 pulseaudio-utils                  1:13.99.1-1ubuntu3.13              deb        
 python                            3.8.10                             binary     
-python-apt                        2.0.1                              python     
-python-apt-common                 2.0.1                              deb        
+python-apt                        2.0.1+ubuntu0.20.4.1               python     
+python-apt-common                 2.0.1ubuntu0.20.04.1               deb        
 python3                           3.8.2-0ubuntu2                     deb        
-python3-apt                       2.0.1                              deb        
+python3-apt                       2.0.1ubuntu0.20.04.1               deb        
 python3-certifi                   2019.11.28-1                       deb        
 python3-chardet                   3.0.4-4build1                      deb        
 python3-dbus                      1.2.16-1build1                     deb        
