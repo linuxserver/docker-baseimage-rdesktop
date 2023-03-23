@@ -16,7 +16,7 @@ chardet                           3.0.4                              python
 coreutils                         8.30-3ubuntu2                      deb        
 cpp                               4:9.3.0-1ubuntu2                   deb        
 cpp-9                             9.4.0-1ubuntu1~20.04.1             deb        
-curl                              7.68.0-1ubuntu2.16                 deb        
+curl                              7.68.0-1ubuntu2.18                 deb        
 dash                              0.5.10.2-6                         deb        
 dbus                              1.12.16-2ubuntu2.3                 deb        
 dbus-python                       1.2.16                             python     
@@ -65,7 +65,7 @@ init-system-helpers               1.57                               deb
 iso-codes                         4.4-1                              deb        
 jq                                1.6-1ubuntu0.20.04.1               deb        
 keyboard-configuration            1.194ubuntu3                       deb        
-krb5-locales                      1.17-6ubuntu4.2                    deb        
+krb5-locales                      1.17-6ubuntu4.3                    deb        
 libacl1                           2.2.53-6                           deb        
 libapparmor1                      2.13.3-7ubuntu5.1                  deb        
 libappstream4                     0.12.10-2                          deb        
@@ -93,7 +93,7 @@ libcbor0.6                        0.6.0-0ubuntu1                     deb
 libcom-err2                       1.45.5-2ubuntu1                    deb        
 libcrypt1                         1:4.4.10-10ubuntu4                 deb        
 libcryptsetup12                   2:2.2.2-3ubuntu2.4                 deb        
-libcurl4                          7.68.0-1ubuntu2.16                 deb        
+libcurl4                          7.68.0-1ubuntu2.18                 deb        
 libdb5.3                          5.3.28+dfsg1-0.6ubuntu2            deb        
 libdbus-1-3                       1.12.16-2ubuntu2.3                 deb        
 libdconf1                         0.36.0-1                           deb        
@@ -138,7 +138,7 @@ libgmp10                          2:6.2.0+dfsg-4                     deb
 libgnutls30                       3.6.13-2ubuntu1.6                  deb        
 libgomp1                          10.3.0-1ubuntu1~20.04              deb        
 libgpg-error0                     1.37-1                             deb        
-libgssapi-krb5-2                  1.17-6ubuntu4.2                    deb        
+libgssapi-krb5-2                  1.17-6ubuntu4.3                    deb        
 libgssapi3-heimdal                7.7.0+dfsg-1ubuntu1.4              deb        
 libgstreamer-plugins-base1.0-0    1.16.3-0ubuntu1.1                  deb        
 libgstreamer1.0-0                 1.16.3-0ubuntu1.1                  deb        
@@ -159,12 +159,12 @@ libjq1                            1.6-1ubuntu0.20.04.1               deb
 libjson-c4                        0.13.1+dfsg-7ubuntu0.3             deb        
 libjson-glib-1.0-0                1.4.4-2ubuntu2                     deb        
 libjson-glib-1.0-common           1.4.4-2ubuntu2                     deb        
-libk5crypto3                      1.17-6ubuntu4.2                    deb        
+libk5crypto3                      1.17-6ubuntu4.3                    deb        
 libkeyutils1                      1.6-6ubuntu1.1                     deb        
 libkmod2                          27-1ubuntu2.1                      deb        
 libkrb5-26-heimdal                7.7.0+dfsg-1ubuntu1.4              deb        
-libkrb5-3                         1.17-6ubuntu4.2                    deb        
-libkrb5support0                   1.17-6ubuntu4.2                    deb        
+libkrb5-3                         1.17-6ubuntu4.3                    deb        
+libkrb5support0                   1.17-6ubuntu4.3                    deb        
 libksba8                          1.3.5-2ubuntu0.20.04.2             deb        
 libldap-2.4-2                     2.4.49+dfsg-2ubuntu1.9             deb        
 libldap-common                    2.4.49+dfsg-2ubuntu1.9             deb        
@@ -209,8 +209,8 @@ libpthread-stubs0-dev             0.4-1                              deb
 libpulse0                         1:13.99.1-1ubuntu3.13              deb        
 libpulsedsp                       1:13.99.1-1ubuntu3.13              deb        
 libpython3-stdlib                 3.8.2-0ubuntu2                     deb        
-libpython3.8-minimal              3.8.10-0ubuntu1~20.04.6            deb        
-libpython3.8-stdlib               3.8.10-0ubuntu1~20.04.6            deb        
+libpython3.8-minimal              3.8.10-0ubuntu1~20.04.7            deb        
+libpython3.8-stdlib               3.8.10-0ubuntu1~20.04.7            deb        
 libreadline8                      8.0-4                              deb        
 libroken18-heimdal                7.7.0+dfsg-1ubuntu1.4              deb        
 librtmp1                          2.4+20151223.gitfa8646d.1-2build1  deb        
@@ -246,7 +246,7 @@ libtinfo6                         6.2-0ubuntu2                       deb
 libuchardet0                      0.0.6-3build1                      deb        
 libudev1                          245.4-4ubuntu3.20                  deb        
 libunistring2                     0.9.10-2                           deb        
-libunwind8                        1.2.1-9build1                      deb        
+libunwind8                        1.2.1-9ubuntu0.1                   deb        
 libuuid1                          2.34-0.1ubuntu9.3                  deb        
 libvorbis0a                       1.3.6-2ubuntu1                     deb        
 libvorbisenc2                     1.3.6-2ubuntu1                     deb        
@@ -343,8 +343,8 @@ python3-requests-unixsocket       0.2.0-2                            deb
 python3-six                       1.14.0-2                           deb        
 python3-software-properties       0.99.9.11                          deb        
 python3-urllib3                   1.25.8-2ubuntu0.2                  deb        
-python3.8                         3.8.10-0ubuntu1~20.04.6            deb        
-python3.8-minimal                 3.8.10-0ubuntu1~20.04.6            deb        
+python3.8                         3.8.10-0ubuntu1~20.04.7            deb        
+python3.8-minimal                 3.8.10-0ubuntu1~20.04.7            deb        
 readline-common                   8.0-4                              deb        
 requests                          2.22.0                             python     
 requests-unixsocket               0.2.0                              python     
