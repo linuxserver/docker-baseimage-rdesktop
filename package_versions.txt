@@ -272,7 +272,7 @@ nghttp2-libs                                      1.46.0-r0                     
 openssh-client-common                             8.8_p1-r1                                          apk        
 openssh-client-default                            8.8_p1-r1                                          apk        
 openssh-keygen                                    8.8_p1-r1                                          apk        
-openssl                                           1.1.1t-r1                                          apk        
+openssl                                           1.1.1t-r2                                          apk        
 opus                                              1.3.1-r1                                           apk        
 orc                                               0.4.32-r0                                          apk        
 p11-kit                                           0.24.0-r1                                          apk        
