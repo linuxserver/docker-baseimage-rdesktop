@@ -180,7 +180,7 @@ libcanberra-gstreamer                             0.30-r8                       
 libcanberra-gtk3                                  0.30-r8                                            apk        
 libcanberra-pulse                                 0.30-r8                                            apk        
 libcap                                            2.61-r0                                            apk        
-libcrypto1.1                                      1.1.1t-r2                                          apk        
+libcrypto1.1                                      1.1.1t-r3                                          apk        
 libcurl                                           7.80.0-r6                                          apk        
 libdrm                                            2.4.109-r0                                         apk        
 libedit                                           20210910.3.1-r0                                    apk        
@@ -209,7 +209,7 @@ libseccomp                                        2.5.2-r0                      
 libsigc++                                         2.10.6-r0                                          apk        
 libsm                                             1.2.3-r0                                           apk        
 libsndfile                                        1.0.31-r1                                          apk        
-libssl1.1                                         1.1.1t-r2                                          apk        
+libssl1.1                                         1.1.1t-r3                                          apk        
 libstdc++                                         10.3.1_git20211027-r0                              apk        
 libtasn1                                          4.18.0-r1                                          apk        
 libtheora                                         1.1.1-r16                                          apk        
@@ -303,7 +303,7 @@ sudo                                              1.9.12_p2-r0                  
 tdb-libs                                          1.4.5-r0                                           apk        
 tiff                                              4.4.0-r1                                           apk        
 tini-static                                       0.19.0-r0                                          apk        
-tzdata                                            2023b-r1                                           apk        
+tzdata                                            2023c-r0                                           apk        
 util-macros                                       1.19.3-r0                                          apk        
 utmps                                             0.1.0.3-r0                                         apk        
 wayland-libs-client                               1.19.0-r1                                          apk        
