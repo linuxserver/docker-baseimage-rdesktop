@@ -27,8 +27,8 @@ debconf                           1.5.73                             deb
 debianutils                       4.9.1                              deb        
 diffutils                         1:3.7-3                            deb        
 dirmngr                           2.2.19-3ubuntu2.2                  deb        
-distro-info-data                  0.43ubuntu1.11                     deb        
-docker-ce-cli                     5:23.0.2-1~ubuntu.18.04~bionic     deb        
+distro-info-data                  0.43ubuntu1.12                     deb        
+docker-ce-cli                     5:23.0.3-1~ubuntu.18.04~bionic     deb        
 dpkg                              1.19.7ubuntu3                      deb        
 e2fsprogs                         1.45.5-2ubuntu1                    deb        
 fdisk                             2.34-0.1ubuntu9.3                  deb        
