@@ -2,7 +2,7 @@ NAME                              VERSION                              TYPE
 PyGObject                         3.26.1                               python     
 adduser                           3.116ubuntu1                         deb        
 apt                               1.6.14                               deb        
-apt-transport-https               1.6.14                               deb        
+apt-transport-https               1.6.17                               deb        
 apt-utils                         1.6.14                               deb        
 base-files                        10.1ubuntu2.11                       deb        
 base-passwd                       3.5.44                               deb        
@@ -302,7 +302,7 @@ sed                               4.4-2                                deb
 sensible-utils                    0.0.12                               deb        
 software-properties-common        0.96.24.32.20                        deb        
 ssl-cert                          1.0.39                               deb        
-sudo                              1.8.21p2-3ubuntu1.5                  deb        
+sudo                              1.8.21p2-3ubuntu1.6                  deb        
 sysvinit-utils                    2.88dsf-59.10ubuntu1                 deb        
 tar                               1.29b-2ubuntu0.3                     deb        
 tzdata                            2022g-0ubuntu0.18.04                 deb        
