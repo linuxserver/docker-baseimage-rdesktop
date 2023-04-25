@@ -205,7 +205,7 @@ libsoup2.4-1                      2.62.1-1ubuntu0.4                    deb
 libspeexdsp1                      1.2~rc1.2-1ubuntu2.1                 deb        
 libsqlite3-0                      3.22.0-1ubuntu0.7                    deb        
 libss2                            1.44.1-1ubuntu1.3                    deb        
-libssl1.0.0                       1.0.2n-1ubuntu5.11                   deb        
+libssl1.0.0                       1.0.2n-1ubuntu5.12                   deb        
 libssl1.1                         1.1.1-1ubuntu2.1~18.04.21            deb        
 libstdc++6                        8.4.0-1ubuntu1~18.04                 deb        
 libsystemd0                       237-3ubuntu10.53                     deb        
