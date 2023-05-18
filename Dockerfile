@@ -1,6 +1,6 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy as buildstage
 
-ARG XRDP_PULSE_VERSION=v0.6 \
+ARG XRDP_PULSE_VERSION=v0.7 \
 ARG DEBIAN_FRONTEND="noninteractive"
 
 

@@ -1,7 +1,8 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
-if [ ! -f "/keylock" ]; then
-    cd /etc/xrdp
+if [[ ! -f "/keylock" ]]; then
+    cd /etc/xrdp || exit 1
     xrdp-keygen xrdp
     rm -f /etc/xrdp/*.pem
     openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
