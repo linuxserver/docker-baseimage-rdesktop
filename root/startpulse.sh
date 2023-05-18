@@ -1,4 +1,5 @@
 #!/bin/bash
+
 while :
 do
     if [[ ! $(/usr/bin/pulseaudio --check) ]]; then

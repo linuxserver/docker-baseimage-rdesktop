@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 
 FILES=$(find /dev/dri /dev/dvb -type c -print 2>/dev/null)
 
@@ -11,7 +12,7 @@ do
         echo "**** permissions for ${i} are good ****"
     else
         # check if group matches and that device has group rw
-        if id -G abc | grep -qw "${VIDEO_GID}" && [ $(stat -c '%A' "${i}" | cut -b 5,6) = "rw" ]; then
+        if id -G abc | grep -qw "${VIDEO_GID}" && [[ $(stat -c '%A' "${i}" | cut -b 5,6) = "rw" ]]; then
             echo "**** permissions for ${i} are good ****"
         # check if device needs to be added to video group
         elif ! id -G abc | grep -qw "${VIDEO_GID}"; then
@@ -27,7 +28,7 @@ do
             usermod -a -G "${VIDEO_NAME}" abc
         fi
         # check if device has group rw
-        if [ $(stat -c '%A' "${i}" | cut -b 5,6) != "rw" ]; then
+        if [[ $(stat -c '%A' "${i}" | cut -b 5,6) != "rw" ]]; then
             echo -e "**** The device ${i} does not have group read/write permissions, attempting to fix inside the container.If it doesn't work, you can run the following on your docker host: ****\nsudo chmod g+rw ${i}\n"
             chmod g+rw "${i}"
         fi
