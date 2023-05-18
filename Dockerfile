@@ -1,7 +1,7 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.17 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:3.18 as buildstage
 
-ARG ALPINE_VERSION=3.17
-ARG XRDP_PULSE_VERSION=v0.6
+ARG ALPINE_VERSION=3.18
+ARG XRDP_PULSE_VERSION=v0.7
 
 RUN \
   echo "**** install build deps ****" && \
@@ -63,7 +63,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:amd64-alpine as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-alpine:3.17
+FROM ghcr.io/linuxserver/baseimage-alpine:3.18
 
 # set version label
 ARG BUILD_DATE
