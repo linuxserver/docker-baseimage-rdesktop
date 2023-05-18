@@ -1,7 +1,7 @@
 FROM ghcr.io/linuxserver/baseimage-alpine:3.18 as buildstage
 
 ARG ALPINE_VERSION=3.18
-ARG XRDP_PULSE_VERSION=v0.6
+ARG XRDP_PULSE_VERSION=v0.7
 
 RUN \
   echo "**** install build deps ****" && \
