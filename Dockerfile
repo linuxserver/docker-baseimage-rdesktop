@@ -2,7 +2,7 @@
 
 FROM ghcr.io/linuxserver/baseimage-fedora:38 as buildstage
 
-ARG XRDP_PULSE_VERSION=v0.6
+ARG XRDP_PULSE_VERSION=v0.7
 
 RUN \
   echo "**** install build deps ****" && \
