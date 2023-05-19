@@ -394,7 +394,7 @@ xorg-x11-xauth                                                1:1.1.2-2.fc37    
 xorg-x11-xinit                                                1.4.0-15.fc37                         rpm        
 xorgxrdp                                                      0.9.19-5.fc37                         rpm        
 xrdb                                                          1.2.1-4.fc37                          rpm        
-xrdp                                                          1:0.9.21-1.fc37                       rpm        
+xrdp                                                          1:0.9.22-3.fc37                       rpm        
 xterm                                                         379-2.fc37                            rpm        
 xz                                                            5.4.1-1.fc37                          rpm        
 xz-libs                                                       5.4.1-1.fc37                          rpm        
