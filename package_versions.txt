@@ -46,7 +46,7 @@ fftw                                                                         3.3
 file                                                                         5.44-3                                             alpm          
 filesystem                                                                   2023.01.31-1                                       alpm          
 findutils                                                                    4.9.0-3                                            alpm          
-flac                                                                         1.4.2-1                                            alpm          
+flac                                                                         1.4.3-1                                            alpm          
 flex                                                                         2.6.4-5                                            alpm          
 fontconfig                                                                   2:2.14.2-1                                         alpm          
 freetype2                                                                    2.13.0-1                                           alpm          
