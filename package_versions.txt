@@ -20,7 +20,7 @@ cairo-gobject                                                 1.17.8-4.fc38     
 cairomm                                                       1.14.4-7.fc38                         rpm        
 cdparanoia-libs                                               10.2-41.fc38                          rpm        
 colord-libs                                                   1.4.6-4.fc38                          rpm        
-container-selinux                                             2:2.218.0-1.fc38                      rpm        
+container-selinux                                             2:2.219.0-1.fc38                      rpm        
 containerd                                                    1.6.19-1.fc38                         rpm        
 coreutils                                                     9.1-12.fc38                           rpm        
 coreutils-common                                              9.1-12.fc38                           rpm        
@@ -42,9 +42,9 @@ diffutils                                                     3.10-1.fc38       
 dnf                                                           4.16.1-1.fc38                         rpm        
 dnf-data                                                      4.16.1-1.fc38                         rpm        
 duktape                                                       2.7.0-2.fc38                          rpm        
-elfutils-default-yama-scope                                   0.189-2.fc38                          rpm        
-elfutils-libelf                                               0.189-2.fc38                          rpm        
-elfutils-libs                                                 0.189-2.fc38                          rpm        
+elfutils-default-yama-scope                                   0.189-3.fc38                          rpm        
+elfutils-libelf                                               0.189-3.fc38                          rpm        
+elfutils-libs                                                 0.189-3.fc38                          rpm        
 expat                                                         2.5.0-2.fc38                          rpm        
 fedora-gpg-keys                                               38-1                                  rpm        
 fedora-release-common                                         38-36                                 rpm        
@@ -126,7 +126,7 @@ gzip                                                          1.12-3.fc38       
 harfbuzz                                                      7.1.0-1.fc38                          rpm        
 hicolor-icon-theme                                            0.17-15.fc38                          rpm        
 hostname                                                      3.23-8.fc38                           rpm        
-hwdata                                                        0.371-1.fc38                          rpm        
+hwdata                                                        0.372-1.fc38                          rpm        
 ima-evm-utils                                                 1.4-7.fc38                            rpm        
 imlib2                                                        1.7.4-4.fc38                          rpm        
 iptables-legacy                                               1.8.9-4.fc38                          rpm        
@@ -172,7 +172,7 @@ libXvMC                                                       1.0.13-2.fc38     
 libXxf86vm                                                    1.1.5-2.fc38                          rpm        
 libacl                                                        2.3.1-6.fc38                          rpm        
 libarchive                                                    3.6.1-4.fc38                          rpm        
-libassuan                                                     2.5.5-6.fc38                          rpm        
+libassuan                                                     2.5.6-1.fc38                          rpm        
 libasyncns                                                    0.8-24.fc38                           rpm        
 libattr                                                       2.5.1-6.fc38                          rpm        
 libb2                                                         0.98.1-8.fc38                         rpm        
@@ -217,12 +217,12 @@ libicu                                                        72.1-2.fc38       
 libidn2                                                       2.3.4-2.fc38                          rpm        
 libinput                                                      1.23.0-2.fc38                         rpm        
 libjpeg-turbo                                                 2.1.4-2.fc38                          rpm        
-libksba                                                       1.6.3-2.fc38                          rpm        
+libksba                                                       1.6.4-1.fc38                          rpm        
 libmd                                                         1.1.0-1.fc38                          rpm        
 libmnl                                                        1.0.5-2.fc38                          rpm        
 libmodulemd                                                   2.15.0-2.fc38                         rpm        
 libmount                                                      2.38.1-4.fc38                         rpm        
-libnetfilter_conntrack                                        1.0.8-7.fc38                          rpm        
+libnetfilter_conntrack                                        1.0.9-1.fc38                          rpm        
 libnfnetlink                                                  1.0.1-23.fc38                         rpm        
 libnghttp2                                                    1.52.0-1.fc38                         rpm        
 libnl3                                                        3.7.0-3.fc38                          rpm        
@@ -234,7 +234,7 @@ libpng                                                        2:1.6.37-14.fc38  
 libpsl                                                        0.21.2-2.fc38                         rpm        
 libpwquality                                                  1.4.5-3.fc38                          rpm        
 librepo                                                       1.15.1-2.fc38                         rpm        
-libreport-filesystem                                          2.17.10-1.fc38                        rpm        
+libreport-filesystem                                          2.17.11-1.fc38                        rpm        
 libretls                                                      3.7.0-2.fc38                          rpm        
 libseccomp                                                    2.5.3-4.fc38                          rpm        
 libselinux                                                    3.5-1.fc38                            rpm        
@@ -276,7 +276,7 @@ libwayland-egl                                                1.22.0-1.fc38     
 libwayland-server                                             1.22.0-1.fc38                         rpm        
 libwebp                                                       1.3.1-1.fc38                          rpm        
 libxcb                                                        1.13.1-11.fc38                        rpm        
-libxcrypt                                                     4.4.35-1.fc38                         rpm        
+libxcrypt                                                     4.4.36-1.fc38                         rpm        
 libxkbcommon                                                  1.5.0-2.fc38                          rpm        
 libxkbfile                                                    1.1.1-2.fc38                          rpm        
 libxml2                                                       2.10.4-1.fc38                         rpm        
@@ -376,8 +376,8 @@ tpm2-tss                                                      4.0.1-3.fc38      
 tzdata                                                        2023c-1.fc38                          rpm        
 util-linux                                                    2.38.1-4.fc38                         rpm        
 util-linux-core                                               2.38.1-4.fc38                         rpm        
-vim-data                                                      2:9.0.1649-1.fc38                     rpm        
-vim-minimal                                                   2:9.0.1649-1.fc38                     rpm        
+vim-data                                                      2:9.0.1671-1.fc38                     rpm        
+vim-minimal                                                   2:9.0.1671-1.fc38                     rpm        
 webrtc-audio-processing                                       0.3.1-10.fc38                         rpm        
 which                                                         2.21-39.fc38                          rpm        
 xcb-util                                                      0.4.1-2.fc38                          rpm        
