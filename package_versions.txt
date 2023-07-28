@@ -24,7 +24,7 @@ command-line-arguments                                                       (de
 containerd                                                                   1.7.2-1                                            alpm          
 coreutils                                                                    9.3-1                                              alpm          
 cryptsetup                                                                   2.6.1-3                                            alpm          
-curl                                                                         8.2.0-2                                            alpm          
+curl                                                                         8.2.1-1                                            alpm          
 db                                                                           6.2.32-1                                           alpm          
 db5.3                                                                        5.3.28-2                                           alpm          
 dbus-x11                                                                     1.15.0-2                                           alpm          
@@ -36,7 +36,7 @@ diffutils                                                                    3.1
 dnssec-anchors                                                               20190629-3                                         alpm          
 docbook-xml                                                                  4.5-9                                              alpm          
 docbook-xsl                                                                  1.79.2-7                                           alpm          
-docker                                                                       1:24.0.2-1                                         alpm          
+docker                                                                       1:24.0.5-1                                         alpm          
 doxygen                                                                      1.9.7-1                                            alpm          
 duktape                                                                      2.7.0-6                                            alpm          
 e2fsprogs                                                                    1.47.0-1                                           alpm          
@@ -50,7 +50,7 @@ flac                                                                         1.4
 flex                                                                         2.6.4-5                                            alpm          
 fontconfig                                                                   2:2.14.2-1                                         alpm          
 freetype2                                                                    2.13.1-1                                           alpm          
-fuse-common                                                                  3.14.1-1                                           alpm          
+fuse-common                                                                  3.15.1-1                                           alpm          
 fuse2                                                                        2.9.9-4                                            alpm          
 gawk                                                                         5.2.2-1                                            alpm          
 gc                                                                           8.2.4-1                                            alpm          
@@ -59,7 +59,7 @@ gcc-libs                                                                     13.
 gdbm                                                                         1.23-2                                             alpm          
 gettext                                                                      0.22-1                                             alpm          
 giflib                                                                       5.2.1-2                                            alpm          
-git                                                                          2.41.0-1                                           alpm          
+git                                                                          2.41.0-2                                           alpm          
 github.com/Microsoft/hcsshim                                                 v0.10.0-rc.8                                       go-module     
 github.com/beorn7/perks                                                      v1.0.1                                             go-module     
 github.com/blang/semver/v4                                                   v4.0.0                                             go-module     
@@ -236,10 +236,10 @@ krb5                                                                         1.2
 lame                                                                         3.100-4                                            alpm          
 ldns                                                                         1.8.3-2                                            alpm          
 less                                                                         1:633-1                                            alpm          
-libarchive                                                                   3.6.2-2                                            alpm          
+libarchive                                                                   3.7.0-2                                            alpm          
 libassuan                                                                    2.5.6-1                                            alpm          
 libasyncns                                                                   1:0.8+r3+g68cd5af-2                                alpm          
-libbpf                                                                       1.2.0-1                                            alpm          
+libbpf                                                                       1.2.2-1                                            alpm          
 libcap                                                                       2.69-1                                             alpm          
 libcap-ng                                                                    0.8.3-2                                            alpm          
 libdrm                                                                       2.4.115-1                                          alpm          
@@ -332,8 +332,8 @@ m4                                                                           1.4
 make                                                                         4.4.1-2                                            alpm          
 mallard-ducktype                                                             1.0.2                                              python        
 mallard-ducktype                                                             1.0.2-9                                            alpm          
-mesa                                                                         23.1.3-2                                           alpm          
-mpfr                                                                         4.2.0.p9-1                                         alpm          
+mesa                                                                         23.1.4-2                                           alpm          
+mpfr                                                                         4.2.0.p12-1                                        alpm          
 mpg123                                                                       1.31.3-1                                           alpm          
 mtdev                                                                        1.1.6-2                                            alpm          
 ncurses                                                                      6.4_20230520-1                                     alpm          
@@ -379,11 +379,11 @@ sigs.k8s.io/structured-merge-diff/v4                                         v4.
 sigs.k8s.io/yaml                                                             v1.3.0                                             go-module     
 speexdsp                                                                     1.2.1-1                                            alpm          
 sqlite                                                                       3.42.0-1                                           alpm          
-sudo                                                                         1.9.14.p2-1                                        alpm          
-systemd                                                                      253.6-2                                            alpm          
-systemd-libs                                                                 253.6-2                                            alpm          
-tar                                                                          1.34-2                                             alpm          
-tdb                                                                          1.4.8-2                                            alpm          
+sudo                                                                         1.9.14.p3-1                                        alpm          
+systemd                                                                      253.7-1                                            alpm          
+systemd-libs                                                                 253.7-1                                            alpm          
+tar                                                                          1.35-1                                             alpm          
+tdb                                                                          1.4.9-1                                            alpm          
 texinfo                                                                      7.0.3-1                                            alpm          
 tpm2-tss                                                                     4.0.1-1                                            alpm          
 turbojpeg                                                                                                                       java-archive  
