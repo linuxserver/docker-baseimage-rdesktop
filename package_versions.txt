@@ -461,7 +461,7 @@ xorg-server                                                                   21
 xorg-server-common                                                            21.1.8-r0                                          apk        
 xorgxrdp                                                                      0.9.19-r0                                          apk        
 xrdb                                                                          1.2.1-r2                                           apk        
-xrdp                                                                          0.9.21.1-r0                                        apk        
+xrdp                                                                          0.9.23-r0                                          apk        
 xterm                                                                         382-r0                                             apk        
 xz-libs                                                                       5.4.3-r0                                           apk        
 zlib                                                                          1.2.13-r1                                          apk        
