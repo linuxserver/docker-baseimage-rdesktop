@@ -9,6 +9,7 @@ apt-utils                         2.4.10                                   deb
 base-files                        12ubuntu4.3                              deb        
 base-passwd                       3.5.52build1                             deb        
 bash                              5.1-6ubuntu1                             deb        
+bash                              5.1.16                                   binary     
 blinker                           1.4                                      python     
 bsdextrautils                     2.37.2-4ubuntu3                          deb        
 bsdutils                          1:2.37.2-4ubuntu3                        deb        
@@ -158,7 +159,7 @@ libjack-jackd2-0                  1.9.20~dfsg-1                            deb
 libjpeg-turbo8                    2.1.2-0ubuntu1                           deb        
 libjpeg8                          8c-2ubuntu10                             deb        
 libjq1                            1.6-2.1ubuntu3                           deb        
-libjson-c5                        0.15-3~ubuntu1.22.04.1                   deb        
+libjson-c5                        0.15-3~ubuntu1.22.04.2                   deb        
 libjson-glib-1.0-0                1.6.6-1build1                            deb        
 libjson-glib-1.0-common           1.6.6-1build1                            deb        
 libk5crypto3                      1.19.2-2ubuntu0.2                        deb        
