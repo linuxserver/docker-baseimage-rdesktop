@@ -334,7 +334,7 @@ m4                                                                           1.4
 make                                                                         4.4.1-2                                   alpm          
 mallard-ducktype                                                             1.0.2                                     python        
 mallard-ducktype                                                             1.0.2-9                                   alpm          
-mesa                                                                         1:23.1.6-4                                alpm          
+mesa                                                                         1:23.1.7-1                                alpm          
 mpfr                                                                         4.2.1-1                                   alpm          
 mpg123                                                                       1.31.3-1                                  alpm          
 mtdev                                                                        1.1.6-2                                   alpm          
