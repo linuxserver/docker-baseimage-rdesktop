@@ -1,9 +1,9 @@
 NAME                                                                         VERSION                                   TYPE         
 acl                                                                          2.3.1-3                                   alpm          
-alsa-lib                                                                     1.2.10-1                                  alpm          
+alsa-lib                                                                     1.2.10-2                                  alpm          
 alsa-topology-conf                                                           1.2.5.1-3                                 alpm          
 alsa-ucm-conf                                                                1.2.10-2                                  alpm          
-archlinux-keyring                                                            20230821-2                                alpm          
+archlinux-keyring                                                            20230918-1                                alpm          
 argon2                                                                       20190702-5                                alpm          
 attr                                                                         2.5.1-3                                   alpm          
 audit                                                                        3.1.2-1                                   alpm          
@@ -203,10 +203,10 @@ gopkg.in/yaml.v3                                                             v3.
 gpgme                                                                        1.22.0-1                                  alpm          
 graphite                                                                     1:1.3.14-3                                alpm          
 grep                                                                         3.11-1                                    alpm          
-groff                                                                        1.23.0-4                                  alpm          
+groff                                                                        1.23.0-5                                  alpm          
 guile                                                                        3.0.9-1                                   alpm          
 gzip                                                                         1.13-2                                    alpm          
-harfbuzz                                                                     8.2.0-1                                   alpm          
+harfbuzz                                                                     8.2.1-1                                   alpm          
 hwdata                                                                       0.374-1                                   alpm          
 hwloc                                                                        2.9.1-1                                   alpm          
 iana-etc                                                                     20230907-1                                alpm          
@@ -273,7 +273,7 @@ libnl                                                                        3.8
 libnsl                                                                       2.0.0-3                                   alpm          
 libogg                                                                       1.3.5-1                                   alpm          
 libomxil-bellagio                                                            0.9.3-4                                   alpm          
-libp11-kit                                                                   0.25.0-1                                  alpm          
+libp11-kit                                                                   0.25.0-2                                  alpm          
 libpcap                                                                      1.10.4-1                                  alpm          
 libpciaccess                                                                 0.17-1                                    alpm          
 libpng                                                                       1.6.40-2                                  alpm          
@@ -281,7 +281,7 @@ libpsl                                                                       0.2
 libpulse                                                                     16.1-6                                    alpm          
 libsasl                                                                      2.1.28-4                                  alpm          
 libseccomp                                                                   2.5.4-2                                   alpm          
-libsecret                                                                    0.21.0-1                                  alpm          
+libsecret                                                                    0.21.1-1                                  alpm          
 libsm                                                                        1.2.4-1                                   alpm          
 libsndfile                                                                   1.2.2-1                                   alpm          
 libsoxr                                                                      0.1.3-3                                   alpm          
@@ -334,7 +334,7 @@ m4                                                                           1.4
 make                                                                         4.4.1-2                                   alpm          
 mallard-ducktype                                                             1.0.2                                     python        
 mallard-ducktype                                                             1.0.2-9                                   alpm          
-mesa                                                                         1:23.1.7-1                                alpm          
+mesa                                                                         1:23.1.8-1                                alpm          
 mpfr                                                                         4.2.1-1                                   alpm          
 mpg123                                                                       1.31.3-1                                  alpm          
 mtdev                                                                        1.1.6-2                                   alpm          
@@ -346,10 +346,10 @@ oniguruma                                                                    6.9
 openmpi                                                                      4.1.5-5                                   alpm          
 openpmix                                                                     4.2.6-1                                   alpm          
 openssh                                                                      9.4p1-4                                   alpm          
-openssl                                                                      3.1.2-1                                   alpm          
+openssl                                                                      3.1.3-1                                   alpm          
 opus                                                                         1.4-1                                     alpm          
 orc                                                                          0.4.34-1                                  alpm          
-p11-kit                                                                      0.25.0-1                                  alpm          
+p11-kit                                                                      0.25.0-2                                  alpm          
 pacman                                                                       6.0.2-7                                   alpm          
 pacman-mirrorlist                                                            20230820-1                                alpm          
 pam                                                                          1.5.3-3                                   alpm          
@@ -366,7 +366,7 @@ pixman                                                                       0.4
 pkgconf                                                                      1.8.1-1                                   alpm          
 polkit                                                                       123-1                                     alpm          
 popt                                                                         1.19-1                                    alpm          
-procps-ng                                                                    4.0.4-1                                   alpm          
+procps-ng                                                                    4.0.4-2                                   alpm          
 pulseaudio                                                                   16.1-6                                    alpm          
 python                                                                       3.11.5-2                                  alpm          
 python-lxml                                                                  4.9.2-3                                   alpm          
@@ -381,8 +381,8 @@ sigs.k8s.io/yaml                                                             v1.
 speexdsp                                                                     1.2.1-1                                   alpm          
 sqlite                                                                       3.43.1-1                                  alpm          
 sudo                                                                         1.9.14.p3-1                               alpm          
-systemd                                                                      254.3-1                                   alpm          
-systemd-libs                                                                 254.3-1                                   alpm          
+systemd                                                                      254.4-1                                   alpm          
+systemd-libs                                                                 254.4-1                                   alpm          
 tar                                                                          1.35-1                                    alpm          
 tdb                                                                          1.4.9-1                                   alpm          
 texinfo                                                                      7.0.3-1                                   alpm          
