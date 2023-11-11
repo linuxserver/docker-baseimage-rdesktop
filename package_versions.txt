@@ -336,7 +336,7 @@ grep                                                                          3.
 groff                                                                         1.23.0-5                                  alpm          
 guile                                                                         3.0.9-1                                   alpm          
 gzip                                                                          1.13-2                                    alpm          
-harfbuzz                                                                      8.2.2-1                                   alpm          
+harfbuzz                                                                      8.3.0-1                                   alpm          
 hwdata                                                                        0.376-1                                   alpm          
 hwloc                                                                         2.9.1-1                                   alpm          
 iana-etc                                                                      20231018-1                                alpm          
