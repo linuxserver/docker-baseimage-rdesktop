@@ -4,7 +4,7 @@ PyJWT                             2.3.0                                    pytho
 SecretStorage                     3.3.1                                    python     
 adduser                           3.118ubuntu5                             deb        
 apt                               2.4.10                                   deb        
-apt-transport-https               2.4.10                                   deb        
+apt-transport-https               2.4.11                                   deb        
 apt-utils                         2.4.10                                   deb        
 base-files                        12ubuntu4.3                              deb        
 base-passwd                       3.5.52build1                             deb        
