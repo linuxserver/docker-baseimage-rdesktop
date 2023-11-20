@@ -269,7 +269,7 @@ glibc                                                                         2.
 gmp                                                                           6.3.0-1                                   alpm          
 gnu-netcat                                                                    0.7.1-9                                   alpm          
 gnupg                                                                         2.2.41-2                                  alpm          
-gnutls                                                                        3.8.1-2                                   alpm          
+gnutls                                                                        3.8.2-1                                   alpm          
 go.etcd.io/bbolt                                                              v1.3.7                                    go-module     
 go.etcd.io/etcd/client/pkg/v3                                                 v3.5.6                                    go-module     
 go.etcd.io/etcd/pkg/v3                                                        v3.5.6                                    go-module     
@@ -339,7 +339,7 @@ gzip                                                                          1.
 harfbuzz                                                                      8.3.0-1                                   alpm          
 hwdata                                                                        0.376-1                                   alpm          
 hwloc                                                                         2.9.1-1                                   alpm          
-iana-etc                                                                      20231018-1                                alpm          
+iana-etc                                                                      20231117-1                                alpm          
 icu                                                                           73.2-2                                    alpm          
 imlib2                                                                        1.12.1-1                                  alpm          
 iproute2                                                                      6.6.0-2                                   alpm          
@@ -374,7 +374,7 @@ libasyncns                                                                    1:
 libbpf                                                                        1.2.2-1                                   alpm          
 libcap                                                                        2.69-2                                    alpm          
 libcap-ng                                                                     0.8.3-2                                   alpm          
-libdrm                                                                        2.4.117-1                                 alpm          
+libdrm                                                                        2.4.118-1                                 alpm          
 libedit                                                                       20230828_3.1-1                            alpm          
 libelf                                                                        0.190-1                                   alpm          
 libepoxy                                                                      1.5.10-2                                  alpm          
@@ -383,7 +383,7 @@ libevent                                                                      2.
 libfdk-aac                                                                    2.0.2-1                                   alpm          
 libffi                                                                        3.4.4-1                                   alpm          
 libfontenc                                                                    1.1.7-1                                   alpm          
-libgcrypt                                                                     1.10.2-1                                  alpm          
+libgcrypt                                                                     1.10.3-1                                  alpm          
 libglvnd                                                                      1.7.0-1                                   alpm          
 libgpg-error                                                                  1.47-1                                    alpm          
 libgudev                                                                      238-1                                     alpm          
@@ -404,7 +404,7 @@ libnl                                                                         3.
 libnsl                                                                        2.0.1-1                                   alpm          
 libogg                                                                        1.3.5-1                                   alpm          
 libomxil-bellagio                                                             0.9.3-4                                   alpm          
-libp11-kit                                                                    0.25.2-1                                  alpm          
+libp11-kit                                                                    0.25.3-1                                  alpm          
 libpcap                                                                       1.10.4-1                                  alpm          
 libpciaccess                                                                  0.17-1                                    alpm          
 libpng                                                                        1.6.40-2                                  alpm          
@@ -443,13 +443,13 @@ libxfont2                                                                     2.
 libxft                                                                        2.3.8-1                                   alpm          
 libxi                                                                         1.8.1-1                                   alpm          
 libxkbfile                                                                    1.1.2-1                                   alpm          
-libxml2                                                                       2.11.5-1                                  alpm          
+libxml2                                                                       2.12.0-1                                  alpm          
 libxmu                                                                        1.1.4-1                                   alpm          
 libxpm                                                                        3.5.17-1                                  alpm          
 libxrandr                                                                     1.5.4-1                                   alpm          
 libxrender                                                                    0.9.11-1                                  alpm          
 libxshmfence                                                                  1.3.2-1                                   alpm          
-libxslt                                                                       1.1.38-1                                  alpm          
+libxslt                                                                       1.1.39-1                                  alpm          
 libxt                                                                         1.3.0-1                                   alpm          
 libxtst                                                                       1.2.4-1                                   alpm          
 libxv                                                                         1.0.12-1                                  alpm          
@@ -480,7 +480,7 @@ openssh                                                                       9.
 openssl                                                                       3.1.4-1                                   alpm          
 opus                                                                          1.4-1                                     alpm          
 orc                                                                           0.4.34-1                                  alpm          
-p11-kit                                                                       0.25.2-1                                  alpm          
+p11-kit                                                                       0.25.3-1                                  alpm          
 pacman                                                                        6.0.2-8                                   alpm          
 pacman-mirrorlist                                                             20231001-1                                alpm          
 pam                                                                           1.5.3-3                                   alpm          
@@ -519,7 +519,7 @@ systemd                                                                       25
 systemd-libs                                                                  254.6-2                                   alpm          
 tar                                                                           1.35-2                                    alpm          
 tdb                                                                           1.4.9-1                                   alpm          
-texinfo                                                                       7.1-1                                     alpm          
+texinfo                                                                       7.1-2                                     alpm          
 tpm2-tss                                                                      4.0.1-1                                   alpm          
 turbojpeg                                                                                                               java-archive  
 tzdata                                                                        2023c-2                                   alpm          
