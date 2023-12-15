@@ -99,7 +99,7 @@ github.com/syndtr/gocapability                                v0.0.0-20200815063
 github.com/urfave/cli                                         v1.22.1                               go-module  
 github.com/vishvananda/netlink                                v1.1.0                                go-module  
 github.com/vishvananda/netns                                  v0.0.0-20191106174202-0a2b9b5464df    go-module  
-glib2                                                         2.76.5-2.fc38                         rpm        
+glib2                                                         2.76.6-1.fc38                         rpm        
 glibc                                                         2.37-14.fc38                          rpm        
 glibc-common                                                  2.37-14.fc38                          rpm        
 glibc-minimal-langpack                                        2.37-14.fc38                          rpm        
@@ -303,7 +303,7 @@ mpg123-libs                                                   1.31.3-1.fc38     
 mtdev                                                         1.1.6-5.fc38                          rpm        
 ncurses-base                                                  6.4-3.20230114.fc38                   rpm        
 ncurses-libs                                                  6.4-3.20230114.fc38                   rpm        
-netcat                                                        1.225-3.fc38                          rpm        
+netcat                                                        1.226-1.fc38                          rpm        
 nettle                                                        3.8-3.fc38                            rpm        
 npth                                                          1.6-12.fc38                           rpm        
 oniguruma                                                     6.9.9-1.fc38                          rpm        
@@ -351,7 +351,7 @@ rpm                                                           4.18.2-1.fc38     
 rpm-build-libs                                                4.18.2-1.fc38                         rpm        
 rpm-libs                                                      4.18.2-1.fc38                         rpm        
 rpm-plugin-selinux                                            4.18.2-1.fc38                         rpm        
-rpm-sequoia                                                   1.5.0-1.fc38                          rpm        
+rpm-sequoia                                                   1.5.0-2.fc38                          rpm        
 rpm-sign-libs                                                 4.18.2-1.fc38                         rpm        
 rtkit                                                         0.11-58.fc38                          rpm        
 runc                                                          2:1.1.8-1.fc38                        rpm        
