@@ -73,6 +73,9 @@ RUN \
   echo 'abc ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/abc && \
   echo "allowed_users=anybody" > /etc/X11/Xwrapper.config && \
   echo "**** build dbus-x11 ****" && \
+  rm -f \
+    /usr/lib/systemd/system/dbus.service \
+    /usr/lib/systemd/user/dbus.service && \
   cd /tmp && \
   pacman -Rns --noconfirm -dd dbus && \
   git clone https://aur.archlinux.org/dbus-x11.git && \
