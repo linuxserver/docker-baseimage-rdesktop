@@ -54,7 +54,7 @@ fedora-release-container                                      38-36             
 fedora-release-identity-container                             38-36                                 rpm        
 fedora-repos                                                  38-1                                  rpm        
 fedora-repos-modular                                          38-1                                  rpm        
-fftw-libs-single                                              3.3.10-3.fc37                         rpm        
+fftw-libs-single                                              3.3.10-10.fc38                        rpm        
 file-libs                                                     5.44-3.fc38                           rpm        
 filesystem                                                    3.18-3.fc38                           rpm        
 findutils                                                     1:4.9.0-3.fc38                        rpm        
