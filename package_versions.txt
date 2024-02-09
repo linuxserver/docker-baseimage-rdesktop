@@ -1,7 +1,7 @@
 NAME                                                          VERSION                               TYPE      
 adwaita-cursor-theme                                          44.0-1.fc38                           rpm        
 adwaita-icon-theme                                            44.0-1.fc38                           rpm        
-alsa-lib                                                      1.2.10-2.fc38                         rpm        
+alsa-lib                                                      1.2.11-2.fc38                         rpm        
 alternatives                                                  1.25-1.fc38                           rpm        
 at-spi2-atk                                                   2.48.4-1.fc38                         rpm        
 at-spi2-core                                                  2.48.4-1.fc38                         rpm        
@@ -21,7 +21,7 @@ cairo-gobject                                                 1.17.8-4.fc38     
 cairomm                                                       1.14.5-1.fc38                         rpm        
 cdparanoia-libs                                               10.2-41.fc38                          rpm        
 colord-libs                                                   1.4.6-4.fc38                          rpm        
-container-selinux                                             2:2.227.0-1.fc38                      rpm        
+container-selinux                                             2:2.228.1-1.fc38                      rpm        
 containerd                                                    1.6.19-1.fc38                         rpm        
 coreutils                                                     9.1-12.fc38                           rpm        
 coreutils-common                                              9.1-12.fc38                           rpm        
@@ -37,8 +37,8 @@ dbus-daemon                                                   1:1.14.10-1.fc38  
 dbus-libs                                                     1:1.14.10-1.fc38                      rpm        
 dbus-tools                                                    1:1.14.10-1.fc38                      rpm        
 dbus-x11                                                      1:1.14.10-1.fc38                      rpm        
-device-mapper                                                 1.02.189-2.fc38                       rpm        
-device-mapper-libs                                            1.02.189-2.fc38                       rpm        
+device-mapper                                                 1.02.197-1.fc38                       rpm        
+device-mapper-libs                                            1.02.197-1.fc38                       rpm        
 diffutils                                                     3.10-1.fc38                           rpm        
 dnf                                                           4.18.2                                python     
 dnf                                                           4.18.2-1.fc38                         rpm        
@@ -120,8 +120,8 @@ grep                                                          3.8-3.fc38        
 gsm                                                           1.0.22-2.fc38                         rpm        
 gstreamer1                                                    1.22.9-1.fc38                         rpm        
 gstreamer1-plugins-base                                       1.22.9-1.fc38                         rpm        
-gtk-update-icon-cache                                         3.24.38-1.fc38                        rpm        
-gtk3                                                          3.24.38-1.fc38                        rpm        
+gtk-update-icon-cache                                         3.24.41-1.fc38                        rpm        
+gtk3                                                          3.24.41-1.fc38                        rpm        
 gtkmm3.0                                                      3.24.8-1.fc38                         rpm        
 gzip                                                          1.12-3.fc38                           rpm        
 harfbuzz                                                      7.1.0-1.fc38                          rpm        
