@@ -25,7 +25,8 @@ RUN \
     git clone https://aur.archlinux.org/${PACKAGE}.git && \
     cd ${PACKAGE} && \
     makepkg -sAci --skipinteg --noconfirm && \
-    sudo -u root tar xf *pkg.tar.zst -C /buildout && \
+    sudo rm -f ${PACKAGE}-debug*pkg.tar.zst && \
+    sudo -u root tar xf ${PACKAGE}-*pkg.tar.zst -C /buildout && \
     cd /tmp ;\
   done
 
