@@ -27,8 +27,8 @@ coreutils                                                     9.1-12.fc38       
 coreutils-common                                              9.1-12.fc38                           rpm                         
 cracklib                                                      2.9.11-1.fc38                         rpm                         
 crypto-policies                                               20230301-1.gita12f7b2.fc38            rpm                         
-cups-libs                                                     1:2.4.7-5.fc38                        rpm                         
-curl                                                          8.0.1-6.fc38                          rpm                         
+cups-libs                                                     1:2.4.7-11.fc38                       rpm                         
+curl                                                          8.0.1-7.fc38                          rpm                         
 cyrus-sasl-lib                                                2.1.28-9.fc38                         rpm                         
 dbus                                                          1:1.14.10-1.fc38                      rpm                         
 dbus-broker                                                   33-1.fc38                             rpm                         
@@ -68,7 +68,7 @@ gawk                                                          5.1.1-5.fc38      
 gdbm-libs                                                     1:1.23-3.fc38                         rpm                         
 gdk-pixbuf2                                                   2.42.10-2.fc38                        rpm                         
 gdk-pixbuf2-modules                                           2.42.10-2.fc38                        rpm                         
-giflib                                                        5.2.1-17.fc38                         rpm                         
+giflib                                                        5.2.2-1.fc38                          rpm                         
 github.com/checkpoint-restore/go-criu/v5                      v5.3.0                                go-module                   
 github.com/cilium/ebpf                                        v0.7.0                                go-module                   
 github.com/containerd/console                                 v1.0.3                                go-module                   
@@ -189,7 +189,7 @@ libcloudproviders                                             0.3.5-1.fc38      
 libcom_err                                                    1.46.5-4.fc38                         rpm                         
 libcomps                                                      0.1.20                                python                      
 libcomps                                                      0.1.20-1.fc38                         rpm                         
-libcurl                                                       8.0.1-6.fc38                          rpm                         
+libcurl                                                       8.0.1-7.fc38                          rpm                         
 libdatrie                                                     0.2.13-5.fc38                         rpm                         
 libdb                                                         5.3.28-55.fc38                        rpm                         
 libdnf                                                        0.73.0                                python                      
