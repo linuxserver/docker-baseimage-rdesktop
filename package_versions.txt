@@ -119,7 +119,7 @@ libegl-mesa0                      23.2.1-1ubuntu3.1~22.04.2                deb
 libegl1                           1.4.0-1                                  deb          
 libelf1                           0.186-1build1                            deb          
 libepoxy0                         1.5.10-1                                 deb          
-libexpat1                         2.4.7-1ubuntu0.2                         deb          
+libexpat1                         2.4.7-1ubuntu0.3                         deb          
 libext2fs2                        1.46.5-2ubuntu1.1                        deb          
 libffi8                           3.4.2-4                                  deb          
 libfftw3-single3                  3.3.8-2ubuntu8                           deb          
