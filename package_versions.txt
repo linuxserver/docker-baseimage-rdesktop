@@ -7,7 +7,7 @@ alsa-lib                                                                      1.
 apk-tools                                                                     2.14.0-r5                                    apk                         
 at-spi2-core                                                                  2.50.1-r0                                    apk                         
 atkmm                                                                         2.28.3-r1                                    apk                         
-avahi-libs                                                                    0.8-r13                                      apk                         
+avahi-libs                                                                    0.8-r16                                      apk                         
 bash                                                                          5.2.21-r0                                    apk                         
 brotli-libs                                                                   1.1.0-r1                                     apk                         
 busybox                                                                       1.36.1-r15                                   apk                         
@@ -419,7 +419,7 @@ libdrm                                                                        2.
 libedit                                                                       20230828.3.1-r3                              apk                         
 libelf                                                                        0.190-r1                                     apk                         
 libepoxy                                                                      1.5.10-r1                                    apk                         
-libexpat                                                                      2.6.0-r0                                     apk                         
+libexpat                                                                      2.6.2-r0                                     apk                         
 libffi                                                                        3.4.4-r3                                     apk                         
 libflac                                                                       1.4.3-r1                                     apk                         
 libfontenc                                                                    1.1.7-r4                                     apk                         
