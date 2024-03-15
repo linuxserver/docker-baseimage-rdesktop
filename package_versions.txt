@@ -356,8 +356,8 @@ rpm-sign-libs                                                 4.18.2-1.fc38     
 rtkit                                                         0.11-58.fc38                          rpm                         
 runc                                                          2:1.1.12-1.fc38                       rpm                         
 sed                                                           4.8-12.fc38                           rpm                         
-selinux-policy                                                38.31-1.fc38                          rpm                         
-selinux-policy-targeted                                       38.31-1.fc38                          rpm                         
+selinux-policy                                                38.32-1.fc38                          rpm                         
+selinux-policy-targeted                                       38.32-1.fc38                          rpm                         
 setup                                                         2.14.3-2.fc38                         rpm                         
 setxkbmap                                                     1.3.4-1.fc38                          rpm                         
 shadow-utils                                                  2:4.13-6.fc38                         rpm                         
