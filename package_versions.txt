@@ -510,7 +510,7 @@ opus                                                                          1.
 orc                                                                           0.4.34-r0                                    apk                         
 p11-kit                                                                       0.25.3-r0                                    apk                         
 pango                                                                         1.51.0-r0                                    apk                         
-pangomm                                                                       2.46.3-r0                                    apk                         
+pangomm                                                                       2.46.4-r0                                    apk                         
 pavucontrol                                                                   5.0-r4                                       apk                         
 pciutils-libs                                                                 3.10.0-r0                                    apk                         
 pcre2                                                                         10.42-r2                                     apk                         
