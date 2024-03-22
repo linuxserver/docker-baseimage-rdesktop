@@ -177,7 +177,7 @@ libXv                                                         1.0.11-19.fc39    
 libXvMC                                                       1.0.13-3.fc39                         rpm                         
 libXxf86vm                                                    1.1.5-3.fc39                          rpm                         
 libacl                                                        2.3.1-9.fc39                          rpm                         
-libaom                                                        3.8.0-1.fc39                          rpm                         
+libaom                                                        3.8.2-1.fc39                          rpm                         
 libarchive                                                    3.7.1-1.fc39                          rpm                         
 libassuan                                                     2.5.6-2.fc39                          rpm                         
 libasyncns                                                    0.8-25.fc39                           rpm                         
@@ -409,8 +409,8 @@ urw-base35-standard-symbols-ps-fonts                          20200910-18.fc39  
 urw-base35-z003-fonts                                         20200910-18.fc39                      rpm                         
 util-linux                                                    2.39.3-6.fc39                         rpm                         
 util-linux-core                                               2.39.3-6.fc39                         rpm                         
-vim-data                                                      2:9.1.113-1.fc39                      rpm                         
-vim-minimal                                                   2:9.1.113-1.fc39                      rpm                         
+vim-data                                                      2:9.1.181-1.fc39                      rpm                         
+vim-minimal                                                   2:9.1.181-1.fc39                      rpm                         
 webrtc-audio-processing                                       0.3.1-11.fc39                         rpm                         
 which                                                         2.21-40.fc39                          rpm                         
 xcb-util                                                      0.4.1-3.fc39                          rpm                         
@@ -427,10 +427,10 @@ xorg-x11-server-Xorg                                          1.20.14-30.fc39   
 xorg-x11-server-common                                        1.20.14-30.fc39                       rpm                         
 xorg-x11-xauth                                                1:1.1.2-4.fc39                        rpm                         
 xorg-x11-xinit                                                1.4.2-1.fc39                          rpm                         
-xorgxrdp                                                      0.9.19-7.fc39                         rpm                         
+xorgxrdp                                                      0.9.20-1.fc39                         rpm                         
 xprop                                                         1.2.5-4.fc39                          rpm                         
 xrdb                                                          1.2.2-1.fc39                          rpm                         
-xrdp                                                          1:0.9.24-1.fc39                       rpm                         
+xrdp                                                          1:0.9.25-2.fc39                       rpm                         
 xterm                                                         385-1.fc39                            rpm                         
 xz                                                            5.4.4-1.fc39                          rpm                         
 xz-libs                                                       5.4.4-1.fc39                          rpm                         
