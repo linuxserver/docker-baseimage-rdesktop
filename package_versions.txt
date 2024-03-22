@@ -1,5 +1,5 @@
 NAME                                                                          VERSION                                   TYPE                          
-abseil-cpp                                                                    20230802.1-1                              alpm                           
+abseil-cpp                                                                    20240116.1-1                              alpm                           
 acl                                                                           2.3.2-1                                   alpm                           
 alsa-lib                                                                      1.2.11-1                                  alpm                           
 alsa-topology-conf                                                            1.2.5.1-3                                 alpm                           
@@ -280,7 +280,7 @@ glibc                                                                         2.
 gmp                                                                           6.3.0-1                                   alpm                           
 gnu-netcat                                                                    0.7.1-9                                   alpm                           
 gnupg                                                                         2.4.5-1                                   alpm                           
-gnutls                                                                        3.8.3-1                                   alpm                           
+gnutls                                                                        3.8.4-1                                   alpm                           
 go.etcd.io/bbolt                                                              v1.3.7                                    go-module     (+1 duplicate)   
 go.etcd.io/etcd/client/pkg/v3                                                 v3.5.6                                    go-module                      
 go.etcd.io/etcd/pkg/v3                                                        v3.5.6                                    go-module                      
@@ -369,7 +369,7 @@ libarchive                                                                    3.
 libassuan                                                                     2.5.6-1                                   alpm                           
 libasyncns                                                                    1:0.8+r3+g68cd5af-2                       alpm                           
 libbpf                                                                        1.3.0-1                                   alpm                           
-libcap                                                                        2.69-3                                    alpm                           
+libcap                                                                        2.69-4                                    alpm                           
 libcap-ng                                                                     0.8.4-1                                   alpm                           
 libdrm                                                                        2.4.120-1                                 alpm                           
 libedit                                                                       20230828_3.1-1                            alpm                           
@@ -463,7 +463,7 @@ m4                                                                            1.
 make                                                                          4.4.1-2                                   alpm                           
 mallard-ducktype                                                              1.0.2                                     python                         
 mallard-ducktype                                                              1.0.2-9                                   alpm                           
-mesa                                                                          1:24.0.3-1                                alpm                           
+mesa                                                                          1:24.0.3-2                                alpm                           
 mpfr                                                                          4.2.1-2                                   alpm                           
 mpg123                                                                        1.32.5-1                                  alpm                           
 mtdev                                                                         1.1.6-2                                   alpm                           
@@ -508,9 +508,8 @@ sigs.k8s.io/structured-merge-diff/v4                                          v4
 sigs.k8s.io/yaml                                                              v1.3.0                                    go-module     (+2 duplicates)  
 speexdsp                                                                      1.2.1-1                                   alpm                           
 sqlite                                                                        3.45.2-1                                  alpm                           
-stdlib                                                                        go1.21.4                                  go-module                      
 stdlib                                                                        go1.21.6                                  go-module                      
-stdlib                                                                        go1.22.1                                  go-module     (+8 duplicates)  
+stdlib                                                                        go1.22.1                                  go-module     (+9 duplicates)  
 sudo                                                                          1.9.15.p5-1                               alpm                           
 systemd                                                                       255.4-2                                   alpm                           
 systemd-libs                                                                  255.4-2                                   alpm                           
