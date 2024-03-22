@@ -21,7 +21,7 @@ cairo-gobject                                                 1.17.8-4.fc38     
 cairomm                                                       1.14.5-1.fc38                         rpm                         
 cdparanoia-libs                                               10.2-41.fc38                          rpm                         
 colord-libs                                                   1.4.6-4.fc38                          rpm                         
-container-selinux                                             2:2.228.1-1.fc38                      rpm                         
+container-selinux                                             2:2.230.0-1.fc38                      rpm                         
 containerd                                                    1.6.19-1.fc38                         rpm                         
 coreutils                                                     9.1-12.fc38                           rpm                         
 coreutils-common                                              9.1-12.fc38                           rpm                         
@@ -127,7 +127,7 @@ gzip                                                          1.12-3.fc38       
 harfbuzz                                                      7.1.0-1.fc38                          rpm                         
 hicolor-icon-theme                                            0.17-15.fc38                          rpm                         
 hostname                                                      3.23-8.fc38                           rpm                         
-hwdata                                                        0.379-1.fc38                          rpm                         
+hwdata                                                        0.380-1.fc38                          rpm                         
 ima-evm-utils                                                 1.4-7.fc38                            rpm                         
 imlib2                                                        1.7.4-4.fc38                          rpm                         
 iptables-legacy                                               1.8.9-4.fc38.1                        rpm                         
@@ -265,7 +265,7 @@ libtracker-sparql                                             3.5.3-2.fc38      
 libunistring                                                  1.1-3.fc38                            rpm                         
 libunistring1.0                                               1.0-1.fc38                            rpm                         
 libunwind                                                     1.6.2-7.fc38                          rpm                         
-libusb1                                                       1.0.26-2.fc38                         rpm                         
+libusb1                                                       1.0.27-1.fc38                         rpm                         
 libutempter                                                   1.2.1-8.fc38                          rpm                         
 libuuid                                                       2.38.1-4.fc38                         rpm                         
 libverto                                                      0.3.2-5.fc38                          rpm                         
@@ -301,8 +301,8 @@ mpdecimal                                                     2.5.1-6.fc38      
 mpfr                                                          4.1.1-3.fc38                          rpm                         
 mpg123-libs                                                   1.31.3-1.fc38                         rpm                         
 mtdev                                                         1.1.6-5.fc38                          rpm                         
-ncurses-base                                                  6.4-7.20230520.fc38                   rpm                         
-ncurses-libs                                                  6.4-7.20230520.fc38                   rpm                         
+ncurses-base                                                  6.4-7.20230520.fc38.1                 rpm                         
+ncurses-libs                                                  6.4-7.20230520.fc38.1                 rpm                         
 netcat                                                        1.226-1.fc38                          rpm                         
 nettle                                                        3.8-3.fc38                            rpm                         
 npth                                                          1.6-12.fc38                           rpm                         
@@ -337,12 +337,12 @@ pulseaudio-libs                                               16.1-4.fc38       
 pulseaudio-libs-glib2                                         16.1-4.fc38                           rpm                         
 python-pip-wheel                                              22.3.1-3.fc38                         rpm                         
 python-setuptools-wheel                                       65.5.1-2.fc38                         rpm                         
-python3                                                       3.11.8-1.fc38                         rpm                         
+python3                                                       3.11.8-2.fc38                         rpm                         
 python3-dnf                                                   4.19.0-1.fc38                         rpm                         
 python3-hawkey                                                0.73.0-1.fc38                         rpm                         
 python3-libcomps                                              0.1.20-1.fc38                         rpm                         
 python3-libdnf                                                0.73.0-1.fc38                         rpm                         
-python3-libs                                                  3.11.8-1.fc38                         rpm                         
+python3-libs                                                  3.11.8-2.fc38                         rpm                         
 python3-rpm                                                   4.18.2-1.fc38                         rpm                         
 readline                                                      8.2-4.fc38                            rpm                         
 rootfiles                                                     8.1-33.fc38                           rpm                         
@@ -380,8 +380,8 @@ tpm2-tss                                                      4.0.1-3.fc38      
 tzdata                                                        2024a-1.fc38                          rpm                         
 util-linux                                                    2.38.1-4.fc38                         rpm                         
 util-linux-core                                               2.38.1-4.fc38                         rpm                         
-vim-data                                                      2:9.1.113-1.fc38                      rpm                         
-vim-minimal                                                   2:9.1.113-1.fc38                      rpm                         
+vim-data                                                      2:9.1.158-1.fc38                      rpm                         
+vim-minimal                                                   2:9.1.158-1.fc38                      rpm                         
 webrtc-audio-processing                                       0.3.1-10.fc38                         rpm                         
 which                                                         2.21-39.fc38                          rpm                         
 xcb-util                                                      0.4.1-2.fc38                          rpm                         
@@ -398,10 +398,10 @@ xorg-x11-server-Xorg                                          1.20.14-29.fc38   
 xorg-x11-server-common                                        1.20.14-29.fc38                       rpm                         
 xorg-x11-xauth                                                1:1.1.2-3.fc38                        rpm                         
 xorg-x11-xinit                                                1.4.0-17.fc38                         rpm                         
-xorgxrdp                                                      0.9.19-6.fc38                         rpm                         
+xorgxrdp                                                      0.9.20-1.fc38                         rpm                         
 xprop                                                         1.2.5-3.fc38                          rpm                         
 xrdb                                                          1.2.1-5.fc38                          rpm                         
-xrdp                                                          1:0.9.24-1.fc38                       rpm                         
+xrdp                                                          1:0.9.25-2.fc38                       rpm                         
 xterm                                                         385-1.fc38                            rpm                         
 xz                                                            5.4.1-1.fc38                          rpm                         
 xz-libs                                                       5.4.1-1.fc38                          rpm                         
