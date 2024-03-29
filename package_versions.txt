@@ -44,9 +44,9 @@ dnf                                                           4.19.0            
 dnf                                                           4.19.0-1.fc38                         rpm                         
 dnf-data                                                      4.19.0-1.fc38                         rpm                         
 duktape                                                       2.7.0-2.fc38                          rpm                         
-elfutils-default-yama-scope                                   0.190-2.fc38                          rpm                         
-elfutils-libelf                                               0.190-2.fc38                          rpm                         
-elfutils-libs                                                 0.190-2.fc38                          rpm                         
+elfutils-default-yama-scope                                   0.191-1.fc38                          rpm                         
+elfutils-libelf                                               0.191-1.fc38                          rpm                         
+elfutils-libs                                                 0.191-1.fc38                          rpm                         
 expat                                                         2.6.0-1.fc38                          rpm                         
 fedora-gpg-keys                                               38-1                                  rpm                         
 fedora-release-common                                         38-36                                 rpm                         
@@ -138,7 +138,7 @@ jbigkit-libs                                                  2.1-25.fc38       
 jq                                                            1.6-16.fc38                           rpm                         
 json-c                                                        0.17-1.fc38                           rpm                         
 json-glib                                                     1.6.6-4.fc38                          rpm                         
-keyutils-libs                                                 1.6.1-6.fc38                          rpm                         
+keyutils-libs                                                 1.6.3-1.fc38                          rpm                         
 kmod-libs                                                     30-4.fc38                             rpm                         
 krb5-libs                                                     1.21-3.fc38                           rpm                         
 lame-libs                                                     3.100-14.fc38                         rpm                         
@@ -205,12 +205,12 @@ libffi                                                        3.4.4-2.fc38      
 libfido2                                                      1.12.0-3.fc38                         rpm                         
 libfontenc                                                    1.1.6-2.fc38                          rpm                         
 libfsverity                                                   1.4-9.fc38                            rpm                         
-libgcc                                                        13.2.1-4.fc38                         rpm                         
+libgcc                                                        13.2.1-7.fc38                         rpm                         
 libgcrypt                                                     1.10.2-1.fc38                         rpm                         
 libglvnd                                                      1:1.6.0-2.fc38                        rpm                         
 libglvnd-egl                                                  1:1.6.0-2.fc38                        rpm                         
 libglvnd-glx                                                  1:1.6.0-2.fc38                        rpm                         
-libgomp                                                       13.2.1-4.fc38                         rpm                         
+libgomp                                                       13.2.1-7.fc38                         rpm                         
 libgpg-error                                                  1.47-1.fc38                           rpm                         
 libgudev                                                      237-4.fc38                            rpm                         
 libgusb                                                       0.4.8-1.fc38                          rpm                         
@@ -252,7 +252,7 @@ libsolv                                                       0.7.28-1.fc38     
 libsoup3                                                      3.4.4-1.fc38                          rpm                         
 libssh                                                        0.10.6-2.fc38                         rpm                         
 libssh-config                                                 0.10.6-2.fc38                         rpm                         
-libstdc++                                                     13.2.1-4.fc38                         rpm                         
+libstdc++                                                     13.2.1-7.fc38                         rpm                         
 libstemmer                                                    2.2.0-5.fc38                          rpm                         
 libtasn1                                                      4.19.0-2.fc38                         rpm                         
 libtdb                                                        1.4.8-1.fc38                          rpm                         
@@ -370,9 +370,9 @@ stdlib                                                        go1.20.1          
 stdlib                                                        go1.20.13                             go-module                   
 stdlib                                                        go1.20.7                              go-module  (+2 duplicates)  
 sudo                                                          1.9.15-1.p5.fc38                      rpm                         
-systemd                                                       253.15-2.fc38                         rpm                         
-systemd-libs                                                  253.15-2.fc38                         rpm                         
-systemd-pam                                                   253.15-2.fc38                         rpm                         
+systemd                                                       253.17-1.fc38                         rpm                         
+systemd-libs                                                  253.17-1.fc38                         rpm                         
+systemd-pam                                                   253.17-1.fc38                         rpm                         
 tar                                                           2:1.34-8.fc38                         rpm                         
 tigervnc-license                                              1.13.1-11.fc38                        rpm                         
 tigervnc-server-minimal                                       1.13.1-11.fc38                        rpm                         
