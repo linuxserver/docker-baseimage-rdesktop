@@ -326,7 +326,7 @@ github.com/zmap/zlint/v3                                                      v3
 glib                                                                          2.76.6-r0                                          apk                         
 glibmm                                                                        2.66.6-r0                                          apk                         
 gmp                                                                           6.2.1-r3                                           apk                         
-gnutls                                                                        3.8.3-r0                                           apk                         
+gnutls                                                                        3.8.4-r0                                           apk                         
 go.etcd.io/bbolt                                                              v1.3.7                                             go-module  (+1 duplicate)   
 go.etcd.io/etcd/client/pkg/v3                                                 v3.5.6                                             go-module                   
 go.etcd.io/etcd/pkg/v3                                                        v3.5.6                                             go-module                   
