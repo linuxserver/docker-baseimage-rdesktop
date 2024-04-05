@@ -106,7 +106,7 @@ glibc-minimal-langpack                                        2.37-18.fc38      
 glibmm2.4                                                     2.66.6-1.fc38                         rpm                         
 gmp                                                           1:6.2.1-4.fc38                        rpm                         
 gnupg2                                                        2.4.0-3.fc38                          rpm                         
-gnutls                                                        3.8.3-1.fc38                          rpm                         
+gnutls                                                        3.8.4-1.fc38                          rpm                         
 golang.org/x/net                                              v0.8.0                                go-module                   
 golang.org/x/sys                                              v0.6.0                                go-module                   
 google-noto-fonts-common                                      20230201-2.fc38                       rpm                         
