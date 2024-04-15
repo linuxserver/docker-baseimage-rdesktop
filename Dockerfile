@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-fedora:39 as buildstage
+FROM ghcr.io/linuxserver/baseimage-fedora:40 as buildstage
 
 ARG XRDP_PULSE_VERSION=v0.7
 
@@ -59,7 +59,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:amd64-latest as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-fedora:39
+FROM ghcr.io/linuxserver/baseimage-fedora:40
 
 # set version label
 ARG BUILD_DATE
