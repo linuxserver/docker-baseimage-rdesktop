@@ -31,7 +31,7 @@ coreutils                                                     9.3-5.fc39        
 coreutils-common                                              9.3-5.fc39                            rpm                         
 cracklib                                                      2.9.11-2.fc39                         rpm                         
 crypto-policies                                               20231204-1.git1e3a2e4.fc39            rpm                         
-cups-libs                                                     1:2.4.7-11.fc39                       rpm                         
+cups-libs                                                     1:2.4.7-13.fc39                       rpm                         
 curl                                                          8.2.1-4.fc39                          rpm                         
 cyrus-sasl-lib                                                2.1.28-11.fc39                        rpm                         
 dbus                                                          1:1.14.10-1.fc39                      rpm                         
@@ -185,7 +185,7 @@ libattr                                                       2.5.1-8.fc39      
 libb2                                                         0.98.1-9.fc39                         rpm                         
 libblkid                                                      2.39.4-1.fc39                         rpm                         
 libbrotli                                                     1.1.0-1.fc39                          rpm                         
-libbsd                                                        0.11.7-5.fc39                         rpm                         
+libbsd                                                        0.12.2-1.fc39                         rpm                         
 libcanberra                                                   0.30-32.fc39                          rpm                         
 libcanberra-gtk3                                              0.30-32.fc39                          rpm                         
 libcap                                                        2.48-9.fc39                           rpm                         
@@ -391,8 +391,8 @@ systemd                                                       254.10-1.fc39     
 systemd-libs                                                  254.10-1.fc39                         rpm                         
 systemd-pam                                                   254.10-1.fc39                         rpm                         
 tar                                                           2:1.35-2.fc39                         rpm                         
-tigervnc-license                                              1.13.1-11.fc39                        rpm                         
-tigervnc-server-minimal                                       1.13.1-11.fc39                        rpm                         
+tigervnc-license                                              1.13.1-14.fc39                        rpm                         
+tigervnc-server-minimal                                       1.13.1-14.fc39                        rpm                         
 tpm2-tss                                                      4.0.1-6.fc39                          rpm                         
 tzdata                                                        2024a-2.fc39                          rpm                         
 urw-base35-bookman-fonts                                      20200910-18.fc39                      rpm                         
@@ -409,8 +409,8 @@ urw-base35-standard-symbols-ps-fonts                          20200910-18.fc39  
 urw-base35-z003-fonts                                         20200910-18.fc39                      rpm                         
 util-linux                                                    2.39.4-1.fc39                         rpm                         
 util-linux-core                                               2.39.4-1.fc39                         rpm                         
-vim-data                                                      2:9.1.181-1.fc39                      rpm                         
-vim-minimal                                                   2:9.1.181-1.fc39                      rpm                         
+vim-data                                                      2:9.1.264-1.fc39                      rpm                         
+vim-minimal                                                   2:9.1.264-1.fc39                      rpm                         
 webrtc-audio-processing                                       0.3.1-11.fc39                         rpm                         
 which                                                         2.21-40.fc39                          rpm                         
 xcb-util                                                      0.4.1-3.fc39                          rpm                         
@@ -423,8 +423,8 @@ xorg-x11-drv-amdgpu                                           23.0.0-2.fc39     
 xorg-x11-drv-ati                                              19.1.0-10.fc39                        rpm                         
 xorg-x11-drv-intel                                            2.99.917-56.20210115.fc39             rpm                         
 xorg-x11-drv-libinput                                         1.4.0-1.fc39                          rpm                         
-xorg-x11-server-Xorg                                          1.20.14-30.fc39                       rpm                         
-xorg-x11-server-common                                        1.20.14-30.fc39                       rpm                         
+xorg-x11-server-Xorg                                          1.20.14-35.fc39                       rpm                         
+xorg-x11-server-common                                        1.20.14-35.fc39                       rpm                         
 xorg-x11-xauth                                                1:1.1.2-4.fc39                        rpm                         
 xorg-x11-xinit                                                1.4.2-1.fc39                          rpm                         
 xorgxrdp                                                      0.9.20-1.fc39                         rpm                         
