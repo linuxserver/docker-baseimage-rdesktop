@@ -32,10 +32,10 @@ coreutils-common                                              9.3-5.fc39        
 cracklib                                                      2.9.11-2.fc39                         rpm                         
 crypto-policies                                               20231204-1.git1e3a2e4.fc39            rpm                         
 cups-libs                                                     1:2.4.7-13.fc39                       rpm                         
-curl                                                          8.2.1-4.fc39                          rpm                         
+curl                                                          8.2.1-5.fc39                          rpm                         
 cyrus-sasl-lib                                                2.1.28-11.fc39                        rpm                         
 dbus                                                          1:1.14.10-1.fc39                      rpm                         
-dbus-broker                                                   35-2.fc39                             rpm                         
+dbus-broker                                                   36-2.fc39                             rpm                         
 dbus-common                                                   1:1.14.10-1.fc39                      rpm                         
 dbus-daemon                                                   1:1.14.10-1.fc39                      rpm                         
 dbus-libs                                                     1:1.14.10-1.fc39                      rpm                         
@@ -195,7 +195,7 @@ libcloudproviders                                             0.3.5-1.fc39      
 libcom_err                                                    1.47.0-2.fc39                         rpm                         
 libcomps                                                      0.1.20                                python                      
 libcomps                                                      0.1.20-1.fc39                         rpm                         
-libcurl                                                       8.2.1-4.fc39                          rpm                         
+libcurl                                                       8.2.1-5.fc39                          rpm                         
 libdatrie                                                     0.2.13-7.fc39                         rpm                         
 libdav1d                                                      1.2.1-2.fc39                          rpm                         
 libdb                                                         5.3.28-56.fc39                        rpm                         
