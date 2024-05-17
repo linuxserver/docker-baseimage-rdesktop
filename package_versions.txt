@@ -132,7 +132,7 @@ gtk-update-icon-cache                                         3.24.41-1.fc40    
 gtk3                                                          3.24.41-1.fc40                        rpm                         
 gtkmm3.0                                                      3.24.9-1.fc40                         rpm                         
 gzip                                                          1.13-1.fc40                           rpm                         
-harfbuzz                                                      8.3.0-5.fc40                          rpm                         
+harfbuzz                                                      8.4.0-1.fc40                          rpm                         
 hicolor-icon-theme                                            0.17-18.fc40                          rpm                         
 highway                                                       1.1.0-1.fc40                          rpm                         
 hostname                                                      3.23-12.fc40                          rpm                         
@@ -277,7 +277,7 @@ libtool-ltdl                                                  2.4.7-10.fc40     
 libtracker-sparql                                             3.7.3-1.fc40                          rpm                         
 libunistring                                                  1.1-7.fc40                            rpm                         
 libunwind                                                     1.8.0-3.fc40                          rpm                         
-libusb1                                                       1.0.27-1.fc40                         rpm                         
+libusb1                                                       1.0.27-2.fc40                         rpm                         
 libutempter                                                   1.2.1-13.fc40                         rpm                         
 libuuid                                                       2.40-0.9.rc1.fc40                     rpm                         
 libverto                                                      0.3.2-8.fc40                          rpm                         
@@ -303,12 +303,12 @@ llvm-libs                                                     18.1.1-1.fc40     
 lm_sensors-libs                                               3.6.0-18.fc40                         rpm                         
 lua-libs                                                      5.4.6-5.fc40                          rpm                         
 lz4-libs                                                      1.9.4-6.fc40                          rpm                         
-mesa-dri-drivers                                              24.0.6-2.fc40                         rpm                         
-mesa-filesystem                                               24.0.6-2.fc40                         rpm                         
-mesa-libEGL                                                   24.0.6-2.fc40                         rpm                         
-mesa-libGL                                                    24.0.6-2.fc40                         rpm                         
-mesa-libgbm                                                   24.0.6-2.fc40                         rpm                         
-mesa-libglapi                                                 24.0.6-2.fc40                         rpm                         
+mesa-dri-drivers                                              24.0.7-3.fc40                         rpm                         
+mesa-filesystem                                               24.0.7-3.fc40                         rpm                         
+mesa-libEGL                                                   24.0.7-3.fc40                         rpm                         
+mesa-libGL                                                    24.0.7-3.fc40                         rpm                         
+mesa-libgbm                                                   24.0.7-3.fc40                         rpm                         
+mesa-libglapi                                                 24.0.7-3.fc40                         rpm                         
 moby-engine                                                   24.0.5-4.fc40                         rpm                         
 mpdecimal                                                     2.5.1-9.fc40                          rpm                         
 mpfr                                                          4.2.1-3.fc40                          rpm                         
@@ -371,8 +371,8 @@ rsvg-pixbuf-loader                                            2.57.1-4.fc40     
 rtkit                                                         0.11-63.fc40                          rpm                         
 runc                                                          2:1.1.12-3.fc40                       rpm                         
 sed                                                           4.9-1.fc40                            rpm                         
-selinux-policy                                                40.17-1.fc40                          rpm                         
-selinux-policy-targeted                                       40.17-1.fc40                          rpm                         
+selinux-policy                                                40.18-2.fc40                          rpm                         
+selinux-policy-targeted                                       40.18-2.fc40                          rpm                         
 setup                                                         2.14.5-2.fc40                         rpm                         
 setxkbmap                                                     1.3.4-3.fc40                          rpm                         
 shadow-utils                                                  2:4.15.1-2.fc40                       rpm                         
@@ -384,9 +384,9 @@ sqlite-libs                                                   3.45.1-2.fc40     
 stdlib                                                        go1.22.0                              go-module  (+9 duplicates)  
 sudo                                                          1.9.15-2.p5.fc40                      rpm                         
 svt-av1-libs                                                  1.4.1-5.fc40                          rpm                         
-systemd                                                       255.4-1.fc40                          rpm                         
-systemd-libs                                                  255.4-1.fc40                          rpm                         
-systemd-pam                                                   255.4-1.fc40                          rpm                         
+systemd                                                       255.6-1.fc40                          rpm                         
+systemd-libs                                                  255.6-1.fc40                          rpm                         
+systemd-pam                                                   255.6-1.fc40                          rpm                         
 tar                                                           2:1.35-3.fc40                         rpm                         
 tigervnc-license                                              1.13.1-14.fc40                        rpm                         
 tigervnc-server-minimal                                       1.13.1-14.fc40                        rpm                         
