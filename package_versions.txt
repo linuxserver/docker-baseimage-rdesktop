@@ -24,7 +24,7 @@ cloud.google.com/go/compute/metadata                                          v0
 cloud.google.com/go/logging                                                   v1.7.0                                       go-module                   
 cloud.google.com/go/longrunning                                               v0.5.1                                       go-module                   
 code.cloudfoundry.org/clock                                                   v1.1.0                                       go-module                   
-containerd                                                                    1.7.10-r2                                    apk                         
+containerd                                                                    1.7.10-r3                                    apk                         
 coreutils                                                                     9.4-r2                                       apk                         
 coreutils-env                                                                 9.4-r2                                       apk                         
 coreutils-fmt                                                                 9.4-r2                                       apk                         
@@ -36,10 +36,10 @@ dbus                                                                          1.
 dbus-daemon-launch-helper                                                     1.14.10-r0                                   apk                         
 dbus-libs                                                                     1.14.10-r0                                   apk                         
 dbus-x11                                                                      1.14.10-r0                                   apk                         
-docker                                                                        25.0.5-r0                                    apk                         
-docker-cli                                                                    25.0.5-r0                                    apk                         
-docker-cli-buildx                                                             0.12.0-r2                                    apk                         
-docker-engine                                                                 25.0.5-r0                                    apk                         
+docker                                                                        25.0.5-r1                                    apk                         
+docker-cli                                                                    25.0.5-r1                                    apk                         
+docker-cli-buildx                                                             0.12.0-r3                                    apk                         
+docker-engine                                                                 25.0.5-r1                                    apk                         
 encodings                                                                     1.0.7-r1                                     apk                         
 eudev-libs                                                                    3.2.14-r0                                    apk                         
 fftw-single-libs                                                              3.3.10-r5                                    apk                         
@@ -305,7 +305,7 @@ github.com/xeipuuv/gojsonschema                                               v1
 github.com/zclconf/go-cty                                                     v1.14.1                                      go-module                   
 github.com/zmap/zcrypto                                                       v0.0.0-20210511125630-18f1e0152cfc           go-module                   
 github.com/zmap/zlint/v3                                                      v3.1.0                                       go-module                   
-glib                                                                          2.78.5-r0                                    apk                         
+glib                                                                          2.78.6-r0                                    apk                         
 glibmm                                                                        2.66.6-r0                                    apk                         
 gmp                                                                           6.3.0-r0                                     apk                         
 gnutls                                                                        3.8.4-r0                                     apk                         
@@ -377,8 +377,8 @@ gopkg.in/yaml.v2                                                              v2
 gopkg.in/yaml.v3                                                              v3.0.1                                       go-module  (+1 duplicate)   
 graphene                                                                      1.10.8-r4                                    apk                         
 graphite2                                                                     1.3.14-r6                                    apk                         
-gst-plugins-base                                                              1.22.11-r0                                   apk                         
-gstreamer                                                                     1.22.11-r0                                   apk                         
+gst-plugins-base                                                              1.22.12-r0                                   apk                         
+gstreamer                                                                     1.22.12-r0                                   apk                         
 gtk+3.0                                                                       3.24.41-r0                                   apk                         
 gtk-update-icon-cache                                                         3.24.41-r0                                   apk                         
 gtkmm3                                                                        3.24.8-r0                                    apk                         
@@ -523,7 +523,7 @@ pulseaudio                                                                    16
 pulseaudio-alsa                                                               16.1-r11                                     apk                         
 readline                                                                      8.2.1-r2                                     apk                         
 resenje.org/singleflight                                                      v0.4.1                                       go-module                   
-runc                                                                          1.1.12-r2                                    apk                         
+runc                                                                          1.1.12-r3                                    apk                         
 scanelf                                                                       1.3.7-r2                                     apk                         
 shadow                                                                        4.14.2-r0                                    apk                         
 shared-mime-info                                                              2.4-r0                                       apk                         
@@ -535,7 +535,7 @@ sound-theme-freedesktop                                                       0.
 soxr                                                                          0.1.3-r7                                     apk                         
 speexdsp                                                                      1.2.1-r2                                     apk                         
 ssl_client                                                                    1.36.1-r15                                   apk                         
-stdlib                                                                        go1.21.9                                     go-module  (+8 duplicates)  
+stdlib                                                                        go1.21.10                                    go-module  (+8 duplicates)  
 sudo                                                                          1.9.15_p2-r0                                 apk                         
 tags.cncf.io/container-device-interface                                       v0.6.2                                       go-module                   
 tags.cncf.io/container-device-interface/specs-go                              v0.6.0                                       go-module                   
