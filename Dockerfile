@@ -1,6 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20 as buildstage
 
-ARG ALPINE_VERSION=3.19
+ARG ALPINE_VERSION=3.20
 ARG XRDP_PULSE_VERSION=v0.7
 
 RUN \
@@ -59,11 +59,8 @@ RUN \
   make && \
   install -t "/tmp/buildout/usr/lib/pulse-${VERSION}/modules/" -D -m 644 src/.libs/*.so
 
-# docker compose
-FROM ghcr.io/linuxserver/docker-compose:amd64-alpine as compose
-
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-alpine:3.19
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20
 
 # set version label
 ARG BUILD_DATE
@@ -73,13 +70,13 @@ LABEL maintainer="thelamer"
 
 # copy over libs and installers from build stage
 COPY --from=buildstage /tmp/buildout/ /
-COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 RUN \
   echo "**** install deps ****" && \
   apk add --no-cache \
     dbus-x11 \
     docker \
+    docker-cli-compose \
     libpulse \
     mesa \
     openssh-client \
@@ -92,7 +89,7 @@ RUN \
     xf86-video-amdgpu \
     xf86-video-intel \
     xorg-server \
-    xorgxrdp \ 
+    xorgxrdp \
     xrdp \
     xterm && \
   VERSION=$(ls -1 /usr/lib/ | \
