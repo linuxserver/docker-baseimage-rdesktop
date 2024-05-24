@@ -127,7 +127,7 @@ gzip                                                          1.12-3.fc38       
 harfbuzz                                                      7.1.0-1.fc38                          rpm                         
 hicolor-icon-theme                                            0.17-15.fc38                          rpm                         
 hostname                                                      3.23-8.fc38                           rpm                         
-hwdata                                                        0.381-1.fc38                          rpm                         
+hwdata                                                        0.382-1.fc38                          rpm                         
 ima-evm-utils                                                 1.4-7.fc38                            rpm                         
 imlib2                                                        1.7.4-4.fc38                          rpm                         
 iptables-legacy                                               1.8.9-4.fc38.1                        rpm                         
