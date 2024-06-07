@@ -31,7 +31,7 @@ coreutils                                                     9.3-5.fc39        
 coreutils-common                                              9.3-5.fc39                            rpm                         
 cracklib                                                      2.9.11-2.fc39                         rpm                         
 crypto-policies                                               20231204-1.git1e3a2e4.fc39            rpm                         
-cups-libs                                                     1:2.4.7-13.fc39                       rpm                         
+cups-libs                                                     1:2.4.8-3.fc39                        rpm                         
 curl                                                          8.2.1-5.fc39                          rpm                         
 cyrus-sasl-lib                                                2.1.28-11.fc39                        rpm                         
 dbus                                                          1:1.14.10-1.fc39                      rpm                         
@@ -177,7 +177,7 @@ libXv                                                         1.0.11-19.fc39    
 libXvMC                                                       1.0.13-3.fc39                         rpm                         
 libXxf86vm                                                    1.1.5-3.fc39                          rpm                         
 libacl                                                        2.3.1-9.fc39                          rpm                         
-libaom                                                        3.8.2-1.fc39                          rpm                         
+libaom                                                        3.9.0-1.fc39                          rpm                         
 libarchive                                                    3.7.1-1.fc39                          rpm                         
 libassuan                                                     2.5.6-2.fc39                          rpm                         
 libasyncns                                                    0.8-25.fc39                           rpm                         
@@ -203,7 +203,7 @@ libdnf                                                        0.73.1            
 libdnf                                                        0.73.1-1.fc39                         rpm                         
 libdrm                                                        2.4.120-1.fc39                        rpm                         
 libeconf                                                      0.5.2-2.fc39                          rpm                         
-libedit                                                       3.1-48.20230828cvs.fc39               rpm                         
+libedit                                                       3.1-51.20240517cvs.fc39               rpm                         
 libepoxy                                                      1.5.10-4.fc39                         rpm                         
 libevdev                                                      1.13.1-2.fc39                         rpm                         
 libevent                                                      2.1.12-9.fc39                         rpm                         
@@ -251,7 +251,7 @@ libpwquality                                                  1.4.5-6.fc39      
 librepo                                                       1.17.1-1.fc39                         rpm                         
 libreport-filesystem                                          2.17.11-3.fc39                        rpm                         
 libretls                                                      3.8.1-1.fc39                          rpm                         
-librsvg2                                                      2.57.1-1.fc39                         rpm                         
+librsvg2                                                      2.57.1-2.fc39                         rpm                         
 libseccomp                                                    2.5.3-6.fc39                          rpm                         
 libselinux                                                    3.5-5.fc39                            rpm                         
 libselinux-utils                                              3.5-5.fc39                            rpm                         
@@ -358,7 +358,7 @@ python3-libcomps                                              0.1.20-1.fc39     
 python3-libdnf                                                0.73.1-1.fc39                         rpm                         
 python3-libs                                                  3.12.3-2.fc39                         rpm                         
 python3-rpm                                                   4.19.1.1-1.fc39                       rpm                         
-rav1e-libs                                                    0.7.1-1.fc39                          rpm                         
+rav1e-libs                                                    0.7.1-2.fc39                          rpm                         
 readline                                                      8.2-6.fc39                            rpm                         
 rootfiles                                                     8.1-34.fc39                           rpm                         
 rpm                                                           4.19.1.1                              python                      
@@ -366,9 +366,9 @@ rpm                                                           4.19.1.1-1.fc39   
 rpm-build-libs                                                4.19.1.1-1.fc39                       rpm                         
 rpm-libs                                                      4.19.1.1-1.fc39                       rpm                         
 rpm-plugin-selinux                                            4.19.1.1-1.fc39                       rpm                         
-rpm-sequoia                                                   1.6.0-1.fc39                          rpm                         
+rpm-sequoia                                                   1.6.0-3.fc39                          rpm                         
 rpm-sign-libs                                                 4.19.1.1-1.fc39                       rpm                         
-rsvg-pixbuf-loader                                            2.57.1-1.fc39                         rpm                         
+rsvg-pixbuf-loader                                            2.57.1-2.fc39                         rpm                         
 rtkit                                                         0.11-61.fc39                          rpm                         
 runc                                                          2:1.1.12-1.fc39                       rpm                         
 sed                                                           4.8-14.fc39                           rpm                         
