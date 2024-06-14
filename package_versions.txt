@@ -322,7 +322,7 @@ nettle                                                        3.9.1-2.fc39      
 npth                                                          1.6-14.fc39                           rpm                         
 oniguruma                                                     6.9.9-1.fc39                          rpm                         
 openjpeg2                                                     2.5.2-1.fc39                          rpm                         
-openldap                                                      2.6.6-1.fc39                          rpm                         
+openldap                                                      2.6.7-1.fc39                          rpm                         
 openssh                                                       9.3p1-10.fc39                         rpm                         
 openssh-clients                                               9.3p1-10.fc39                         rpm                         
 openssl                                                       1:3.1.1-4.fc39                        rpm                         
@@ -427,10 +427,10 @@ xorg-x11-server-Xorg                                          1.20.14-35.fc39   
 xorg-x11-server-common                                        1.20.14-35.fc39                       rpm                         
 xorg-x11-xauth                                                1:1.1.2-4.fc39                        rpm                         
 xorg-x11-xinit                                                1.4.2-1.fc39                          rpm                         
-xorgxrdp                                                      0.9.20-1.fc39                         rpm                         
+xorgxrdp                                                      0.10.1-1.fc39                         rpm                         
 xprop                                                         1.2.5-4.fc39                          rpm                         
 xrdb                                                          1.2.2-1.fc39                          rpm                         
-xrdp                                                          1:0.9.25-2.fc39                       rpm                         
+xrdp                                                          1:0.10.0-4.fc39                       rpm                         
 xterm                                                         385-1.fc39                            rpm                         
 xz                                                            5.4.4-1.fc39                          rpm                         
 xz-libs                                                       5.4.4-1.fc39                          rpm                         
