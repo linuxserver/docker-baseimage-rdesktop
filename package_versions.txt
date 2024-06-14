@@ -3,7 +3,7 @@ abseil-cpp                                                                    20
 acl                                                                           2.3.2-1                                alpm                           
 alsa-lib                                                                      1.2.11-1                               alpm                           
 alsa-topology-conf                                                            1.2.5.1-3                              alpm                           
-alsa-ucm-conf                                                                 1.2.11-1                               alpm                           
+alsa-ucm-conf                                                                 1.2.12-1                               alpm                           
 archlinux-keyring                                                             20240609-1                             alpm                           
 argon2                                                                        20190702-5                             alpm                           
 attr                                                                          2.5.2-1                                alpm                           
@@ -288,7 +288,7 @@ github.com/vishvananda/netns                                                  v0
 github.com/weppos/publicsuffix-go                                             v0.15.1-0.20210511084619-b1f36a2d6c0b  go-module                      
 github.com/zmap/zcrypto                                                       v0.0.0-20210511125630-18f1e0152cfc     go-module                      
 github.com/zmap/zlint/v3                                                      v3.1.0                                 go-module                      
-glib2                                                                         2.80.2-2                               alpm                           
+glib2                                                                         2.80.3-2                               alpm                           
 glibc                                                                         2.39+r52+gf8e4623421-1                 alpm                           
 gmp                                                                           6.3.0-2                                alpm                           
 gnu-netcat                                                                    0.7.1-10                               alpm                           
@@ -455,7 +455,7 @@ libusb                                                                        1.
 libutempter                                                                   1.2.1-4                                alpm                           
 libverto                                                                      0.3.2-5                                alpm                           
 libvorbis                                                                     1.3.7-3                                alpm                           
-libwacom                                                                      2.12.0-1                               alpm                           
+libwacom                                                                      2.12.1-1                               alpm                           
 libx11                                                                        1.8.9-1                                alpm                           
 libxau                                                                        1.0.11-2                               alpm                           
 libxaw                                                                        1.0.16-1                               alpm                           
@@ -470,13 +470,13 @@ libxfont2                                                                     2.
 libxft                                                                        2.3.8-1                                alpm                           
 libxi                                                                         1.8.1-1                                alpm                           
 libxkbfile                                                                    1.1.3-1                                alpm                           
-libxml2                                                                       2.12.7-1                               alpm                           
+libxml2                                                                       2.13.0-1                               alpm                           
 libxmu                                                                        1.2.1-1                                alpm                           
 libxpm                                                                        3.5.17-1                               alpm                           
 libxrandr                                                                     1.5.4-1                                alpm                           
 libxrender                                                                    0.9.11-1                               alpm                           
 libxshmfence                                                                  1.3.2-1                                alpm                           
-libxslt                                                                       1.1.39-2                               alpm                           
+libxslt                                                                       1.1.40-1                               alpm                           
 libxt                                                                         1.3.0-1                                alpm                           
 libxtst                                                                       1.2.4-1                                alpm                           
 libxv                                                                         1.0.12-1                               alpm                           
