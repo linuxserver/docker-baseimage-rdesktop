@@ -29,7 +29,7 @@ coreutils                                                                     9.
 coreutils-env                                                                 9.5-r1                                              apk                         
 coreutils-fmt                                                                 9.5-r1                                              apk                         
 coreutils-sha512sum                                                           9.5-r1                                              apk                         
-cups-libs                                                                     2.4.8-r0                                            apk                         
+cups-libs                                                                     2.4.9-r0                                            apk                         
 curl                                                                          8.7.1-r0                                            apk                         
 dario.cat/mergo                                                               v1.0.0                                              go-module  (+2 duplicates)  
 dbus                                                                          1.14.10-r1                                          apk                         
