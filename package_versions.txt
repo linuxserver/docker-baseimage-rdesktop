@@ -5,7 +5,7 @@ adobe-mappings-cmap-deprecated                                20230622-1.fc39   
 adobe-mappings-pdf                                            20190401-5.fc39                       rpm                         
 adwaita-cursor-theme                                          45.0-1.fc39                           rpm                         
 adwaita-icon-theme                                            45.0-1.fc39                           rpm                         
-alsa-lib                                                      1.2.11-2.fc39                         rpm                         
+alsa-lib                                                      1.2.12-1.fc39                         rpm                         
 alternatives                                                  1.26-1.fc39                           rpm                         
 at-spi2-atk                                                   2.50.2-1.fc39                         rpm                         
 at-spi2-core                                                  2.50.2-1.fc39                         rpm                         
@@ -25,7 +25,7 @@ cairo-gobject                                                 1.18.0-1.fc39     
 cairomm                                                       1.14.5-1.fc39                         rpm                         
 cdparanoia-libs                                               10.2-42.fc39                          rpm                         
 colord-libs                                                   1.4.6-6.fc39                          rpm                         
-container-selinux                                             2:2.231.0-1.fc39                      rpm                         
+container-selinux                                             2:2.232.1-1.fc39                      rpm                         
 containerd                                                    1.6.23-2.fc39                         rpm                         
 coreutils                                                     9.3-5.fc39                            rpm                         
 coreutils-common                                              9.3-5.fc39                            rpm                         
@@ -252,7 +252,7 @@ librepo                                                       1.17.1-1.fc39     
 libreport-filesystem                                          2.17.11-3.fc39                        rpm                         
 libretls                                                      3.8.1-1.fc39                          rpm                         
 librsvg2                                                      2.57.1-2.fc39                         rpm                         
-libseccomp                                                    2.5.3-6.fc39                          rpm                         
+libseccomp                                                    2.5.5-1.fc39                          rpm                         
 libselinux                                                    3.5-5.fc39                            rpm                         
 libselinux-utils                                              3.5-5.fc39                            rpm                         
 libsemanage                                                   3.5-4.fc39                            rpm                         
