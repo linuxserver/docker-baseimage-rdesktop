@@ -2,7 +2,7 @@ NAME                                                                          VE
 alpine-baselayout                                                             3.4.3-r2                                     apk                         
 alpine-baselayout-data                                                        3.4.3-r2                                     apk                         
 alpine-keys                                                                   2.4-r1                                       apk                         
-alpine-release                                                                3.19.1-r0                                    apk                         
+alpine-release                                                                3.19.2-r0                                    apk                         
 alsa-lib                                                                      1.2.10-r0                                    apk                         
 apk-tools                                                                     2.14.4-r0                                    apk                         
 at-spi2-core                                                                  2.50.1-r0                                    apk                         
