@@ -61,7 +61,7 @@ fedora-repos                                                  40-1              
 fftw-libs-single                                              3.3.10-12.fc40                        rpm                         
 file-libs                                                     5.45-4.fc40                           rpm                         
 filesystem                                                    3.18-8.fc40                           rpm                         
-findutils                                                     1:4.9.0-8.fc40                        rpm                         
+findutils                                                     1:4.9.0-9.fc40                        rpm                         
 flac-libs                                                     1.4.3-4.fc40                          rpm                         
 fontconfig                                                    2.15.0-6.fc40                         rpm                         
 fonts-filesystem                                              1:2.0.5-14.fc40                       rpm                         
@@ -228,7 +228,7 @@ libidn2                                                       2.3.7-1.fc40      
 libijs                                                        0.35-22.fc40                          rpm                         
 libinput                                                      1.26.1-1.fc40                         rpm                         
 libjpeg-turbo                                                 3.0.2-1.fc40                          rpm                         
-libjxl                                                        1:0.8.2-6.fc40                        rpm                         
+libjxl                                                        1:0.8.3-1.fc40                        rpm                         
 libksba                                                       1.6.6-1.fc40                          rpm                         
 liblerc                                                       4.0.0-6.fc40                          rpm                         
 libmd                                                         1.1.0-4.fc40                          rpm                         
@@ -270,7 +270,7 @@ libtdb                                                        1.4.10-1.fc40     
 libthai                                                       0.1.29-8.fc40                         rpm                         
 libtheora                                                     1:1.1.1-36.fc40                       rpm                         
 libtiff                                                       4.6.0-2.fc40                          rpm                         
-libtirpc                                                      1.3.4-1.rc3.fc40                      rpm                         
+libtirpc                                                      1.3.4-1.rc3.fc40                      rpm        (+1 duplicate)   
 libtool-ltdl                                                  2.4.7-10.fc40                         rpm                         
 libtracker-sparql                                             3.7.3-1.fc40                          rpm                         
 libunistring                                                  1.1-7.fc40                            rpm                         
