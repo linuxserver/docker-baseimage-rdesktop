@@ -24,7 +24,7 @@ cloud.google.com/go/compute/metadata                                          v0
 cloud.google.com/go/logging                                                   v1.8.1                                              go-module                   
 cloud.google.com/go/longrunning                                               v0.5.2                                              go-module                   
 code.cloudfoundry.org/clock                                                   v1.1.0                                              go-module                   
-containerd                                                                    1.7.17-r1                                           apk                         
+containerd                                                                    1.7.17-r2                                           apk                         
 coreutils                                                                     9.5-r1                                              apk                         
 coreutils-env                                                                 9.5-r1                                              apk                         
 coreutils-fmt                                                                 9.5-r1                                              apk                         
@@ -36,11 +36,11 @@ dbus                                                                          1.
 dbus-daemon-launch-helper                                                     1.14.10-r1                                          apk                         
 dbus-libs                                                                     1.14.10-r1                                          apk                         
 dbus-x11                                                                      1.14.10-r1                                          apk                         
-docker                                                                        26.1.3-r1                                           apk                         
-docker-cli                                                                    26.1.3-r1                                           apk                         
-docker-cli-buildx                                                             0.14.0-r2                                           apk                         
-docker-cli-compose                                                            2.27.0-r2                                           apk                         
-docker-engine                                                                 26.1.3-r1                                           apk                         
+docker                                                                        26.1.3-r2                                           apk                         
+docker-cli                                                                    26.1.3-r2                                           apk                         
+docker-cli-buildx                                                             0.14.0-r3                                           apk                         
+docker-cli-compose                                                            2.27.0-r3                                           apk                         
+docker-engine                                                                 26.1.3-r2                                           apk                         
 encodings                                                                     1.0.7-r1                                            apk                         
 eudev-libs                                                                    3.2.14-r2                                           apk                         
 fftw-single-libs                                                              3.3.10-r5                                           apk                         
@@ -452,7 +452,7 @@ libcanberra-gstreamer                                                         0.
 libcanberra-gtk3                                                              0.30-r10                                            apk                         
 libcanberra-pulse                                                             0.30-r10                                            apk                         
 libcap2                                                                       2.70-r0                                             apk                         
-libcrypto3                                                                    3.3.1-r1                                            apk                         
+libcrypto3                                                                    3.3.1-r3                                            apk                         
 libcurl                                                                       8.8.0-r0                                            apk                         
 libdrm                                                                        2.4.120-r0                                          apk                         
 libeconf                                                                      0.6.3-r0                                            apk                         
@@ -487,7 +487,7 @@ libsharpyuv                                                                   1.
 libsigc++                                                                     2.12.1-r0                                           apk                         
 libsm                                                                         1.2.4-r4                                            apk                         
 libsndfile                                                                    1.2.2-r0                                            apk                         
-libssl3                                                                       3.3.1-r1                                            apk                         
+libssl3                                                                       3.3.1-r3                                            apk                         
 libstdc++                                                                     13.2.1_git20240309-r0                               apk                         
 libtasn1                                                                      4.19.0-r2                                           apk                         
 libtheora                                                                     1.1.1-r18                                           apk                         
@@ -546,7 +546,7 @@ oniguruma                                                                     6.
 openssh-client-common                                                         9.7_p1-r4                                           apk                         
 openssh-client-default                                                        9.7_p1-r4                                           apk                         
 openssh-keygen                                                                9.7_p1-r4                                           apk                         
-openssl                                                                       3.3.1-r1                                            apk                         
+openssl                                                                       3.3.1-r3                                            apk                         
 opus                                                                          1.5.2-r0                                            apk                         
 orc                                                                           0.4.37-r0                                           apk                         
 p11-kit                                                                       0.25.3-r0                                           apk                         
@@ -562,7 +562,7 @@ pulseaudio                                                                    17
 pulseaudio-alsa                                                               17.0-r0                                             apk                         
 readline                                                                      8.2.10-r0                                           apk                         
 resenje.org/singleflight                                                      v0.4.1                                              go-module                   
-runc                                                                          1.1.12-r4                                           apk                         
+runc                                                                          1.1.12-r5                                           apk                         
 scanelf                                                                       1.3.7-r2                                            apk                         
 shadow                                                                        4.15.1-r0                                           apk                         
 shared-mime-info                                                              2.4-r0                                              apk                         
@@ -576,7 +576,7 @@ sound-theme-freedesktop                                                       0.
 soxr                                                                          0.1.3-r7                                            apk                         
 speexdsp                                                                      1.2.1-r2                                            apk                         
 ssl_client                                                                    1.36.1-r29                                          apk                         
-stdlib                                                                        go1.22.4                                            go-module  (+9 duplicates)  
+stdlib                                                                        go1.22.5                                            go-module  (+9 duplicates)  
 sudo                                                                          1.9.15_p5-r0                                        apk                         
 tags.cncf.io/container-device-interface                                       v0.6.2                                              go-module                   
 tags.cncf.io/container-device-interface                                       v0.7.2                                              go-module  (+1 duplicate)   
