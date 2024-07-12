@@ -219,7 +219,7 @@ libglvnd-egl                                                  1:1.7.0-1.fc39    
 libglvnd-glx                                                  1:1.7.0-1.fc39                        rpm                         
 libgomp                                                       13.3.1-1.fc39                         rpm                         
 libgpg-error                                                  1.47-2.fc39                           rpm                         
-libgs                                                         10.02.1-2.fc39                        rpm                         
+libgs                                                         10.02.1-5.fc39                        rpm                         
 libgudev                                                      238-2.fc39                            rpm                         
 libgusb                                                       0.4.9-1.fc39                          rpm                         
 libheif                                                       1.17.5-1.fc39                         rpm                         
@@ -273,7 +273,7 @@ libtdb                                                        1.4.9-1.fc39      
 libthai                                                       0.1.29-6.fc39                         rpm                         
 libtheora                                                     1:1.1.1-34.fc39                       rpm                         
 libtiff                                                       4.4.0-8.fc39                          rpm                         
-libtirpc                                                      1.3.4-1.rc3.fc39                      rpm                         
+libtirpc                                                      1.3.4-1.rc3.fc39                      rpm        (+1 duplicate)   
 libtool-ltdl                                                  2.4.7-7.fc39                          rpm                         
 libtracker-sparql                                             3.6.0-1.fc39                          rpm                         
 libunistring                                                  1.1-5.fc39                            rpm                         
