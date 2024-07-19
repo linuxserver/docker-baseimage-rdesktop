@@ -31,7 +31,7 @@ coreutils                                                     9.3-5.fc39        
 coreutils-common                                              9.3-5.fc39                            rpm                         
 cracklib                                                      2.9.11-2.fc39                         rpm                         
 crypto-policies                                               20231204-1.git1e3a2e4.fc39            rpm                         
-cups-libs                                                     1:2.4.8-3.fc39                        rpm                         
+cups-libs                                                     1:2.4.10-1.fc39                       rpm                         
 curl                                                          8.2.1-5.fc39                          rpm                         
 cyrus-sasl-lib                                                2.1.28-11.fc39                        rpm                         
 dbus                                                          1:1.14.10-1.fc39                      rpm                         
@@ -53,11 +53,11 @@ elfutils-default-yama-scope                                   0.191-2.fc39      
 elfutils-libelf                                               0.191-2.fc39                          rpm                         
 elfutils-libs                                                 0.191-2.fc39                          rpm                         
 expat                                                         2.6.2-1.fc39                          rpm                         
-fedora-gpg-keys                                               39-1                                  rpm                         
+fedora-gpg-keys                                               39-2                                  rpm                         
 fedora-release-common                                         39-36                                 rpm                         
 fedora-release-container                                      39-36                                 rpm                         
 fedora-release-identity-container                             39-36                                 rpm                         
-fedora-repos                                                  39-1                                  rpm                         
+fedora-repos                                                  39-2                                  rpm                         
 fftw-libs-single                                              3.3.10-10.fc39                        rpm                         
 file-libs                                                     5.44-5.fc39                           rpm                         
 filesystem                                                    3.18-6.fc39                           rpm                         
@@ -178,7 +178,7 @@ libXvMC                                                       1.0.13-3.fc39     
 libXxf86vm                                                    1.1.5-3.fc39                          rpm                         
 libacl                                                        2.3.1-9.fc39                          rpm                         
 libaom                                                        3.9.0-1.fc39                          rpm                         
-libarchive                                                    3.7.1-1.fc39                          rpm                         
+libarchive                                                    3.7.1-2.fc39                          rpm                         
 libassuan                                                     2.5.6-2.fc39                          rpm                         
 libasyncns                                                    0.8-25.fc39                           rpm                         
 libattr                                                       2.5.1-8.fc39                          rpm                         
@@ -351,12 +351,12 @@ pulseaudio                                                    16.1-5.fc39       
 pulseaudio-libs                                               16.1-5.fc39                           rpm                         
 pulseaudio-libs-glib2                                         16.1-5.fc39                           rpm                         
 python-pip-wheel                                              23.2.1-2.fc39                         rpm                         
-python3                                                       3.12.3-2.fc39                         rpm                         
+python3                                                       3.12.4-1.fc39                         rpm                         
 python3-dnf                                                   4.19.2-1.fc39                         rpm                         
 python3-hawkey                                                0.73.1-1.fc39                         rpm                         
 python3-libcomps                                              0.1.20-1.fc39                         rpm                         
 python3-libdnf                                                0.73.1-1.fc39                         rpm                         
-python3-libs                                                  3.12.3-2.fc39                         rpm                         
+python3-libs                                                  3.12.4-1.fc39                         rpm                         
 python3-rpm                                                   4.19.1.1-1.fc39                       rpm                         
 rav1e-libs                                                    0.7.1-2.fc39                          rpm                         
 readline                                                      8.2-6.fc39                            rpm                         
@@ -409,8 +409,8 @@ urw-base35-standard-symbols-ps-fonts                          20200910-20.fc39  
 urw-base35-z003-fonts                                         20200910-20.fc39                      rpm                         
 util-linux                                                    2.39.4-1.fc39                         rpm                         
 util-linux-core                                               2.39.4-1.fc39                         rpm                         
-vim-data                                                      2:9.1.393-1.fc39                      rpm                         
-vim-minimal                                                   2:9.1.393-1.fc39                      rpm                         
+vim-data                                                      2:9.1.452-1.fc39                      rpm                         
+vim-minimal                                                   2:9.1.452-1.fc39                      rpm                         
 webrtc-audio-processing                                       0.3.1-11.fc39                         rpm                         
 which                                                         2.21-40.fc39                          rpm                         
 xcb-util                                                      0.4.1-3.fc39                          rpm                         
