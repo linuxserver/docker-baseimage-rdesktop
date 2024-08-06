@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-debian:arm64v8-bookworm as buildstage
+FROM ghcr.io/linuxserver/baseimage-debian:arm64v8-bookworm AS buildstage
 
 ARG XRDP_PULSE_VERSION=v0.7
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -47,7 +47,7 @@ RUN \
   cp -ax ../xrdp_*.deb /buildout/xrdp.deb
 
 # docker compose
-FROM ghcr.io/linuxserver/docker-compose:arm64v8-latest as compose
+FROM ghcr.io/linuxserver/docker-compose:arm64v8-latest AS compose
 
 # runtime stage
 FROM ghcr.io/linuxserver/baseimage-debian:arm64v8-bookworm
@@ -105,7 +105,6 @@ RUN \
     xserver-common \
     xserver-xorg-core \
     xserver-xorg-video-amdgpu \
-    xserver-xorg-video-armsoc-endlessm \
     xserver-xorg-video-ati \
     xserver-xorg-video-nouveau \
     xserver-xorg-video-qxl \
