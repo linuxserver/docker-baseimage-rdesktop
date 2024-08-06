@@ -4,28 +4,28 @@ on:
   workflow_dispatch:
 
 jobs:
-  package-trigger-3-20:
+  package-trigger-alpine320:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
 
       - name: Package Trigger
-        if: github.ref == 'refs/heads/3.20'
+        if: github.ref == 'refs/heads/alpine320'
         run: |
-          if [ -n "${{ secrets.PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_3_20 }}" ]; then
-            echo "**** Github secret PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_3_20 is set; skipping trigger. ****"
-            echo "Github secret \`PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_3_20\` is set; skipping trigger." >> $GITHUB_STEP_SUMMARY
+          if [ -n "${{ secrets.PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_ALPINE320 }}" ]; then
+            echo "**** Github secret PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_ALPINE320 is set; skipping trigger. ****"
+            echo "Github secret \`PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_ALPINE320\` is set; skipping trigger." >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
-          if [ $(curl -s https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-baseimage-rdesktop/job/3.20/lastBuild/api/json | jq -r '.building') == "true" ]; then
+          if [ $(curl -s https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-baseimage-rdesktop/job/alpine320/lastBuild/api/json | jq -r '.building') == "true" ]; then
             echo "**** There already seems to be an active build on Jenkins; skipping package trigger ****"
             echo "There already seems to be an active build on Jenkins; skipping package trigger" >> $GITHUB_STEP_SUMMARY
             exit 0
           fi
-          echo "**** Package trigger running off of 3.20 branch. To disable, set a Github secret named \"PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_3_20\". ****"
-          echo "Package trigger running off of 3.20 branch. To disable, set a Github secret named \`PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_3_20\`" >> $GITHUB_STEP_SUMMARY
+          echo "**** Package trigger running off of alpine320 branch. To disable, set a Github secret named \"PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_ALPINE320\". ****"
+          echo "Package trigger running off of alpine320 branch. To disable, set a Github secret named \`PAUSE_PACKAGE_TRIGGER_BASEIMAGE_RDESKTOP_ALPINE320\`" >> $GITHUB_STEP_SUMMARY
           response=$(curl -iX POST \
-            https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-baseimage-rdesktop/job/3.20/buildWithParameters?PACKAGE_CHECK=true \
+            https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-baseimage-rdesktop/job/alpine320/buildWithParameters?PACKAGE_CHECK=true \
             --user ${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_TOKEN }} | grep -i location | sed "s|^[L|l]ocation: \(.*\)|\1|")
           echo "**** Jenkins job queue url: ${response%$'\r'} ****"
           echo "**** Sleeping 10 seconds until job starts ****"

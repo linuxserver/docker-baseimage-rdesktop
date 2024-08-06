@@ -3,9 +3,9 @@
 # jenkins variables
 project_name: docker-baseimage-rdesktop
 external_type: os
-release_type: stable
-release_tag: "3.20"
-ls_branch: "3.20"
+release_type: prerelease
+release_tag: alpine320
+ls_branch: alpine320
 repo_vars:
   - BUILD_VERSION_ARG = 'XRDP_VERSION'
   - LS_USER = 'linuxserver'

@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.20 as buildstage
+FROM ghcr.io/linuxserver/baseimage-alpine:3.20 AS buildstage
 
 ARG ALPINE_VERSION=3.20
 ARG XRDP_PULSE_VERSION=v0.7
@@ -74,23 +74,39 @@ LABEL maintainer="thelamer"
 # copy over libs and installers from build stage
 COPY --from=buildstage /tmp/buildout/ /
 
+ENV HOME=/config
+
 RUN \
   echo "**** install deps ****" && \
   apk add --no-cache \
     dbus-x11 \
     docker \
     docker-cli-compose \
+    font-noto \
+    font-noto-emoji \
+    lang \
     libpulse \
     mesa \
+    mesa-dri-gallium \
+    mesa-gbm \
+    mesa-gl \
+    mesa-va-gallium \
+    mesa-vulkan-ati \
+    mesa-vulkan-intel \
+    mesa-vulkan-layers \
+    mesa-vulkan-swrast \
+    openbox \
     openssh-client \
     openssl \
     pavucontrol \
     pulseaudio \
     pciutils-libs \
     sudo \
-    xf86-video-ati \
     xf86-video-amdgpu \
+    xf86-video-ati \
     xf86-video-intel \
+    xf86-video-nouveau \
+    xf86-video-qxl \
     xorg-server \
     xorgxrdp \
     xrdp \
@@ -98,11 +114,28 @@ RUN \
   VERSION=$(ls -1 /usr/lib/ | \
     awk -F '-' '/pulse-/ {print $2; exit}') && \
   ldconfig -n /usr/lib/pulse-${VERSION}/modules && \
-  echo "**** cleanup and user perms ****" && \
+  echo "**** openbox tweaks ****" && \
+  sed -i \
+    -e 's/NLIMC/NLMC/g' \
+    -e 's|</applications>|  <application class="*"><maximized>yes</maximized></application>\n</applications>|' \
+    -e 's|</keyboard>|  <keybind key="C-S-d"><action name="ToggleDecorations"/></keybind>\n</keyboard>|' \
+    /etc/xdg/openbox/rc.xml && \
+  echo "**** user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
   echo '%wheel ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/wheel && \
   adduser abc wheel && \
+  echo "**** proot-apps ****" && \
+  mkdir /proot-apps/ && \
+  PAPPS_RELEASE=$(curl -sX GET "https://api.github.com/repos/linuxserver/proot-apps/releases/latest" \
+    | awk '/tag_name/{print $4;exit}' FS='[""]') && \
+  curl -L https://github.com/linuxserver/proot-apps/releases/download/${PAPPS_RELEASE}/proot-apps-x86_64.tar.gz \
+    | tar -xzf - -C /proot-apps/ && \
+  echo "${PAPPS_RELEASE}" > /proot-apps/pversion && \
+  echo "**** theme ****" && \
+  curl -s https://raw.githubusercontent.com/thelamer/lang-stash/master/theme.tar.gz \
+    | tar xzvf - -C /usr/share/themes/Clearlooks/openbox-3/ && \
+  echo "**** cleanup ****" && \
   rm -rf \
     /tmp/*
 
