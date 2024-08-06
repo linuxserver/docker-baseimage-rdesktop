@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:noble AS buildstage
+FROM ghcr.io/linuxserver/baseimage-debian:bookworm AS buildstage
 
 ARG XRDP_PULSE_VERSION=v0.7
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -10,6 +10,7 @@ RUN \
   apt-get install -y \
     build-essential \
     devscripts \
+    doxygen \
     dpkg-dev \
     git \
     libpulse-dev \
@@ -49,7 +50,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:amd64-latest AS compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:noble
+FROM ghcr.io/linuxserver/baseimage-debian:bookworm
 
 # set version label
 ARG BUILD_DATE
@@ -69,7 +70,7 @@ RUN \
   echo "**** enable locales ****" && \
   sed -i \
     '/locale/d' \
-    /etc/dpkg/dpkg.cfg.d/excludes && \
+    /etc/dpkg/dpkg.cfg.d/docker && \
   echo "**** install deps ****" && \
   ldconfig && \
   apt-get update && \
@@ -114,8 +115,8 @@ RUN \
   dpkg -i /xrdp.deb && \
   rm /xrdp.deb && \
   echo "**** install docker ****" && \
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
-  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu noble stable" && \
+  curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - && \
+  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian bookworm stable" && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     docker-ce-cli && \
@@ -143,6 +144,9 @@ RUN \
   for LOCALE in $(curl -sL https://raw.githubusercontent.com/thelamer/lang-stash/master/langs); do \
     localedef -i $LOCALE -f UTF-8 $LOCALE.UTF-8; \
   done && \
+  echo "**** theme ****" && \
+  curl -s https://raw.githubusercontent.com/thelamer/lang-stash/master/theme.tar.gz \
+    | tar xzvf - -C /usr/share/themes/Clearlooks/openbox-3/ && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
