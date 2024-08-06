@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:noble as buildstage
+FROM ghcr.io/linuxserver/baseimage-ubuntu:noble AS buildstage
 
 ARG XRDP_PULSE_VERSION=v0.7
 ARG DEBIAN_FRONTEND="noninteractive"
@@ -46,7 +46,7 @@ RUN \
   cp -ax ../xrdp_*.deb /buildout/xrdp.deb
 
 # docker compose
-FROM ghcr.io/linuxserver/docker-compose:amd64-latest as compose
+FROM ghcr.io/linuxserver/docker-compose:amd64-latest AS compose
 
 # runtime stage
 FROM ghcr.io/linuxserver/baseimage-ubuntu:noble
@@ -62,9 +62,8 @@ COPY --from=buildstage /buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 #Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
-ENV NVIDIA_DRIVER_CAPABILITIES=all
-
-ARG DEBIAN_FRONTEND="noninteractive"
+ENV NVIDIA_DRIVER_CAPABILITIES=all \
+    HOME=/config
 
 RUN \
   echo "**** enable locales ****" && \
@@ -79,6 +78,8 @@ RUN \
     apt-transport-https \
     ca-certificates \
     dbus-x11 \
+    fonts-noto-color-emoji \
+    fonts-noto-core \
     gawk \
     gnupg2 \
     libfuse2 \

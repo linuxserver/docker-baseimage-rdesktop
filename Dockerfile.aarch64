@@ -62,9 +62,8 @@ COPY --from=buildstage /buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 #Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
-ENV NVIDIA_DRIVER_CAPABILITIES=all
-
-ARG DEBIAN_FRONTEND="noninteractive"
+ENV NVIDIA_DRIVER_CAPABILITIES=all \
+    HOME=/config
 
 RUN \
   echo "**** enable locales ****" && \
@@ -79,6 +78,8 @@ RUN \
     apt-transport-https \
     ca-certificates \
     dbus-x11 \
+    fonts-noto-color-emoji \
+    fonts-noto-core \
     gawk \
     gnupg2 \
     libfuse2 \
