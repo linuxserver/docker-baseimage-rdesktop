@@ -1,6 +1,7 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:focal as buildstage
+FROM ghcr.io/linuxserver/baseimage-ubuntu:noble as buildstage
 
-ARG XRDP_PULSE_VERSION=v0.4
+ARG XRDP_PULSE_VERSION=v0.7
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
   echo "**** install build deps ****" && \
@@ -12,6 +13,7 @@ RUN \
     dpkg-dev \
     git \
     libpulse-dev \
+    meson \
     pulseaudio && \
   apt build-dep -y \
     pulseaudio \
@@ -21,14 +23,10 @@ RUN \
   echo "**** build pulseaudio modules ****" && \
   mkdir -p /buildout/var/lib/xrdp-pulseaudio-installer && \
   tmp=$(mktemp -d); cd "$tmp" && \
-  pulseaudio_version=$(dpkg-query -W -f='${source:Version}' pulseaudio|awk -F: '{print $2}') && \
   pulseaudio_upstream_version=$(dpkg-query -W -f='${source:Upstream-Version}' pulseaudio) && \
-  set -- $(apt-cache policy pulseaudio | fgrep -A1 '***' | tail -1) && \
-  mirror=$2 && \
-  suite=${3#*/} && \
-  dget -u "$mirror/pool/$suite/p/pulseaudio/pulseaudio_$pulseaudio_version.dsc" && \
+  apt-get source pulseaudio && \
   cd "pulseaudio-$pulseaudio_upstream_version" && \
-  ./configure && \
+  meson build && \
   cd - && \
   git clone https://github.com/neutrinolabs/pulseaudio-module-xrdp.git && \
   cd pulseaudio-module-xrdp && \
@@ -51,7 +49,7 @@ RUN \
 FROM ghcr.io/linuxserver/docker-compose:amd64-latest as compose
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
+FROM ghcr.io/linuxserver/baseimage-ubuntu:noble
 
 # set version label
 ARG BUILD_DATE
@@ -64,9 +62,15 @@ COPY --from=buildstage /buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 #Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
-ENV NVIDIA_DRIVER_CAPABILITIES="compute,video,utility"
+ENV NVIDIA_DRIVER_CAPABILITIES=all
+
+ARG DEBIAN_FRONTEND="noninteractive"
 
 RUN \
+  echo "**** enable locales ****" && \
+  sed -i \
+    '/locale/d' \
+    /etc/dpkg/dpkg.cfg.d/excludes && \
   echo "**** install deps ****" && \
   ldconfig && \
   apt-get update && \
@@ -74,7 +78,6 @@ RUN \
   apt-get install -y --no-install-recommends \
     apt-transport-https \
     ca-certificates \
-    curl \
     dbus-x11 \
     gawk \
     gnupg2 \
@@ -83,6 +86,11 @@ RUN \
     libxfixes3 \
     libxml2 \
     libxrandr2 \
+    locales-all \
+    mesa-va-drivers \
+    mesa-vulkan-drivers \
+    netcat-openbsd \
+    openbox \
     openssh-client \
     pulseaudio \
     software-properties-common \
@@ -92,23 +100,49 @@ RUN \
     xfonts-base \
     xorgxrdp \
     xrdp \
+    xserver-common \
     xserver-xorg-core \
-    xserver-xorg-video-intel \
     xserver-xorg-video-amdgpu \
     xserver-xorg-video-ati \
+    xserver-xorg-video-intel \
+    xserver-xorg-video-nouveau \
+    xserver-xorg-video-qxl \
+    xterm \
     xutils \
     zlib1g && \
   dpkg -i /xrdp.deb && \
   rm /xrdp.deb && \
   echo "**** install docker ****" && \
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
-  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" && \
+  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu noble stable" && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     docker-ce-cli && \
-  echo "**** cleanup and user perms ****" && \
+  echo "**** openbox tweaks ****" && \
+  sed -i \
+    -e 's/NLIMC/NLMC/g' \
+    -e '/debian-menu/d' \
+    -e 's|</applications>|  <application class="*"><maximized>yes</maximized></application>\n</applications>|' \
+    -e 's|</keyboard>|  <keybind key="C-S-d"><action name="ToggleDecorations"/></keybind>\n</keyboard>|' \
+    /etc/xdg/openbox/rc.xml && \
+  echo "**** user perms ****" && \
+  sed -e 's/%sudo	ALL=(ALL:ALL) ALL/%sudo ALL=(ALL:ALL) NOPASSWD: ALL/g' \
+    -i /etc/sudoers && \
   echo "abc:abc" | chpasswd && \
+  usermod -s /bin/bash abc && \
   usermod -aG sudo abc && \
+  echo "**** proot-apps ****" && \
+  mkdir /proot-apps/ && \
+  PAPPS_RELEASE=$(curl -sX GET "https://api.github.com/repos/linuxserver/proot-apps/releases/latest" \
+    | awk '/tag_name/{print $4;exit}' FS='[""]') && \
+  curl -L https://github.com/linuxserver/proot-apps/releases/download/${PAPPS_RELEASE}/proot-apps-x86_64.tar.gz \
+    | tar -xzf - -C /proot-apps/ && \
+  echo "${PAPPS_RELEASE}" > /proot-apps/pversion && \
+  echo "**** locales ****" && \
+  for LOCALE in $(curl -sL https://raw.githubusercontent.com/thelamer/lang-stash/master/langs); do \
+    localedef -i $LOCALE -f UTF-8 $LOCALE.UTF-8; \
+  done && \
+  echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
     /var/lib/apt/lists/* \
