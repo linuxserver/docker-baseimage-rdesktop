@@ -33,6 +33,9 @@ ENV HOME=/tmp
 RUN \
   echo "**** build pulseaudio from source ****" && \
   cd /tmp/aports-${ALPINE_VERSION}-stable/community/pulseaudio && \
+  sed -i \
+    's#https://freedesktop.org#https://www.freedesktop.org#g' \
+    APKBUILD && \
   abuild fetch && \
   abuild unpack && \
   abuild deps && \
