@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-arch:arm64v8-latest as buildstage
+FROM ghcr.io/linuxserver/baseimage-arch:arm64v8-latest AS buildstage
 
 RUN \
   echo "**** install build deps ****" && \
@@ -24,6 +24,9 @@ RUN \
     sudo chmod 777 -R /root && \
     git clone https://aur.archlinux.org/${PACKAGE}.git && \
     cd ${PACKAGE} && \
+    sed -i \
+      's#https://freedesktop.org#https://www.freedesktop.org#g' \
+      PKGBUILD && \
     makepkg -sAci --skipinteg --noconfirm && \
     sudo -u root rm -f ${PACKAGE}-debug*pkg.tar.xz && \
     sudo -u root tar xf ${PACKAGE}-*pkg.tar.xz -C /buildout && \
@@ -31,7 +34,7 @@ RUN \
   done
 
 # docker compose
-FROM ghcr.io/linuxserver/docker-compose:amd64-latest as compose
+FROM ghcr.io/linuxserver/docker-compose:amd64-latest AS compose
 
 # runtime stage
 FROM ghcr.io/linuxserver/baseimage-arch:arm64v8-latest
@@ -46,28 +49,51 @@ LABEL maintainer="thelamer"
 COPY --from=buildstage /buildout/ /
 COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
+#Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
+ENV NVIDIA_DRIVER_CAPABILITIES="all" \
+    HOME=/config
+
 RUN \
+  echo "**** enable locales ****" && \
+  sed -i \
+    '/locale/d' \
+    /etc/pacman.conf && \
   echo "**** install deps ****" && \
   pacman -Sy --noconfirm --needed \
     base-devel \
     docker \
     fuse \
     git \
+    hicolor-icon-theme \
     imlib2 \
     lame \
     libfdk-aac \
     libjpeg-turbo \
+    libva-mesa-driver \
     libxrandr \
     mesa \
+    mesa-libgl \
     noto-fonts \
+    noto-fonts-emoji \
+    openbox \
     openssh \
     pciutils \
     pulseaudio \
     sudo \
+    vulkan-broadcom \
+    vulkan-extra-layers \
+    vulkan-panfrost \
+    vulkan-radeon \
+    vulkan-swrast \
+    vulkan-tools \
     xf86-video-amdgpu \
+    xf86-video-nouveau \
+    xf86-video-qxl \
     xorg-server \
     xorg-xmessage \
     xterm && \
+  pacman -Sy --noconfirm \
+    glibc && \
   echo "**** user perms ****" && \
   echo "abc:abc" | chpasswd && \
   usermod -s /bin/bash abc && \
@@ -84,10 +110,30 @@ RUN \
   cd dbus-x11 && \
   sed -i '/check()/,+2 d' PKGBUILD && \
   sudo -u abc makepkg -sAci --skipinteg --noconfirm --needed && \
+  echo "**** openbox tweaks ****" && \
+  sed -i \
+    -e 's/NLIMC/NLMC/g' \
+    -e 's|</applications>|  <application class="*"><maximized>yes</maximized></application>\n</applications>|' \
+    -e 's|</keyboard>|  <keybind key="C-S-d"><action name="ToggleDecorations"/></keybind>\n</keyboard>|' \
+    /etc/xdg/openbox/rc.xml && \
+  echo "**** proot-apps ****" && \
+  mkdir /proot-apps/ && \
+  PAPPS_RELEASE=$(curl -sX GET "https://api.github.com/repos/linuxserver/proot-apps/releases/latest" \
+    | awk '/tag_name/{print $4;exit}' FS='[""]') && \
+  curl -L https://github.com/linuxserver/proot-apps/releases/download/${PAPPS_RELEASE}/proot-apps-aarch64.tar.gz \
+    | tar -xzf - -C /proot-apps/ && \
+  echo "${PAPPS_RELEASE}" > /proot-apps/pversion && \
   echo "**** configure locale ****" && \
-  echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
-  locale-gen && \
+  for LOCALE in $(curl -sL https://raw.githubusercontent.com/thelamer/lang-stash/master/langs); do \
+    localedef -i $LOCALE -f UTF-8 $LOCALE.UTF-8; \
+  done && \
+  echo "**** theme ****" && \
+  curl -s https://raw.githubusercontent.com/thelamer/lang-stash/master/theme.tar.gz \
+    | tar xzvf - -C /usr/share/themes/Clearlooks/openbox-3/ && \
   echo "**** cleanup ****" && \
+  pacman -Rsn --noconfirm \
+    git \
+    $(pacman -Qdtq) && \
   rm -rf \
     /tmp/* \
     /var/cache/pacman/pkg/* \
