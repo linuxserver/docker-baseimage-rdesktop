@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM ghcr.io/linuxserver/baseimage-ubuntu:noble AS buildstage
 
 ARG XRDP_PULSE_VERSION=v0.7
