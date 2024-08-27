@@ -32,9 +32,9 @@ pipeline {
     CI_WEB='false'
     CI_PORT='3389'
     CI_SSL='false'
-    CI_DELAY='30'
+    CI_DOCKER_LOGS_TIMEOUT='120'
     CI_DOCKERENV='TZ=US/Pacific'
-    CI_AUTH='user:password'
+    CI_AUTH=''
     CI_WEBPATH=''
   }
   stages {
@@ -689,7 +689,7 @@ pipeline {
                 --shm-size=1gb \
                 -v /var/run/docker.sock:/var/run/docker.sock \
                 -e IMAGE=\"${IMAGE}\" \
-                -e DOCKER_LOGS_TIMEOUT=\"${CI_DELAY}\" \
+                -e DOCKER_LOGS_TIMEOUT=\"${CI_DOCKER_LOGS_TIMEOUT}\" \
                 -e TAGS=\"${CI_TAGS}\" \
                 -e META_TAG=\"${META_TAG}\" \
                 -e PORT=\"${CI_PORT}\" \

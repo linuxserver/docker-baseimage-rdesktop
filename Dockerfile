@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM ghcr.io/linuxserver/baseimage-ubuntu:noble AS buildstage
 
 ARG XRDP_PULSE_VERSION=v0.7
@@ -114,8 +116,8 @@ RUN \
   dpkg -i /xrdp.deb && \
   rm /xrdp.deb && \
   echo "**** install docker ****" && \
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
-  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu noble stable" && \
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | tee /usr/share/keyrings/docker.asc >/dev/null && \
+  echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker.asc] https://download.docker.com/linux/ubuntu noble stable" > /etc/apt/sources.list.d/docker.list && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
     docker-ce-cli && \
