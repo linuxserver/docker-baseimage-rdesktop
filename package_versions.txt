@@ -54,8 +54,8 @@ dnf                                                                           4.
 dnf                                                                           4.19.0-1.fc40                          rpm                         
 dnf-data                                                                      4.19.0-1.fc40                          rpm                         
 dnf-plugins-core                                                              4.9.0-1.fc40                           rpm                         
-docker-ce                                                                     3:27.3.0-1.fc40                        rpm                         
-docker-ce-cli                                                                 1:27.3.0-1.fc40                        rpm                         
+docker-ce                                                                     3:27.3.1-1.fc40                        rpm                         
+docker-ce-cli                                                                 1:27.3.1-1.fc40                        rpm                         
 duktape                                                                       2.7.0-7.fc40                           rpm                         
 elfutils-default-yama-scope                                                   0.191-4.fc40                           rpm                         
 elfutils-libelf                                                               0.191-4.fc40                           rpm                         
@@ -156,9 +156,9 @@ github.com/davecgh/go-spew                                                    v1
 github.com/deckarep/golang-set/v2                                             v2.3.0                                 go-module                   
 github.com/dimchansky/utfbom                                                  v1.1.1                                 go-module                   
 github.com/distribution/reference                                             v0.6.0                                 go-module  (+3 duplicates)  
-github.com/docker/cli/cmd/docker                                              v27.3.0                                go-module                   
+github.com/docker/cli/cmd/docker                                              v27.3.1                                go-module                   
 github.com/docker/distribution                                                v2.8.3+incompatible                    go-module                   
-github.com/docker/docker                                                      v27.3.0                                go-module  (+1 duplicate)   
+github.com/docker/docker                                                      v27.3.1                                go-module  (+1 duplicate)   
 github.com/docker/go-connections                                              v0.5.0                                 go-module                   
 github.com/docker/go-events                                                   v0.0.0-20190806004212-e31b211e4f1c     go-module  (+5 duplicates)  
 github.com/docker/go-metrics                                                  v0.0.1                                 go-module  (+2 duplicates)  
@@ -391,9 +391,9 @@ graphite2                                                                     1.
 grep                                                                          3.11-7.fc40                            rpm                         
 gsm                                                                           1.0.22-6.fc40                          rpm                         
 gssdp                                                                         1.6.3-2.fc40                           rpm                         
-gstreamer1                                                                    1.24.7-1.fc40                          rpm                         
-gstreamer1-plugins-bad-free-libs                                              1.24.7-1.fc40                          rpm                         
-gstreamer1-plugins-base                                                       1.24.7-1.fc40                          rpm                         
+gstreamer1                                                                    1.24.8-1.fc40                          rpm                         
+gstreamer1-plugins-bad-free-libs                                              1.24.8-1.fc40                          rpm                         
+gstreamer1-plugins-base                                                       1.24.8-1.fc40                          rpm                         
 gtk-update-icon-cache                                                         3.24.43-1.fc40                         rpm                         
 gtk4                                                                          4.14.5-1.fc40                          rpm                         
 gtkmm4.0                                                                      4.14.0-1.fc40                          rpm                         
@@ -625,9 +625,9 @@ polkit-pkla-compat                                                            0.
 popt                                                                          1.19-6.fc40                            rpm                         
 procps-ng                                                                     4.0.4-3.fc40                           rpm                         
 publicsuffix-list-dafsa                                                       20240107-3.fc40                        rpm                         
-pulseaudio                                                                    16.1-7.fc40                            rpm                         
-pulseaudio-libs                                                               16.1-7.fc40                            rpm                         
-pulseaudio-libs-glib2                                                         16.1-7.fc40                            rpm                         
+pulseaudio                                                                    16.1-8.fc40                            rpm                         
+pulseaudio-libs                                                               16.1-8.fc40                            rpm                         
+pulseaudio-libs-glib2                                                         16.1-8.fc40                            rpm                         
 python-dateutil                                                               2.8.2                                  python                      
 python-pip-wheel                                                              23.3.2-1.fc40                          rpm                         
 python3                                                                       3.12.2-2.fc40                          rpm                         
