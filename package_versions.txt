@@ -509,10 +509,10 @@ mtdev                                                                         1.
 ncurses                                                                       6.5-3                                  alpm                           
 nettle                                                                        3.10-1                                 alpm                           
 noto-fonts                                                                    1:24.9.1-1                             alpm                           
-noto-fonts-emoji                                                              1:2.042-1                              alpm                           
+noto-fonts-emoji                                                              1:2.047-1                              alpm                           
 npth                                                                          1.7-1                                  alpm                           
 nspr                                                                          4.35-3                                 alpm                           
-nss                                                                           3.104-1                                alpm                           
+nss                                                                           3.105-1                                alpm                           
 oniguruma                                                                     6.9.9-1                                alpm                           
 openbox                                                                       3.6.1-11                               alpm                           
 openssh                                                                       9.9p1-1                                alpm                           
