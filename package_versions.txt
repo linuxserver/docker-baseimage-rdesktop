@@ -19,7 +19,7 @@ brotli                                                                        1.
 busybox                                                                       1.36.1-2                               alpm                           
 bzip2                                                                         1.0.8-6                                alpm                           
 ca-certificates                                                               20240618-1                             alpm                           
-ca-certificates-mozilla                                                       3.104-1                                alpm                           
+ca-certificates-mozilla                                                       3.105-1                                alpm                           
 ca-certificates-utils                                                         20240618-1                             alpm                           
 cairo                                                                         1.18.2-2                               alpm                           
 catatonit                                                                     0.2.0-3                                alpm                           
