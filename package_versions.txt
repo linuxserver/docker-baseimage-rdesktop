@@ -35,7 +35,7 @@ coreutils                                                                     9.
 coreutils-common                                                              9.4-8.fc40                             rpm                         
 cracklib                                                                      2.9.11-5.fc40                          rpm                         
 crypto-policies                                                               20240201-2.git9f501f3.fc40             rpm                         
-cups-libs                                                                     1:2.4.10-7.fc40                        rpm                         
+cups-libs                                                                     1:2.4.11-1.fc40                        rpm                         
 curl                                                                          8.6.0-10.fc40                          rpm                         
 cyrus-sasl-lib                                                                2.1.28-19.fc40                         rpm                         
 dario.cat/mergo                                                               v1.0.0                                 go-module  (+2 duplicates)  
