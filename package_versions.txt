@@ -679,9 +679,9 @@ startup-notification                                                          0.
 stdlib                                                                        go1.22.7                               go-module  (+9 duplicates)  
 sudo                                                                          1.9.15-2.p5.fc40                       rpm                         
 svt-av1-libs                                                                  2.1.0-1.fc40                           rpm                         
-systemd                                                                       255.12-1.fc40                          rpm                         
-systemd-libs                                                                  255.12-1.fc40                          rpm                         
-systemd-pam                                                                   255.12-1.fc40                          rpm                         
+systemd                                                                       255.13-1.fc40                          rpm                         
+systemd-libs                                                                  255.13-1.fc40                          rpm                         
+systemd-pam                                                                   255.13-1.fc40                          rpm                         
 systemd-python                                                                235                                    python                      
 tags.cncf.io/container-device-interface                                       v0.7.2                                 go-module  (+1 duplicate)   
 tags.cncf.io/container-device-interface/specs-go                              v0.7.0                                 go-module  (+1 duplicate)   
