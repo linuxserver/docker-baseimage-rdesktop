@@ -1,7 +1,7 @@
 NAME                                                                          VERSION                                TYPE                       
 abattis-cantarell-vf-fonts                                                    0.301-12.fc40                          rpm                         
-adobe-mappings-cmap                                                           20230622-3.fc40                        rpm                         
-adobe-mappings-cmap-deprecated                                                20230622-3.fc40                        rpm                         
+adobe-mappings-cmap                                                           20231115-1.fc40                        rpm                         
+adobe-mappings-cmap-deprecated                                                20231115-1.fc40                        rpm                         
 adobe-mappings-pdf                                                            20190401-7.fc40                        rpm                         
 adwaita-cursor-theme                                                          46.2-2.fc40                            rpm                         
 adwaita-icon-theme                                                            46.2-2.fc40                            rpm                         
@@ -547,7 +547,7 @@ libtasn1                                                                      4.
 libtdb                                                                        1.4.10-1.fc40                          rpm                         
 libthai                                                                       0.1.29-8.fc40                          rpm                         
 libtheora                                                                     1:1.1.1-36.fc40                        rpm                         
-libtiff                                                                       4.6.0-2.fc40                           rpm                         
+libtiff                                                                       4.6.0-5.fc40.1                         rpm                         
 libtirpc                                                                      1.3.4-1.rc3.fc40                       rpm        (+1 duplicate)   
 libtool-ltdl                                                                  2.4.7-10.fc40                          rpm                         
 libtracker-sparql                                                             3.7.3-1.fc40                           rpm                         
@@ -706,7 +706,7 @@ util-linux                                                                    2.
 util-linux-core                                                               2.40-0.9.rc1.fc40                      rpm                         
 vim-data                                                                      2:9.1.158-1.fc40                       rpm                         
 vim-minimal                                                                   2:9.1.158-1.fc40                       rpm                         
-vulkan-loader                                                                 1.3.290.0-1.fc40                       rpm                         
+vulkan-loader                                                                 1.3.296.0-1.fc40                       rpm                         
 webrtc-audio-processing0.3                                                    0.3.1-12.fc40                          rpm                         
 which                                                                         2.21-41.fc40                           rpm                         
 xcb-util                                                                      0.4.1-5.fc40                           rpm                         
