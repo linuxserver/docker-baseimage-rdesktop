@@ -498,7 +498,7 @@ libproc2                                                                      4.
 libpsl                                                                        0.21.5-r1                                           apk                         
 libpulse                                                                      17.0-r0                                             apk                         
 libpulse-mainloop-glib                                                        17.0-r0                                             apk                         
-librsvg                                                                       2.58.0-r0                                           apk                         
+librsvg                                                                       2.58.5-r0                                           apk                         
 libseccomp                                                                    2.5.5-r1                                            apk                         
 libsharpyuv                                                                   1.3.2-r0                                            apk                         
 libsigc++                                                                     2.12.1-r0                                           apk                         
@@ -646,8 +646,8 @@ xkbcomp                                                                       1.
 xkeyboard-config                                                              2.41-r0                                             apk                         
 xkeyboard-config-lang                                                         2.41-r0                                             apk                         
 xmodmap                                                                       1.0.11-r1                                           apk                         
-xorg-server                                                                   21.1.13-r0                                          apk                         
-xorg-server-common                                                            21.1.13-r0                                          apk                         
+xorg-server                                                                   21.1.14-r0                                          apk                         
+xorg-server-common                                                            21.1.14-r0                                          apk                         
 xorgxrdp                                                                      0.9.19-r0                                           apk                         
 xrdb                                                                          1.2.2-r0                                            apk                         
 xrdp                                                                          0.9.24-r0                                           apk                         
