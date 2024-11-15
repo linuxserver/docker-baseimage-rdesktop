@@ -30,7 +30,7 @@ cloud.google.com/go/longrunning                                               v0
 code.cloudfoundry.org/clock                                                   v1.1.0                                 go-module                   
 colord-libs                                                                   1.4.7-3.fc40                           rpm                         
 container-selinux                                                             2:2.233.0-1.fc40                       rpm                         
-containerd.io                                                                 1.7.22-3.1.fc40                        rpm                         
+containerd.io                                                                 1.7.23-3.1.fc40                        rpm                         
 coreutils                                                                     9.4-8.fc40                             rpm                         
 coreutils-common                                                              9.4-8.fc40                             rpm                         
 cracklib                                                                      2.9.11-5.fc40                          rpm                         
@@ -122,11 +122,13 @@ github.com/containerd/cgroups/v3                                              v3
 github.com/containerd/cgroups/v3                                              v3.0.3                                 go-module                   
 github.com/containerd/console                                                 v1.0.3                                 go-module  (+6 duplicates)  
 github.com/containerd/console                                                 v1.0.4                                 go-module                   
-github.com/containerd/containerd                                              v1.7.22                                go-module  (+6 duplicates)  
+github.com/containerd/containerd                                              v1.7.22                                go-module                   
+github.com/containerd/containerd                                              v1.7.23                                go-module  (+5 duplicates)  
 github.com/containerd/containerd/api                                          v1.7.19                                go-module  (+6 duplicates)  
 github.com/containerd/continuity                                              v0.4.2                                 go-module  (+5 duplicates)  
 github.com/containerd/continuity                                              v0.4.3                                 go-module                   
-github.com/containerd/errdefs                                                 v0.1.0                                 go-module  (+6 duplicates)  
+github.com/containerd/errdefs                                                 v0.1.0                                 go-module                   
+github.com/containerd/errdefs                                                 v0.3.0                                 go-module  (+5 duplicates)  
 github.com/containerd/fifo                                                    v1.1.0                                 go-module  (+6 duplicates)  
 github.com/containerd/go-cni                                                  v1.1.10                                go-module                   
 github.com/containerd/go-cni                                                  v1.1.9                                 go-module  (+2 duplicates)  
@@ -553,7 +555,7 @@ libtool-ltdl                                                                  2.
 libtracker-sparql                                                             3.7.3-1.fc40                           rpm                         
 libunistring                                                                  1.1-7.fc40                             rpm                         
 libunwind                                                                     1.8.0-3.fc40                           rpm                         
-libusb1                                                                       1.0.27-2.fc40                          rpm                         
+libusb1                                                                       1.0.27-4.fc40                          rpm                         
 libutempter                                                                   1.2.1-13.fc40                          rpm                         
 libuuid                                                                       2.40-0.9.rc1.fc40                      rpm                         
 libva                                                                         2.21.0-3.fc40                          rpm                         
@@ -677,7 +679,8 @@ soxr                                                                          0.
 speexdsp                                                                      1.2.1-6.fc40                           rpm                         
 sqlite-libs                                                                   3.45.1-2.fc40                          rpm                         
 startup-notification                                                          0.12-29.fc40                           rpm                         
-stdlib                                                                        go1.22.7                               go-module  (+9 duplicates)  
+stdlib                                                                        go1.22.7                               go-module  (+2 duplicates)  
+stdlib                                                                        go1.22.9                               go-module  (+6 duplicates)  
 sudo                                                                          1.9.15-2.p5.fc40                       rpm                         
 svt-av1-libs                                                                  2.1.0-1.fc40                           rpm                         
 systemd                                                                       255.13-1.fc40                          rpm                         
@@ -687,8 +690,8 @@ systemd-python                                                                23
 tags.cncf.io/container-device-interface                                       v0.7.2                                 go-module  (+1 duplicate)   
 tags.cncf.io/container-device-interface/specs-go                              v0.7.0                                 go-module  (+1 duplicate)   
 tar                                                                           2:1.35-3.fc40                          rpm                         
-tigervnc-license                                                              1.14.1-1.fc40                          rpm                         
-tigervnc-server-minimal                                                       1.14.1-1.fc40                          rpm                         
+tigervnc-license                                                              1.14.1-2.fc40                          rpm                         
+tigervnc-server-minimal                                                       1.14.1-2.fc40                          rpm                         
 tpm2-tss                                                                      4.0.1-7.fc40                           rpm                         
 tzdata                                                                        2024a-5.fc40                           rpm                         
 urw-base35-bookman-fonts                                                      20200910-20.fc40                       rpm                         
@@ -722,8 +725,8 @@ xorg-x11-drv-intel                                                            2.
 xorg-x11-drv-libinput                                                         1.4.0-2.fc40                           rpm                         
 xorg-x11-drv-nouveau                                                          1:1.0.17-7.fc40                        rpm                         
 xorg-x11-drv-qxl                                                              0.1.6-3.fc40                           rpm                         
-xorg-x11-server-Xorg                                                          1.20.14-35.fc40                        rpm                         
-xorg-x11-server-common                                                        1.20.14-35.fc40                        rpm                         
+xorg-x11-server-Xorg                                                          1.20.14-36.fc40                        rpm                         
+xorg-x11-server-common                                                        1.20.14-36.fc40                        rpm                         
 xorg-x11-xauth                                                                1:1.1.2-6.fc40                         rpm                         
 xorg-x11-xinit                                                                1.4.2-2.fc40                           rpm                         
 xorgxrdp                                                                      0.10.2-1.fc40                          rpm                         
