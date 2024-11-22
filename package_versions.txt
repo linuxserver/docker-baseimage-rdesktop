@@ -385,7 +385,7 @@ icu                                                                           75
 imlib2                                                                        1.12.3-2                               alpm                           
 intel-gmmlib                                                                  22.5.2-1                               alpm                           
 intel-media-driver                                                            24.4.2-1                               alpm                           
-iproute2                                                                      6.11.0-1                               alpm                           
+iproute2                                                                      6.12.0-1                               alpm                           
 iptables                                                                      1:1.8.10-2                             alpm                           
 jansson                                                                       2.14-4                                 alpm                           
 jbigkit                                                                       2.1-8                                  alpm                           
@@ -432,7 +432,7 @@ libgpg-error                                                                  1.
 libgudev                                                                      238-1                                  alpm                           
 libice                                                                        1.1.1-3                                alpm                           
 libidn2                                                                       2.3.7-1                                alpm                           
-libinput                                                                      1.26.2-1                               alpm                           
+libinput                                                                      1.27.0-1                               alpm                           
 libisl                                                                        0.27-1                                 alpm                           
 libjpeg-turbo                                                                 3.0.4-1                                alpm                           
 libksba                                                                       1.6.7-1                                alpm                           
@@ -498,7 +498,7 @@ libxpm                                                                        3.
 libxrandr                                                                     1.5.4-1                                alpm                           
 libxrender                                                                    0.9.11-2                               alpm                           
 libxshmfence                                                                  1.3.2-2                                alpm                           
-libxt                                                                         1.3.0-2                                alpm                           
+libxt                                                                         1.3.1-1                                alpm                           
 libxtst                                                                       1.2.5-1                                alpm                           
 libxv                                                                         1.0.12-2                               alpm                           
 libxvmc                                                                       1.0.14-1                               alpm                           
@@ -507,7 +507,7 @@ linux-api-headers                                                             6.
 llvm-libs                                                                     18.1.8-4                               alpm                           
 lm_sensors                                                                    1:3.6.0.r41.g31d1f125-3                alpm                           
 lmdb                                                                          0.9.33-1                               alpm                           
-luit                                                                          20240102-2                             alpm                           
+luit                                                                          20240910-1                             alpm                           
 lz4                                                                           1:1.10.0-2                             alpm                           
 lzo                                                                           2.10-5                                 alpm                           
 m4                                                                            1.4.19-3                               alpm                           
@@ -550,7 +550,7 @@ pulseaudio                                                                    17
 readline                                                                      8.2.013-1                              alpm                           
 resenje.org/singleflight                                                      v0.4.1                                 go-module                      
 rtkit                                                                         0.13-3                                 alpm                           
-runc                                                                          1.2.1-1                                alpm                           
+runc                                                                          1.2.2-1                                alpm                           
 sed                                                                           4.9-3                                  alpm                           
 shadow                                                                        4.16.0-1                               alpm                           
 shared-mime-info                                                              2.4-1                                  alpm                           
@@ -564,8 +564,9 @@ spice-protocol                                                                0.
 sqlite                                                                        3.46.1-1                               alpm                           
 startup-notification                                                          0.12-8                                 alpm                           
 stdlib                                                                        go1.23.1                               go-module     (+2 duplicates)  
-stdlib                                                                        go1.23.2                               go-module     (+5 duplicates)  
-sudo                                                                          1.9.16-1                               alpm                           
+stdlib                                                                        go1.23.2                               go-module     (+4 duplicates)  
+stdlib                                                                        go1.23.3                               go-module                      
+sudo                                                                          1.9.16.p1-1                            alpm                           
 systemd                                                                       256.8-1                                alpm                           
 systemd-libs                                                                  256.8-1                                alpm                           
 tags.cncf.io/container-device-interface                                       v0.7.2                                 go-module                      
