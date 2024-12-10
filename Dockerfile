@@ -19,13 +19,16 @@ RUN \
   AUR_PACKAGES="\
     xrdp \
     xorgxrdp \
-    pulseaudio-module-xrdp" && \ 
+    pulseaudio-module-xrdp" && \
   for PACKAGE in ${AUR_PACKAGES}; do \
     sudo chmod 777 -R /root && \
     git clone https://aur.archlinux.org/${PACKAGE}.git && \
     cd ${PACKAGE} && \
+    PU_VERSION=$(pulseaudio --version | awk '{print $2}' | awk -F'-' '{print $1}') && \
     sed -i \
-      's#https://freedesktop.org#https://www.freedesktop.org#g' \
+      -e 's#https://freedesktop.org#https://www.freedesktop.org#g' \
+      -e '/_pulseaudio_ver:/d' \
+      -e 's/_pulseaudio_ver=.*/_pulseaudio_ver="'${PU_VERSION}'"/g' \
       PKGBUILD && \
     makepkg -sAci --skipinteg --noconfirm && \
     sudo rm -f ${PACKAGE}-debug*pkg.tar.zst && \
