@@ -89,6 +89,7 @@ RUN \
     vulkan-radeon \
     vulkan-swrast \
     vulkan-tools \
+    x264 \
     xf86-video-amdgpu \
     xf86-video-ati \
     xf86-video-intel \
