@@ -4,6 +4,11 @@
 
 The purpose of these images is to provide a full featured rdesktop Linux desktop experience for any Linux application or desktop environment. They ship with passwordless sudo to allow easy package installation, testing, and customization. By default they have no logic to mount out anything but the users home directory, meaning on image updates anything outside of `/config` will be lost.
 
+- Support for using our base images in your own projects is provided on a Reasonable Endeavours basis, please see our [Support Policy](https://www.linuxserver.io/supportpolicy) for details.
+- There is no `latest` tag for any of our base images, by design. We often make breaking changes between versions, and we don't publish release notes like we do for the downstream images.
+- If you're intending to distribute an image using one of our bases, please read our [docs on container branding](https://docs.linuxserver.io/general/container-branding/) first.
+- Images are supported for as long as the upstream release on which they are based, after which we will stop building new base images for that version.
+
 # Options
 
 All application settings are passed via environment variables:
@@ -50,7 +55,7 @@ A list of linuxserver.io supported applications is located [HERE](https://github
 
 ### Application containers
 
-Included in these base images is a simple [Openbox DE](http://openbox.org/) and the accompanying logic needed to launch a single application. Lets look at the bare minimum needed to create an application container starting with a Dockerfile: 
+Included in these base images is a simple [Openbox DE](http://openbox.org/) and the accompanying logic needed to launch a single application. Lets look at the bare minimum needed to create an application container starting with a Dockerfile:
 
 ```
 FROM ghcr.io/linuxserver/baseimage-rdesktop:alpine320
@@ -58,14 +63,14 @@ RUN apk add --no-cache firefox
 COPY /root /
 ```
 
-And we can define the application to start using: 
+And we can define the application to start using:
 
 ```
 mkdir -p root/defaults
 echo "firefox" > root/defaults/autostart
 ```
 
-Resulting in a folder that looks like this: 
+Resulting in a folder that looks like this:
 
 ```
 ├── Dockerfile
@@ -101,7 +106,7 @@ Also included in the init logic is the ability to define application launchers. 
 </openbox_menu>
 ```
 
-Simply create this file and add it to your defaults folder as `menu.xml`: 
+Simply create this file and add it to your defaults folder as `menu.xml`:
 
 ```
 ├── Dockerfile
@@ -116,7 +121,7 @@ This allows users to right click the desktop background to launch the applicatio
 
 ### Full Desktop environments
 
-When building an application container we are leveraging the Openbox DE to handle window management, but it is also possible to completely replace the DE that is launched on container init using the `startwm.sh` script, located again in defaults: 
+When building an application container we are leveraging the Openbox DE to handle window management, but it is also possible to completely replace the DE that is launched on container init using the `startwm.sh` script, located again in defaults:
 
 ```
 ├── Dockerfile
@@ -129,7 +134,7 @@ If included in the build logic it will be launched in place of Openbox. Examples
 
 ## Open Source GPU Acceleration
 
-For accelerated apps or games, render devices can be mounted into the container and leveraged by applications using: 
+For accelerated apps or games, render devices can be mounted into the container and leveraged by applications using:
 
 `--device /dev/dri:/dev/dri`
 

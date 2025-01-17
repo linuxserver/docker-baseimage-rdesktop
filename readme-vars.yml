@@ -5,13 +5,18 @@ project_name: baseimage-rdesktop
 full_custom_readme: |
   {% raw -%}
   # rdesktop Base Images from LinuxServer
-  
+
   The purpose of these images is to provide a full featured rdesktop Linux desktop experience for any Linux application or desktop environment. They ship with passwordless sudo to allow easy package installation, testing, and customization. By default they have no logic to mount out anything but the users home directory, meaning on image updates anything outside of `/config` will be lost.
 
+  - Support for using our base images in your own projects is provided on a Reasonable Endeavours basis, please see our [Support Policy](https://www.linuxserver.io/supportpolicy) for details.
+  - There is no `latest` tag for any of our base images, by design. We often make breaking changes between versions, and we don't publish release notes like we do for the downstream images.
+  - If you're intending to distribute an image using one of our bases, please read our [docs on container branding](https://docs.linuxserver.io/general/container-branding/) first.
+  - Images are supported for as long as the upstream release on which they are based, after which we will stop building new base images for that version.
+
   # Options
-  
+
   All application settings are passed via environment variables:
-  
+
   | Variable | Description |
   | :----: | --- |
   | LC_ALL | Set the Language for the container to run as IE `fr_FR.UTF-8` `ar_AE.UTF-8` |
@@ -31,9 +36,9 @@ full_custom_readme: |
   ```
 
   # Available Distros
-  
+
   All base images are built for x86_64 and aarch64 platforms.
-  
+
   | Distro | Current Tag |
   | :----: | --- |
   | Alpine | alpine320 |
@@ -54,7 +59,7 @@ full_custom_readme: |
 
   ### Application containers
 
-  Included in these base images is a simple [Openbox DE](http://openbox.org/) and the accompanying logic needed to launch a single application. Lets look at the bare minimum needed to create an application container starting with a Dockerfile: 
+  Included in these base images is a simple [Openbox DE](http://openbox.org/) and the accompanying logic needed to launch a single application. Lets look at the bare minimum needed to create an application container starting with a Dockerfile:
 
   ```
   FROM ghcr.io/linuxserver/baseimage-rdesktop:alpine320
@@ -62,14 +67,14 @@ full_custom_readme: |
   COPY /root /
   ```
 
-  And we can define the application to start using: 
+  And we can define the application to start using:
 
   ```
   mkdir -p root/defaults
   echo "firefox" > root/defaults/autostart
   ```
 
-  Resulting in a folder that looks like this: 
+  Resulting in a folder that looks like this:
 
   ```
   ├── Dockerfile
@@ -105,7 +110,7 @@ full_custom_readme: |
   </openbox_menu>
   ```
 
-  Simply create this file and add it to your defaults folder as `menu.xml`: 
+  Simply create this file and add it to your defaults folder as `menu.xml`:
 
   ```
   ├── Dockerfile
@@ -114,13 +119,13 @@ full_custom_readme: |
       └── autostart
       └── menu.xml
   ```
-  
+
   This allows users to right click the desktop background to launch the application.
 
 
   ### Full Desktop environments
-  
-  When building an application container we are leveraging the Openbox DE to handle window management, but it is also possible to completely replace the DE that is launched on container init using the `startwm.sh` script, located again in defaults: 
+
+  When building an application container we are leveraging the Openbox DE to handle window management, but it is also possible to completely replace the DE that is launched on container init using the `startwm.sh` script, located again in defaults:
 
   ```
   ├── Dockerfile
@@ -132,8 +137,8 @@ full_custom_readme: |
   If included in the build logic it will be launched in place of Openbox. Examples for this kind of configuration can be found in our [rdesktop repository](https://github.com/linuxserver/docker-rdesktop)
 
   ## Open Source GPU Acceleration
-  
-  For accelerated apps or games, render devices can be mounted into the container and leveraged by applications using: 
+
+  For accelerated apps or games, render devices can be mounted into the container and leveraged by applications using:
 
   `--device /dev/dri:/dev/dri`
 
@@ -177,7 +182,7 @@ full_custom_readme: |
                 count: 1
                 capabilities: [compute,video,graphics,utility]
   ```
-  
+
   The following line is only in this repo for loop testing:
   - { date: "01.01.50:", desc: "I am the release message for this internal repo." }
   {%- endraw %}
