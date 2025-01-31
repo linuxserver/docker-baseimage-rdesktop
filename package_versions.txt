@@ -311,11 +311,11 @@ github.com/weppos/publicsuffix-go                                             v0
 github.com/zmap/zcrypto                                                       v0.0.0-20210511125630-18f1e0152cfc     go-module                   
 github.com/zmap/zlint/v3                                                      v3.1.0                                 go-module                   
 glib2                                                                         2.80.3-1.fc40                          rpm                         
-glibc                                                                         2.39-33.fc40                           rpm                         
-glibc-all-langpacks                                                           2.39-33.fc40                           rpm                         
-glibc-common                                                                  2.39-33.fc40                           rpm                         
-glibc-locale-source                                                           2.39-33.fc40                           rpm                         
-glibc-minimal-langpack                                                        2.39-33.fc40                           rpm                         
+glibc                                                                         2.39-37.fc40                           rpm                         
+glibc-all-langpacks                                                           2.39-37.fc40                           rpm                         
+glibc-common                                                                  2.39-37.fc40                           rpm                         
+glibc-locale-source                                                           2.39-37.fc40                           rpm                         
+glibc-minimal-langpack                                                        2.39-37.fc40                           rpm                         
 glibmm2.68                                                                    2.80.0-1.fc40                          rpm                         
 gmp                                                                           1:6.2.1-8.fc40                         rpm                         
 gnupg2                                                                        2.4.4-1.fc40                           rpm                         
