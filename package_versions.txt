@@ -488,7 +488,7 @@ libcomps                                                                      0.
 libcomps                                                                      0.1.20-5.fc40                          rpm                         
 libcurl                                                                       8.6.0-10.fc40                          rpm                         
 libdatrie                                                                     0.2.13-9.fc40                          rpm                         
-libdav1d                                                                      1.5.0-2.fc40                           rpm                         
+libdav1d                                                                      1.5.1-1.fc40                           rpm                         
 libdnf                                                                        0.73.4                                 python                      
 libdnf                                                                        0.73.4-1.fc40                          rpm                         
 libdrm                                                                        2.4.123-1.fc40                         rpm                         
