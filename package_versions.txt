@@ -300,7 +300,7 @@ libsvtav1enc1                     1.4.1+dfsg-1                    deb
 libswresample4                    7:5.1.6-0+deb12u1               deb                        
 libsystemd-shared                 252.33-1~deb12u1                deb                        
 libsystemd0                       252.33-1~deb12u1                deb                        
-libtasn1-6                        4.19.0-2                        deb                        
+libtasn1-6                        4.19.0-2+deb12u1                deb                        
 libtdb1                           1.4.8-2                         deb                        
 libthai-data                      0.1.29-1                        deb                        
 libthai0                          0.1.29-1                        deb                        
