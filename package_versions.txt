@@ -33,6 +33,7 @@ container-selinux                                                             2:
 containerd.io                                                                 1.7.25-3.1.fc40                        rpm                         
 coreutils                                                                     9.4-9.fc40                             rpm                         
 coreutils-common                                                              9.4-9.fc40                             rpm                         
+cpuinfo                                                                       23.2.14-3.giteb4a667.fc40.2            rpm                         
 cracklib                                                                      2.9.11-5.fc40                          rpm                         
 crypto-policies                                                               20241011-1.git5930b9a.fc40             rpm                         
 cups-filesystem                                                               1:2.4.11-9.fc40                        rpm                         
@@ -56,8 +57,8 @@ dnf                                                                           4.
 dnf                                                                           4.22.0-1.fc40                          rpm                         
 dnf-data                                                                      4.22.0-1.fc40                          rpm                         
 dnf-plugins-core                                                              4.10.0-1.fc40                          rpm                         
-docker-ce                                                                     3:28.0.0-1.fc40                        rpm                         
-docker-ce-cli                                                                 1:28.0.0-1.fc40                        rpm                         
+docker-ce                                                                     3:28.0.1-1.fc40                        rpm                         
+docker-ce-cli                                                                 1:28.0.1-1.fc40                        rpm                         
 duktape                                                                       2.7.0-7.fc40                           rpm                         
 elfutils-default-yama-scope                                                   0.192-7.fc40                           rpm                         
 elfutils-libelf                                                               0.192-7.fc40                           rpm                         
@@ -167,9 +168,9 @@ github.com/davecgh/go-spew                                                    v1
 github.com/deckarep/golang-set/v2                                             v2.3.0                                 go-module                   
 github.com/dimchansky/utfbom                                                  v1.1.1                                 go-module                   
 github.com/distribution/reference                                             v0.6.0                                 go-module  (+3 duplicates)  
-github.com/docker/cli/cmd/docker                                              v28.0.0                                go-module                   
+github.com/docker/cli/cmd/docker                                              v28.0.1                                go-module                   
 github.com/docker/distribution                                                v2.8.3+incompatible                    go-module                   
-github.com/docker/docker                                                      v28.0.0                                go-module  (+1 duplicate)   
+github.com/docker/docker                                                      v28.0.1                                go-module  (+1 duplicate)   
 github.com/docker/go-connections                                              v0.5.0                                 go-module                   
 github.com/docker/go-events                                                   v0.0.0-20190806004212-e31b211e4f1c     go-module  (+5 duplicates)  
 github.com/docker/go-metrics                                                  v0.0.1                                 go-module  (+2 duplicates)  
@@ -622,10 +623,10 @@ openbox-libs                                                                  3.
 openh264                                                                      2.4.1-2.fc40                           rpm                         
 openjpeg2                                                                     2.5.3-1.fc40                           rpm                         
 openldap                                                                      2.6.8-1.fc40                           rpm                         
-openssh                                                                       9.6p1-1.fc40.4                         rpm                         
-openssh-clients                                                               9.6p1-1.fc40.4                         rpm                         
-openssl                                                                       1:3.2.2-3.fc40                         rpm                         
-openssl-libs                                                                  1:3.2.2-3.fc40                         rpm                         
+openssh                                                                       9.6p1-2.fc40                           rpm                         
+openssh-clients                                                               9.6p1-2.fc40                           rpm                         
+openssl                                                                       1:3.2.4-1.fc40                         rpm                         
+openssl-libs                                                                  1:3.2.4-1.fc40                         rpm                         
 opus                                                                          1.5.1-1.fc40                           rpm                         
 orc                                                                           0.4.39-1.fc40                          rpm                         
 p11-kit                                                                       0.25.5-1.fc40                          rpm                         
@@ -700,18 +701,18 @@ startup-notification                                                          0.
 stdlib                                                                        go1.22.10                              go-module  (+6 duplicates)  
 stdlib                                                                        go1.23.6                               go-module  (+2 duplicates)  
 sudo                                                                          1.9.15-2.p5.fc40                       rpm                         
-svt-av1-libs                                                                  2.1.0-4.fc40                           rpm                         
+svt-av1-libs                                                                  2.3.0-1.fc40                           rpm                         
 systemd                                                                       255.16-1.fc40                          rpm                         
 systemd-libs                                                                  255.16-1.fc40                          rpm                         
 systemd-pam                                                                   255.16-1.fc40                          rpm                         
 systemd-python                                                                235                                    python                      
 tags.cncf.io/container-device-interface                                       v0.7.2                                 go-module                   
-tags.cncf.io/container-device-interface                                       v0.8.0                                 go-module                   
+tags.cncf.io/container-device-interface                                       v0.8.1                                 go-module                   
 tags.cncf.io/container-device-interface/specs-go                              v0.7.0                                 go-module                   
 tags.cncf.io/container-device-interface/specs-go                              v0.8.0                                 go-module                   
 tar                                                                           2:1.35-3.fc40                          rpm                         
-tigervnc-license                                                              1.14.1-3.fc40                          rpm                         
-tigervnc-server-minimal                                                       1.14.1-3.fc40                          rpm                         
+tigervnc-license                                                              1.15.0-1.fc40                          rpm                         
+tigervnc-server-minimal                                                       1.15.0-1.fc40                          rpm                         
 tpm2-tss                                                                      4.1.3-1.fc40                           rpm                         
 tzdata                                                                        2025a-1.fc40                           rpm                         
 urw-base35-bookman-fonts                                                      20200910-20.fc40                       rpm                         
