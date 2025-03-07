@@ -78,7 +78,7 @@ jq                                1.7.1                              binary
 jq                                1.7.1-3build1                      deb                        
 keyboard-configuration            1.226ubuntu1                       deb                        
 keyboxd                           2.4.4-2ubuntu17                    deb                        
-krb5-locales                      1.20.1-6ubuntu2.4                  deb                        
+krb5-locales                      1.20.1-6ubuntu2.5                  deb                        
 launchpadlib                      1.11.0                             python                     
 lazr-restfulclient                0.14.6                             python                     
 lazr-uri                          1.0.6                              python                     
@@ -180,7 +180,7 @@ libgs-common                      10.02.1~dfsg1-0ubuntu7.4           deb
 libgs10                           10.02.1~dfsg1-0ubuntu7.4           deb                        
 libgs10-common                    10.02.1~dfsg1-0ubuntu7.4           deb                        
 libgsm1                           1.0.22-1build1                     deb                        
-libgssapi-krb5-2                  1.20.1-6ubuntu2.4                  deb                        
+libgssapi-krb5-2                  1.20.1-6ubuntu2.5                  deb                        
 libgstreamer-plugins-base1.0-0    1.24.2-1ubuntu0.2                  deb                        
 libgstreamer1.0-0                 1.24.2-1ubuntu0.1                  deb                        
 libharfbuzz0b                     8.3.0-2build2                      deb                        
@@ -207,11 +207,11 @@ libjson-c5                        0.17-1build1                       deb
 libjson-glib-1.0-0                1.8.0-2build2                      deb                        
 libjson-glib-1.0-common           1.8.0-2build2                      deb                        
 libjxl0.7                         0.7.0-10.2ubuntu6                  deb                        
-libk5crypto3                      1.20.1-6ubuntu2.4                  deb                        
+libk5crypto3                      1.20.1-6ubuntu2.5                  deb                        
 libkeyutils1                      1.6.3-3build1                      deb                        
 libkmod2                          31+20240202-2ubuntu7.1             deb                        
-libkrb5-3                         1.20.1-6ubuntu2.4                  deb                        
-libkrb5support0                   1.20.1-6ubuntu2.4                  deb                        
+libkrb5-3                         1.20.1-6ubuntu2.5                  deb                        
+libkrb5support0                   1.20.1-6ubuntu2.5                  deb                        
 libksba8                          1.6.6-1build1                      deb                        
 liblcms2-2                        2.14-2build1                       deb                        
 libldap-common                    2.6.7+dfsg-1~exp1ubuntu8.2         deb                        
