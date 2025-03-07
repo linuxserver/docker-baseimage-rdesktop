@@ -22,7 +22,7 @@ ca-certificates                                                               20
 cairo                                                                         1.18.0-3.fc40                          rpm                         
 cairo-gobject                                                                 1.18.0-3.fc40                          rpm                         
 cairomm1.16                                                                   1.18.0-7.fc40                          rpm                         
-catatonit                                                                     0.1.7-22.fc40                          rpm                         
+catatonit                                                                     0.2.1-1.fc40                           rpm                         
 cdparanoia-libs                                                               10.2-44.fc40                           rpm                         
 cloud.google.com/go/compute/metadata                                          v0.5.2                                 go-module                   
 cloud.google.com/go/logging                                                   v1.9.0                                 go-module                   
@@ -478,7 +478,7 @@ libXv                                                                         1.
 libXvMC                                                                       1.0.13-5.fc40                          rpm                         
 libXxf86vm                                                                    1.1.5-6.fc40                           rpm                         
 libacl                                                                        2.3.2-1.fc40                           rpm                         
-libaom                                                                        3.11.0-1.fc40                          rpm                         
+libaom                                                                        3.12.0-1.fc40                          rpm                         
 libarchive                                                                    3.7.2-7.fc40                           rpm                         
 libassuan                                                                     2.5.7-1.fc40                           rpm                         
 libasyncns                                                                    0.8-28.fc40                            rpm                         
