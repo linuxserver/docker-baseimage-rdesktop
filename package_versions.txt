@@ -547,7 +547,7 @@ libxv                                                                         1.
 libxvmc                                                                       1.0.14-r1                                           apk                         
 libxxf86vm                                                                    1.1.5-r6                                            apk                         
 linux-pam                                                                     1.6.0-r0                                            apk                         
-llvm17-libs                                                                   17.0.6-r1                                           apk                         
+llvm17-libs                                                                   17.0.6-r2                                           apk                         
 mcookie                                                                       2.40.1-r1                                           apk                         
 mesa                                                                          24.0.9-r1                                           apk                         
 mesa-dri-gallium                                                              24.0.9-r1                                           apk                         
@@ -626,7 +626,7 @@ tags.cncf.io/container-device-interface/specs-go                              v0
 tdb-libs                                                                      1.4.9-r1                                            apk                         
 tiff                                                                          4.6.0t-r0                                           apk                         
 tini-static                                                                   0.19.0-r3                                           apk                         
-tzdata                                                                        2025a-r0                                            apk                         
+tzdata                                                                        2025b-r0                                            apk                         
 util-macros                                                                   1.20.0-r0                                           apk                         
 utmps-libs                                                                    0.1.2.2-r1                                          apk                         
 wayland-libs-client                                                           1.22.0-r4                                           apk                         
