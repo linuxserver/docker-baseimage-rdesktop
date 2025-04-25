@@ -333,7 +333,7 @@ glibc-all-langpacks                                                           2.
 glibc-common                                                                  2.39-37.fc40                           rpm                         
 glibc-locale-source                                                           2.39-37.fc40                           rpm                         
 glibc-minimal-langpack                                                        2.39-37.fc40                           rpm                         
-glibmm2.68                                                                    2.80.0-1.fc40                          rpm                         
+glibmm2.68                                                                    2.80.1-1.fc40                          rpm                         
 gmp                                                                           1:6.2.1-8.fc40                         rpm                         
 gnupg2                                                                        2.4.4-1.fc40                           rpm                         
 gnutls                                                                        3.8.6-1.fc40                           rpm                         
@@ -424,7 +424,7 @@ gstreamer1-plugins-base                                                       1.
 gtk-update-icon-cache                                                         3.24.43-1.fc40                         rpm                         
 gtk4                                                                          4.14.5-1.fc40                          rpm                         
 gtkmm4.0                                                                      4.14.0-1.fc40                          rpm                         
-gupnp                                                                         1.6.7-1.fc40                           rpm                         
+gupnp                                                                         1.6.8-1.fc40                           rpm                         
 gupnp-igd                                                                     1.6.0-4.fc40                           rpm                         
 gzip                                                                          1.13-1.fc40                            rpm                         
 harfbuzz                                                                      8.5.0-1.fc40                           rpm                         
@@ -692,8 +692,8 @@ rpmfusion-nonfree-release                                                     40
 rsvg-pixbuf-loader                                                            2.57.1-7.fc40                          rpm                         
 rtkit                                                                         0.11-63.fc40                           rpm                         
 sed                                                                           4.9-1.fc40                             rpm                         
-selinux-policy                                                                40.29-2.fc40                           rpm                         
-selinux-policy-targeted                                                       40.29-2.fc40                           rpm                         
+selinux-policy                                                                40.30-1.fc40                           rpm                         
+selinux-policy-targeted                                                       40.30-1.fc40                           rpm                         
 setup                                                                         2.14.5-2.fc40                          rpm                         
 setxkbmap                                                                     1.3.4-3.fc40                           rpm                         
 shadow-utils                                                                  2:4.15.1-4.fc40                        rpm                         
