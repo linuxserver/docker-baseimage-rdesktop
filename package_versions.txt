@@ -36,8 +36,8 @@ coreutils-common                                                              9.
 cpuinfo                                                                       23.2.14-3.giteb4a667.fc40.2            rpm                         
 cracklib                                                                      2.9.11-5.fc40                          rpm                         
 crypto-policies                                                               20241011-1.git5930b9a.fc40             rpm                         
-cups-filesystem                                                               1:2.4.11-9.fc40                        rpm                         
-cups-libs                                                                     1:2.4.11-9.fc40                        rpm                         
+cups-filesystem                                                               1:2.4.12-2.fc40                        rpm                         
+cups-libs                                                                     1:2.4.12-2.fc40                        rpm                         
 curl                                                                          8.6.0-10.fc40                          rpm                         
 cyrus-sasl-lib                                                                2.1.28-19.fc40                         rpm                         
 dario.cat/mergo                                                               v1.0.0                                 go-module  (+1 duplicate)   
@@ -86,7 +86,7 @@ gdbm                                                                          1:
 gdbm-libs                                                                     1:1.23-6.fc40                          rpm                         
 gdk-pixbuf2                                                                   2.42.10-8.fc40                         rpm                         
 gdk-pixbuf2-modules                                                           2.42.10-8.fc40                         rpm                         
-giflib                                                                        5.2.2-1.fc40                           rpm                         
+giflib                                                                        5.2.2-6.fc40                           rpm                         
 github.com/Azure/azure-sdk-for-go/sdk/azcore                                  v1.16.0                                go-module                   
 github.com/Azure/azure-sdk-for-go/sdk/internal                                v1.10.0                                go-module                   
 github.com/Azure/azure-sdk-for-go/sdk/storage/azblob                          v1.5.0                                 go-module                   
@@ -576,7 +576,7 @@ libtdb                                                                        1.
 libthai                                                                       0.1.29-8.fc40                          rpm                         
 libtheora                                                                     1:1.1.1-36.fc40                        rpm                         
 libtiff                                                                       4.6.0-5.fc40.1                         rpm                         
-libtirpc                                                                      1.3.6-1.rc3.fc40                       rpm        (+1 duplicate)   
+libtirpc                                                                      1.3.6-1.rc3.fc40                       rpm                         
 libtool-ltdl                                                                  2.4.7-10.fc40                          rpm                         
 libtracker-sparql                                                             3.7.3-1.fc40                           rpm                         
 libunistring                                                                  1.1-7.fc40                             rpm                         
