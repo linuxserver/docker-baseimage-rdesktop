@@ -5,7 +5,6 @@ apt-transport-https               2.6.1                           deb
 apt-utils                         2.6.1                           deb                        
 base-files                        12.4+deb12u10                   deb                        
 base-passwd                       3.6.1                           deb                        
-bash                              5.2.15                          binary                     
 bash                              5.2.15-2+b7                     deb                        
 blinker                           1.5                             python                     
 bsd-mailx                         8.1.2-0.20220412cvs-1           deb                        
@@ -67,7 +66,6 @@ gpgsm                             2.2.40-1.1                      deb
 gpgv                              2.2.40-1.1                      deb                        
 grep                              3.8-5                           deb                        
 groff-base                        1.22.4-10                       deb                        
-gzip                              1.12                            binary                     
 gzip                              1.12-1                          deb                        
 hostname                          3.23+nmu1                       deb                        
 httplib2                          0.20.4                          python                     
