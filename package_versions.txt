@@ -52,7 +52,7 @@ gawk                              1:5.2.1-2                       deb
 gcc-12-base                       12.2.0-14                       deb                        
 gir1.2-glib-2.0                   1.74.0-3                        deb                        
 gir1.2-packagekitglib-1.0         1.2.6-5                         deb                        
-github.com/docker/cli/cmd/docker  v28.1.1                         go-module                  
+github.com/docker/cli/cmd/docker  UNKNOWN                         go-module                  
 gnupg                             2.2.40-1.1                      deb                        
 gnupg-l10n                        2.2.40-1.1                      deb                        
 gnupg-utils                       2.2.40-1.1                      deb                        
