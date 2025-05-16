@@ -52,7 +52,7 @@ gcc-14-base                       14.2.0-4ubuntu2~24.04              deb
 gir1.2-girepository-2.0           1.80.1-1                           deb                        
 gir1.2-glib-2.0                   2.80.0-6ubuntu3.2                  deb                        
 gir1.2-packagekitglib-1.0         1.2.8-2ubuntu1.2                   deb                        
-github.com/docker/cli/cmd/docker  v28.1.1                            go-module                  
+github.com/docker/cli/cmd/docker  UNKNOWN                            go-module                  
 glib-networking                   2.80.0-1build1                     deb                        
 glib-networking-common            2.80.0-1build1                     deb                        
 glib-networking-services          2.80.0-1build1                     deb                        
