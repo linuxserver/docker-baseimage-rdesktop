@@ -16,8 +16,8 @@ busybox-binsh                                                                 1.
 c-ares                                                                        1.33.1-r0                                           apk                         
 ca-certificates                                                               20241121-r1                                         apk                         
 ca-certificates-bundle                                                        20241121-r1                                         apk                         
-cairo                                                                         1.18.0-r0                                           apk                         
-cairo-gobject                                                                 1.18.0-r0                                           apk                         
+cairo                                                                         1.18.4-r0                                           apk                         
+cairo-gobject                                                                 1.18.4-r0                                           apk                         
 cairomm                                                                       1.14.5-r0                                           apk                         
 catatonit                                                                     0.2.0-r0                                            apk                         
 cdparanoia-libs                                                               10.2-r14                                            apk                         
@@ -593,10 +593,10 @@ procps-ng-lang                                                                4.
 pulseaudio                                                                    17.0-r0                                             apk                         
 pulseaudio-alsa                                                               17.0-r0                                             apk                         
 pulseaudio-lang                                                               17.0-r0                                             apk                         
-pyc                                                                           3.12.10-r1                                          apk                         
-python3                                                                       3.12.10-r1                                          apk                         
-python3-pyc                                                                   3.12.10-r1                                          apk                         
-python3-pycache-pyc0                                                          3.12.10-r1                                          apk                         
+pyc                                                                           3.12.11-r0                                          apk                         
+python3                                                                       3.12.11-r0                                          apk                         
+python3-pyc                                                                   3.12.11-r0                                          apk                         
+python3-pycache-pyc0                                                          3.12.11-r0                                          apk                         
 readline                                                                      8.2.10-r0                                           apk                         
 resenje.org/singleflight                                                      v0.4.1                                              go-module                   
 runc                                                                          1.1.14-r0                                           apk                         
