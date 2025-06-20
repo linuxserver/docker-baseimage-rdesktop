@@ -10,7 +10,7 @@ blinker                           1.5                             python
 bsd-mailx                         8.1.2-0.20220412cvs-1           deb                        
 bsdextrautils                     2.38.1-5+deb12u3                deb                        
 bsdutils                          1:2.38.1-5+deb12u3              deb                        
-ca-certificates                   20230311                        deb                        
+ca-certificates                   20230311+deb12u1                deb                        
 catatonit                         0.1.7-1+b1                      deb                        
 coreutils                         9.1-1                           deb                        
 cpp                               4:12.2.0-3                      deb                        
