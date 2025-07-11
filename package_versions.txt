@@ -465,7 +465,7 @@ libcanberra-gstreamer                                                         0.
 libcanberra-gtk3                                                              0.30-r10                                            apk                         
 libcanberra-pulse                                                             0.30-r10                                            apk                         
 libcap2                                                                       2.70-r0                                             apk                         
-libcrypto3                                                                    3.3.3-r0                                            apk                         
+libcrypto3                                                                    3.3.4-r0                                            apk                         
 libcurl                                                                       8.12.1-r0                                           apk                         
 libdrm                                                                        2.4.120-r0                                          apk                         
 libeconf                                                                      0.6.3-r0                                            apk                         
@@ -503,7 +503,7 @@ libsharpyuv                                                                   1.
 libsigc++                                                                     2.12.1-r0                                           apk                         
 libsm                                                                         1.2.4-r4                                            apk                         
 libsndfile                                                                    1.2.2-r1                                            apk                         
-libssl3                                                                       3.3.3-r0                                            apk                         
+libssl3                                                                       3.3.4-r0                                            apk                         
 libstdc++                                                                     13.2.1_git20240309-r1                               apk                         
 libtasn1                                                                      4.20.0-r0                                           apk                         
 libtheora                                                                     1.1.1-r18                                           apk                         
@@ -576,7 +576,7 @@ openbox-libs                                                                  3.
 openssh-client-common                                                         9.7_p1-r5                                           apk                         
 openssh-client-default                                                        9.7_p1-r5                                           apk                         
 openssh-keygen                                                                9.7_p1-r5                                           apk                         
-openssl                                                                       3.3.3-r0                                            apk                         
+openssl                                                                       3.3.4-r0                                            apk                         
 opus                                                                          1.5.2-r0                                            apk                         
 orc                                                                           0.4.40-r0                                           apk                         
 p11-kit                                                                       0.25.3-r0                                           apk                         
