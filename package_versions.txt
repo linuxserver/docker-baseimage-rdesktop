@@ -75,7 +75,7 @@ httplib2                          0.20.4                             python
 init-system-helpers               1.66ubuntu1                        deb                        
 iso-codes                         4.16.0-1                           deb                        
 jq                                1.7.1                              binary                     
-jq                                1.7.1-3build1                      deb                        
+jq                                1.7.1-3ubuntu0.24.04.1             deb                        
 keyboard-configuration            1.226ubuntu1                       deb                        
 keyboxd                           2.4.4-2ubuntu17.3                  deb                        
 krb5-locales                      1.20.1-6ubuntu2.6                  deb                        
@@ -158,8 +158,8 @@ libgbm1                           24.2.8-1ubuntu1~24.04.1            deb
 libgcc-s1                         14.2.0-4ubuntu2~24.04              deb                        
 libgcrypt20                       1.10.3-2build1                     deb                        
 libgdbm6t64                       1.23-5.1build1                     deb                        
-libgdk-pixbuf-2.0-0               2.42.10+dfsg-3ubuntu3.1            deb                        
-libgdk-pixbuf2.0-common           2.42.10+dfsg-3ubuntu3.1            deb                        
+libgdk-pixbuf-2.0-0               2.42.10+dfsg-3ubuntu3.2            deb                        
+libgdk-pixbuf2.0-common           2.42.10+dfsg-3ubuntu3.2            deb                        
 libgif7                           5.2.2-1ubuntu1                     deb                        
 libgirepository-1.0-1             1.80.1-1                           deb                        
 libgl1                            1.7.0-1build1                      deb                        
@@ -202,7 +202,7 @@ libjbig0                          2.1-6.1ubuntu2                     deb
 libjbig2dec0                      0.20-1build3                       deb                        
 libjpeg-turbo8                    2.1.5-2ubuntu2                     deb                        
 libjpeg8                          8c-2ubuntu11                       deb                        
-libjq1                            1.7.1-3build1                      deb                        
+libjq1                            1.7.1-3ubuntu0.24.04.1             deb                        
 libjson-c5                        0.17-1build1                       deb                        
 libjson-glib-1.0-0                1.8.0-2build2                      deb                        
 libjson-glib-1.0-common           1.8.0-2build2                      deb                        
@@ -413,7 +413,7 @@ netcat-openbsd                    1.226-1ubuntu2                     deb
 oauthlib                          3.2.2                              python                     
 ocl-icd-libopencl1                2.3.2-1build1                      deb                        
 openbox                           3.6.1-12build5                     deb                        
-openssh-client                    1:9.6p1-3ubuntu13.12               deb                        
+openssh-client                    1:9.6p1-3ubuntu13.13               deb                        
 openssl                           3.0.13-0ubuntu3.5                  deb                        
 packagekit                        1.2.8-2ubuntu1.2                   deb                        
 passwd                            1:4.13+dfsg1-4ubuntu3.2            deb                        
