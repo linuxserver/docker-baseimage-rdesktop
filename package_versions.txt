@@ -292,7 +292,7 @@ libspeexdsp1                      1.2.1-1                         deb
 libsqlite3-0                      3.40.1-2+deb12u1                deb                        
 libss2                            1.47.0-2                        deb                        
 libssh2-1                         1.10.0-3+b1                     deb                        
-libssl3                           3.0.17-1~deb12u1                deb                        
+libssl3                           3.0.17-1~deb12u2                deb                        
 libstartup-notification0          0.12-6+b1                       deb                        
 libstdc++6                        12.2.0-14+deb12u1               deb                        
 libstemmer0d                      2.2.0-2                         deb                        
@@ -410,7 +410,7 @@ oauthlib                          3.2.2                           python
 ocl-icd-libopencl1                2.3.1-1                         deb                        
 openbox                           3.6.1-10                        deb                        
 openssh-client                    1:9.2p1-2+deb12u7               deb                        
-openssl                           3.0.17-1~deb12u1                deb                        
+openssl                           3.0.17-1~deb12u2                deb                        
 packagekit                        1.2.6-5                         deb                        
 passwd                            1:4.13+dfsg1-1+deb12u1          deb                        
 perl-base                         5.36.0-7+deb12u2                deb                        
