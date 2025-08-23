@@ -37,10 +37,6 @@ All base images are built for x86_64 and aarch64 platforms.
 
 | Distro | Current Tag |
 | :----: | --- |
-| Alpine | alpine320 |
-| Arch | arch |
-| Debian | debianbookworm |
-| Fedora | fedora40 |
 | Ubuntu | ubuntunoble |
 
 # PRoot Apps
