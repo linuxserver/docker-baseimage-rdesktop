@@ -47,9 +47,6 @@ RUN \
   debuild -b -uc -us && \
   cp -ax ../xrdp_*.deb /buildout/xrdp.deb
 
-# docker compose
-FROM ghcr.io/linuxserver/docker-compose:amd64-latest AS compose
-
 # runtime stage
 FROM ghcr.io/linuxserver/baseimage-ubuntu:noble
 
@@ -61,7 +58,6 @@ LABEL maintainer="thelamer"
 
 # copy over libs and installers from build stage
 COPY --from=buildstage /buildout/ /
-COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
 
 #Add needed nvidia environment variables for https://github.com/NVIDIA/nvidia-docker
 ENV NVIDIA_DRIVER_CAPABILITIES=all \
@@ -72,6 +68,9 @@ RUN \
   sed -i \
     '/locale/d' \
     /etc/dpkg/dpkg.cfg.d/excludes && \
+  echo "**** add docker repos ****" && \
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | tee /usr/share/keyrings/docker.asc >/dev/null && \
+  echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker.asc] https://download.docker.com/linux/ubuntu noble stable" > /etc/apt/sources.list.d/docker.list && \
   echo "**** install deps ****" && \
   ldconfig && \
   apt-get update && \
@@ -80,6 +79,8 @@ RUN \
     apt-transport-https \
     ca-certificates \
     dbus-x11 \
+    docker-ce-cli \
+    docker-compose-plugin \
     fonts-noto-color-emoji \
     fonts-noto-core \
     gawk \
@@ -115,12 +116,6 @@ RUN \
     zlib1g && \
   dpkg -i /xrdp.deb && \
   rm /xrdp.deb && \
-  echo "**** install docker ****" && \
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | tee /usr/share/keyrings/docker.asc >/dev/null && \
-  echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker.asc] https://download.docker.com/linux/ubuntu noble stable" > /etc/apt/sources.list.d/docker.list && \
-  apt-get update && \
-  apt-get install -y --no-install-recommends \
-    docker-ce-cli && \
   echo "**** openbox tweaks ****" && \
   sed -i \
     -e 's/NLIMC/NLMC/g' \
