@@ -79,7 +79,7 @@ RUN \
     apt-transport-https \
     ca-certificates \
     dbus-x11 \
-    docker-ce-cli && \
+    docker-ce-cli \
     docker-compose-plugin \
     fonts-noto-color-emoji \
     fonts-noto-core \
