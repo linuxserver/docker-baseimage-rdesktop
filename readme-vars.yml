@@ -2,6 +2,10 @@
 
 # project information
 project_name: baseimage-rdesktop
+project_deprecation_status: true
+project_deprecation_message: |
+  Please migrate to an Ubuntu-based tag. For more info, see
+  https://info.linuxserver.io/issues/2025-08-23-rdesktop/
 full_custom_readme: |
   {% raw -%}
   Up to date documentation is available [here](https://github.com/linuxserver/docker-baseimage-rdesktop/blob/master/README.md).
