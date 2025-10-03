@@ -35,7 +35,7 @@ dirmngr                           2.2.40-1.1+deb12u1              deb
 distro                            1.8.0                           python                     
 distro-info-data                  0.58+deb12u5                    deb                        
 dmsetup                           2:1.02.185-2                    deb                        
-docker-ce-cli                     5:28.4.0-1~debian.12~bookworm   deb                        
+docker-ce-cli                     5:28.5.0-1~debian.12~bookworm   deb                        
 dpkg                              1.21.22                         deb                        
 e2fsprogs                         1.47.0-2+b2                     deb                        
 exim4-base                        4.96-15+deb12u7                 deb                        
@@ -292,7 +292,7 @@ libspeexdsp1                      1.2.1-1                         deb
 libsqlite3-0                      3.40.1-2+deb12u2                deb                        
 libss2                            1.47.0-2+b2                     deb                        
 libssh2-1                         1.10.0-3+b1                     deb                        
-libssl3                           3.0.17-1~deb12u2                deb                        
+libssl3                           3.0.17-1~deb12u3                deb                        
 libstartup-notification0          0.12-6+b1                       deb                        
 libstdc++6                        12.2.0-14+deb12u1               deb                        
 libstemmer0d                      2.2.0-2                         deb                        
@@ -410,7 +410,7 @@ oauthlib                          3.2.2                           python
 ocl-icd-libopencl1                2.3.1-1                         deb                        
 openbox                           3.6.1-10                        deb                        
 openssh-client                    1:9.2p1-2+deb12u7               deb                        
-openssl                           3.0.17-1~deb12u2                deb                        
+openssl                           3.0.17-1~deb12u3                deb                        
 packagekit                        1.2.6-5                         deb                        
 passwd                            1:4.13+dfsg1-1+deb12u1          deb                        
 perl-base                         5.36.0-7+deb12u3                deb                        
